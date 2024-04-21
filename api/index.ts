@@ -2,7 +2,7 @@ import { AbilityDefinition } from "definitions/AbilityDefinition";
 import { AudioSourceDefinition } from "definitions/AudioSourceDefinition";
 import { BankDefinition } from "definitions/BankDefinition";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
-import { BattleImpactAnimation } from "definitions/BattleImpactAnimationDefinition";
+import { BattleImpactAnimationDefinition } from "definitions/BattleImpactAnimationDefinition";
 import { BodyCosmeticDefinition } from "definitions/BodyCosmeticDefinition";
 import { ChestDefinition } from "definitions/ChestDefinition";
 import { ClothesColorDefinition } from "definitions/ClothesColorDefinition";
@@ -48,7 +48,7 @@ export {
   AudioSourceDefinition,
   BankDefinition,
   BattleImpactAlignment,
-  BattleImpactAnimation,
+  BattleImpactAnimationDefinition,
   BodyCosmeticDefinition,
   ChestDefinition,
   ClothesColorDefinition,
