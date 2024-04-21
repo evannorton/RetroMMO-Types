@@ -1,11 +1,10 @@
 {
     "version": "1.0.0",
     "name": "retrommo-types",
-    "main": "./api/index.ts",
-    "browser": "./api/index.ts",
-    "module": "./api/index.ts",
-    "types": "./api/index.ts",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
+        "build": "tsc",
         "lint": "eslint api",
         "lint:fix": "eslint api --fix"
     },
@@ -15,7 +14,8 @@
         "eslint": "8.55.0",
         "eslint-config-prettier": "9.1.0",
         "eslint-plugin-prettier": "5.0.1",
-        "eslint-plugin-sort-imports-es6-autofix": "0.6.0"
+        "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
+        "typescript": "5.4.5"
     },
     "engines": {
         "npm": "10.5.0",

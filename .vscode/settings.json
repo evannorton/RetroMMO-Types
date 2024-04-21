@@ -18,6 +18,12 @@
     "files.eol": "\n",
     "javascript.preferences.importModuleSpecifier": "project-relative",
     "typescript.preferences.importModuleSpecifier": "project-relative",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     }
