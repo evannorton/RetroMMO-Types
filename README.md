@@ -1,2 +1,2 @@
-# RetroMMO-GameDataStructure
-TypeScript interfaces for RetroMMO's game data
+# RetroMMO-Types
+TypeScript types for RetroMMO
