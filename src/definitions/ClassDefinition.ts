@@ -10,4 +10,5 @@ export interface ClassDefinition extends Definition {
   readonly defaultOutfitItemSlug: string;
   readonly defaultSkinColorSlug: string;
   readonly name: string;
+  readonly order: number;
 }
