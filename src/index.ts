@@ -5,6 +5,7 @@ import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
+import { ClassDefinition } from "./definitions/ClassDefinition";
 import { ClothesColorDefinition } from "./definitions/ClothesColorDefinition";
 import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
@@ -42,8 +43,6 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
-import { ClassDefinition } from "./definitions/ClassDefinition";
-
 
 export {
   AbilityDefinition,
