@@ -42,6 +42,8 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
+import { ClassDefinition } from "./definitions/ClassDefinition";
+
 
 export {
   AbilityDefinition,
@@ -51,6 +53,7 @@ export {
   BattleImpactAnimationDefinition,
   BodyCosmeticDefinition,
   ChestDefinition,
+  ClassDefinition,
   ClothesColorDefinition,
   ClothesDyeDefinition,
   Color,
