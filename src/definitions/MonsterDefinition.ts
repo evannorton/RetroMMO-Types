@@ -3,7 +3,7 @@ import { Definition } from "./Definition";
 export interface MonsterDefinition extends Definition {
   readonly battleHeight: number;
   readonly battleWidth: number;
-  readonly imageSourceSlug: string;
+  readonly imageSourceID: string;
   readonly offset: number;
   readonly shadowXOffset: number;
   readonly shadowXRadius: number;

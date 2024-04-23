@@ -2,12 +2,12 @@ import { TilesetTileAnimationFrameDefinition } from "./TilesetTileAnimationFrame
 
 export interface TilesetTileDefinition {
   readonly animationFrames: TilesetTileAnimationFrameDefinition[];
-  readonly bankSlug?: string;
-  readonly chestSlug?: string;
-  readonly combinationLockSlug?: string;
+  readonly bankID?: string;
+  readonly chestID?: string;
+  readonly combinationLockID?: string;
   readonly collision: boolean;
   readonly coversCollision: boolean;
   readonly extendsNPC: boolean;
-  readonly npcSlug?: string;
-  readonly reachableSlug?: string;
+  readonly npcID?: string;
+  readonly reachableID?: string;
 }

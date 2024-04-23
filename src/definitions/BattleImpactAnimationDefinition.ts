@@ -3,5 +3,5 @@ import { Definition } from "./Definition";
 
 export interface BattleImpactAnimationDefinition extends Definition {
   readonly alignment: BattleImpactAlignment;
-  readonly imageSourceSlug: string;
+  readonly imageSourceID: string;
 }
