@@ -19,9 +19,11 @@ import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
+import { InitialUpdate } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
+import { MainState } from "./MainState";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
@@ -66,9 +68,11 @@ export {
   HairDyeDefinition,
   HeadCosmeticDefinition,
   ImageSourceDefinition,
+  InitialUpdate,
   ItemDefinition,
   LabelDefinition,
   LandscapeDefinition,
+  MainState,
   MaskDefinition,
   MonsterDefinition,
   MusicTrackDefinition,
