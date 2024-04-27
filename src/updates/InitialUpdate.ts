@@ -1,5 +1,7 @@
 import { MainState } from "../MainState";
+import { Savefile } from "../Savefile";
 
 export interface InitialUpdate {
-  mainState: MainState;
+  readonly mainState: MainState;
+  readonly savefile: Savefile;
 }
