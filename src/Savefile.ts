@@ -2,33 +2,47 @@ import { BestiaryEntry } from "./BestiaryEntry";
 import { ChestOpen } from "./ChestOpen";
 import { DefinableReference } from "./DefinableReference";
 import { Direction } from "./Direction";
-import { ItemInstance } from "./ItemInstance";
 import { Step } from "./Step";
 
+export interface SavefileItemInstanceTrade {
+  readonly tradedAt: number;
+  readonly traderUserID: number;
+}
+export interface SavefileItemInstance {
+  readonly bankSpawnedAt: number | null;
+  readonly customizedAt: number | null;
+  readonly droppedAt: number | null;
+  readonly itemID: string;
+  readonly openedAt: number | null;
+  readonly origin: string;
+  readonly purchasedAt: number | null;
+  readonly id: string;
+  readonly trades: SavefileItemInstanceTrade[];
+}
 export interface SavefileCharacter {
   battleHotkeyablesDefinableReferences: (DefinableReference | null)[];
   bestiaryEntries: Record<string, BestiaryEntry>;
-  bodyItemInstance: ItemInstance | null;
-  boostsItemInstances: ItemInstance[];
+  bodyItemInstance: SavefileItemInstance | null;
+  boostsItemInstances: SavefileItemInstance[];
   chestOpens: ChestOpen[];
   classID: string;
-  clothesDyeItemInstance: ItemInstance | null;
+  clothesDyeItemInstance: SavefileItemInstance | null;
   createdAt: number;
   direction: Direction;
   experience: number;
   experienceUntilLevel: number | null;
   figureID: string;
   gold: number;
-  hairDyeItemInstance: ItemInstance | null;
-  headItemInstance: ItemInstance | null;
+  hairDyeItemInstance: SavefileItemInstance | null;
+  headItemInstance: SavefileItemInstance | null;
   hp: number;
-  itemInstances: ItemInstance[];
+  itemInstances: SavefileItemInstance[];
   level: number;
-  mainHandItemInstance: ItemInstance | null;
-  maskItemInstance: ItemInstance | null;
+  mainHandItemInstance: SavefileItemInstance | null;
+  maskItemInstance: SavefileItemInstance | null;
   mp: number | null;
-  offHandItemInstance: ItemInstance | null;
-  outfitItemInstance: ItemInstance | null;
+  offHandItemInstance: SavefileItemInstance | null;
+  outfitItemInstance: SavefileItemInstance | null;
   renewAbilityID: string | null;
   renewSteps: number;
   skinColorID: string;
@@ -42,7 +56,7 @@ export interface SavefileCharacter {
 }
 export interface Savefile {
   bankGold: number;
-  bankItemInstances: ItemInstance[][];
+  bankItemInstances: SavefileItemInstance[][];
   bestiaryEntries: Record<string, BestiaryEntry>;
   characters: SavefileCharacter[];
   lifetimeExperience: number;

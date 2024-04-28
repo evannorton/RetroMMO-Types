@@ -24,7 +24,6 @@ import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
 import { InitialUpdate } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
-import { ItemInstance, ItemInstanceTrade } from "./ItemInstance";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { MainState } from "./MainState";
@@ -39,7 +38,12 @@ import { PictureDefinition } from "./definitions/PictureDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
-import { Savefile, SavefileCharacter } from "./Savefile";
+import {
+  Savefile,
+  SavefileCharacter,
+  SavefileItemInstance,
+  SavefileItemInstanceTrade,
+} from "./Savefile";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { Step } from "./Step";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
@@ -79,8 +83,8 @@ export {
   ImageSourceDefinition,
   InitialUpdate,
   ItemDefinition,
-  ItemInstance,
-  ItemInstanceTrade,
+  SavefileItemInstance,
+  SavefileItemInstanceTrade,
   LabelDefinition,
   LandscapeDefinition,
   MainState,
