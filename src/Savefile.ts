@@ -36,6 +36,7 @@ export interface SavefileCharacter {
   hairDyeItemInstance: SavefileItemInstance | null;
   headItemInstance: SavefileItemInstance | null;
   hp: number;
+  id: number;
   itemInstances: SavefileItemInstance[];
   level: number;
   mainHandItemInstance: SavefileItemInstance | null;
