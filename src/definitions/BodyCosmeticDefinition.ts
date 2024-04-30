@@ -1,7 +1,7 @@
 import { Definition } from "./Definition";
 
 export interface BodyCosmeticDefinition extends Definition {
-  readonly imageSourcesIDs: {
+  readonly imageSourceIDs: {
     readonly [key: string]: string;
   };
 }

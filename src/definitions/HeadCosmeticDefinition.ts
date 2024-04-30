@@ -1,10 +1,10 @@
 import { Definition } from "./Definition";
 
 export interface HeadCosmeticDefinition extends Definition {
-  readonly backImageSourcesIDs: {
+  readonly backImageSourceIDs: {
     readonly [key: string]: string | undefined;
   };
-  readonly frontImageSourcesIDs: {
+  readonly frontImageSourceIDs: {
     readonly [key: string]: string;
   };
 }
