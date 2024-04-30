@@ -1,6 +1,7 @@
 import { Definition } from "./Definition";
 
 export interface MaskDefinition extends Definition {
-  readonly headCosmeticID: string;
   readonly classIDs: string[];
+  readonly headCosmeticID: string;
+  readonly isDefault?: boolean;
 }
