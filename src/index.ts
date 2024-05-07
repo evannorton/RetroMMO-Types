@@ -12,6 +12,7 @@ import { ClothesColorDefinition } from "./definitions/ClothesColorDefinition";
 import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
 import { CombinationLockDefinition } from "./definitions/CombinationLockDefinition";
+import { Constants } from "./Constants";
 import { DefinableReference } from "./DefinableReference";
 import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
@@ -71,6 +72,7 @@ export {
   ClothesDyeDefinition,
   Color,
   CombinationLockDefinition,
+  Constants,
   DefinableReference,
   Definition,
   Direction,
