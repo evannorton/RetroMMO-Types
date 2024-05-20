@@ -13,17 +13,20 @@ import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
 import { CombinationLockDefinition } from "./definitions/CombinationLockDefinition";
 import { Constants } from "./Constants";
+import { CreateCharacterUpdate } from "./updates/CreateCharacterUpdate";
 import { DefinableReference } from "./DefinableReference";
 import { Definition } from "./definitions/Definition";
+import { DeleteCharacterUpdate } from "./updates/DeleteCharacterUpdate";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
+import { ExitToMainMenuUpdate } from "./updates/ExitToMainMenuUpdate";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
-import { InitialUpdate } from "./updates/InitialUpdate";
+import { InitialUpdate, InitialWorldUpdate } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
@@ -45,7 +48,10 @@ import {
   SavefileItemInstance,
   SavefileItemInstanceTrade,
 } from "./Savefile";
+import { SelectCharacterUpdate } from "./updates/SelectCharacterUpdate";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
+import { SortCharacterLeftUpdate } from "./updates/SortCharacterLeftUpdate";
+import { SortCharacterRightUpdate } from "./updates/SortCharacterRightUpdate";
 import { Step } from "./Step";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
@@ -73,20 +79,22 @@ export {
   Color,
   CombinationLockDefinition,
   Constants,
+  CreateCharacterUpdate,
   DefinableReference,
   Definition,
+  DeleteCharacterUpdate,
   Direction,
   EmoteDefinition,
   EnterableDefinition,
+  ExitToMainMenuUpdate,
   FigureDefinition,
   HairColorDefinition,
   HairDyeDefinition,
   HeadCosmeticDefinition,
   ImageSourceDefinition,
   InitialUpdate,
+  InitialWorldUpdate,
   ItemDefinition,
-  SavefileItemInstance,
-  SavefileItemInstanceTrade,
   LabelDefinition,
   LandscapeDefinition,
   MainState,
@@ -103,7 +111,12 @@ export {
   ResourceBarDefinition,
   Savefile,
   SavefileCharacter,
+  SavefileItemInstance,
+  SavefileItemInstanceTrade,
+  SelectCharacterUpdate,
   SkinColorDefinition,
+  SortCharacterLeftUpdate,
+  SortCharacterRightUpdate,
   Step,
   SwitchDefinition,
   TargetType,
