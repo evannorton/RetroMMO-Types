@@ -5,6 +5,7 @@ import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BestiaryEntry } from "./BestiaryEntry";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
+import { CharacterUpdate } from "./updates/CharacterUpdate";
 import { ChestDefinition } from "./definitions/ChestDefinition";
 import { ChestOpen } from "./ChestOpen";
 import { ClassDefinition } from "./definitions/ClassDefinition";
@@ -26,11 +27,7 @@ import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
-import {
-  InitialUpdate,
-  InitialWorldUpdate,
-  InitialWorldUpdateCharacter,
-} from "./updates/InitialUpdate";
+import { InitialUpdate, InitialWorldUpdate } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
@@ -75,6 +72,7 @@ export {
   BattleImpactAnimationDefinition,
   BestiaryEntry,
   BodyCosmeticDefinition,
+  CharacterUpdate,
   ChestDefinition,
   ChestOpen,
   ClassDefinition,
@@ -98,7 +96,6 @@ export {
   ImageSourceDefinition,
   InitialUpdate,
   InitialWorldUpdate,
-  InitialWorldUpdateCharacter,
   ItemDefinition,
   LabelDefinition,
   LandscapeDefinition,
