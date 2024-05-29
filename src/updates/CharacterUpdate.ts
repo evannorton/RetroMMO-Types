@@ -11,6 +11,7 @@ export interface CharacterUpdate {
   readonly outfitItemInstance: SavefileItemInstance | null;
   readonly skinColorID: string;
   readonly tilemapID: string;
+  readonly userID: number;
   readonly username: string;
   readonly x: number;
   readonly y: number;
