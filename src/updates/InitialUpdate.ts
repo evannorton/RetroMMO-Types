@@ -10,6 +10,7 @@ export interface InitialUpdate {
   readonly isSubscribed: boolean;
   readonly mainState: MainState;
   readonly savefile: Savefile;
+  readonly userID: number;
   readonly username: string;
   readonly world?: InitialWorldUpdate;
 }
