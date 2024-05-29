@@ -21,6 +21,7 @@ import { DeleteCharacterUpdate } from "./updates/DeleteCharacterUpdate";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
+import { ExitCharacterUpdate } from "./updates/ExitCharacterUpdate";
 import { ExitToMainMenuUpdate } from "./updates/ExitToMainMenuUpdate";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
@@ -88,6 +89,7 @@ export {
   Direction,
   EmoteDefinition,
   EnterableDefinition,
+  ExitCharacterUpdate,
   ExitToMainMenuUpdate,
   FigureDefinition,
   HairColorDefinition,
