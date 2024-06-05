@@ -35,6 +35,7 @@ import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { MainState } from "./MainState";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
+import { MoveCharacterUpdate } from "./updates/MoveCharacterUpdate";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
 import { NPCDefinition } from "./definitions/NPCDefinition";
 import { NoiseDefinition } from "./definitions/NoiseDefinition";
@@ -104,6 +105,7 @@ export {
   MainState,
   MaskDefinition,
   MonsterDefinition,
+  MoveCharacterUpdate,
   MusicTrackDefinition,
   NoiseDefinition,
   NPCDefinition,
