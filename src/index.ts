@@ -55,6 +55,7 @@ import { SelectCharacterUpdate } from "./updates/SelectCharacterUpdate";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { SortCharacterLeftUpdate } from "./updates/SortCharacterLeftUpdate";
 import { SortCharacterRightUpdate } from "./updates/SortCharacterRightUpdate";
+import { StartBattleUpdate } from "./updates/StartBattleUpdate";
 import { Step } from "./Step";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
@@ -123,6 +124,7 @@ export {
   SkinColorDefinition,
   SortCharacterLeftUpdate,
   SortCharacterRightUpdate,
+  StartBattleUpdate,
   Step,
   SwitchDefinition,
   TargetType,
