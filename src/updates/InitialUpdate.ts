@@ -1,10 +1,10 @@
-import { CharacterUpdate } from "./CharacterUpdate";
 import { MainState } from "../MainState";
 import { Savefile } from "../Savefile";
+import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 
 export interface InitialWorldUpdate {
   readonly characterID: string;
-  readonly characters: CharacterUpdate[];
+  readonly characters: WorldCharacterUpdate[];
 }
 export interface InitialUpdate {
   readonly isSubscribed: boolean;

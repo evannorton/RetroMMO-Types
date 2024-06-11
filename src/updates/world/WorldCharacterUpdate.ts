@@ -1,6 +1,6 @@
-import { SavefileItemInstance } from "../Savefile";
+import { SavefileItemInstance } from "../../Savefile";
 
-export interface CharacterUpdate {
+export interface WorldCharacterUpdate {
   readonly classID: string;
   readonly clothesDyeItemInstance: SavefileItemInstance | null;
   readonly figureID: string;

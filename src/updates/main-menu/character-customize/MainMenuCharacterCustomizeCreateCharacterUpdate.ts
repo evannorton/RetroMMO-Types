@@ -1,6 +1,6 @@
-import { SavefileItemInstance } from "../Savefile";
+import { SavefileItemInstance } from "../../../Savefile";
 
-export interface CreateCharacterUpdate {
+export interface MainMenuCharacterCustomizeCreateCharacterUpdate {
   readonly classID: string;
   readonly clothesDyeSavefileItemInstance: SavefileItemInstance;
   readonly figureID: string;
