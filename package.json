@@ -5,6 +5,7 @@
     "types": "lib/index.d.ts",
     "scripts": {
         "build": "tsc",
+        "dev": "tsc --watch",
         "prepare": "npm run build",
         "lint": "eslint src",
         "lint:fix": "eslint src --fix"
