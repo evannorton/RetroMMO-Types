@@ -17,7 +17,6 @@ export interface SavefileItemInstance {
   readonly origin: string;
   readonly purchasedAt: number | null;
   readonly id: string;
-  readonly trades: SavefileItemInstanceTrade[];
 }
 export interface SavefileCharacter {
   battleHotkeyablesDefinableReferences: (DefinableReference | null)[];
