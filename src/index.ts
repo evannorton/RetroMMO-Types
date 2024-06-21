@@ -62,6 +62,7 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
+import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldEnterCharacterUpdate } from "./updates/world/WorldEnterCharacterUpdate";
 import { WorldExitCharacterUpdate } from "./updates/world/WorldExitCharacterUpdate";
@@ -135,6 +136,7 @@ export {
   TilesetTileAnimationFrameDefinition,
   TilesetTileDefinition,
   TransportDefinition,
+  WorldBonkUpdate,
   WorldCharacterUpdate,
   WorldEnterCharacterUpdate,
   WorldExitCharacterUpdate,
