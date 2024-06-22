@@ -70,6 +70,7 @@ import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUp
 import { WorldMoveCharacterUpdate } from "./updates/world/WorldMoveCharacterUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
+import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
 
 export {
   AbilityDefinition,
@@ -143,4 +144,5 @@ export {
   WorldExitToMainMenuUpdate,
   WorldMoveCharacterUpdate,
   WorldStartBattleUpdate,
+  WorldTeleportUpdate,
 };
