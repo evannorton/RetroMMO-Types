@@ -28,10 +28,15 @@ import { InitialUpdate, InitialWorldUpdate } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
+import { MainMenuCharacterCustomizeCreateCharacterRequest } from "./requests/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterRequest";
 import { MainMenuCharacterCustomizeCreateCharacterUpdate } from "./updates/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterUpdate";
+import { MainMenuCharacterSelectDeleteCharacterRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectDeleteCharacterRequest";
 import { MainMenuCharacterSelectDeleteCharacterUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectDeleteCharacterUpdate";
+import { MainMenuCharacterSelectSelectCharacterRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSelectCharacterRequest";
 import { MainMenuCharacterSelectSelectCharacterUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSelectCharacterUpdate";
+import { MainMenuCharacterSelectSortCharacterLeftRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSortCharacterLeftRequest";
 import { MainMenuCharacterSelectSortCharacterLeftUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterLeftUpdate";
+import { MainMenuCharacterSelectSortCharacterRightRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightRequest";
 import { MainMenuCharacterSelectSortCharacterRightUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightUpdate";
 import { MainState } from "./MainState";
 import { MaskDefinition } from "./definitions/MaskDefinition";
@@ -66,6 +71,7 @@ import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldEnterCharacterUpdate } from "./updates/world/WorldEnterCharacterUpdate";
 import { WorldExitCharacterUpdate } from "./updates/world/WorldExitCharacterUpdate";
+import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
 import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUpdate";
 import { WorldMoveCharacterUpdate } from "./updates/world/WorldMoveCharacterUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
@@ -74,7 +80,6 @@ import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
 
 export {
   AbilityDefinition,
-  WorldPositionUpdate,
   AudioSourceDefinition,
   BankDefinition,
   BattleExitToWorldUpdate,
@@ -105,10 +110,15 @@ export {
   ItemDefinition,
   LabelDefinition,
   LandscapeDefinition,
+  MainMenuCharacterCustomizeCreateCharacterRequest,
   MainMenuCharacterCustomizeCreateCharacterUpdate,
+  MainMenuCharacterSelectDeleteCharacterRequest,
   MainMenuCharacterSelectDeleteCharacterUpdate,
+  MainMenuCharacterSelectSelectCharacterRequest,
   MainMenuCharacterSelectSelectCharacterUpdate,
+  MainMenuCharacterSelectSortCharacterLeftRequest,
   MainMenuCharacterSelectSortCharacterLeftUpdate,
+  MainMenuCharacterSelectSortCharacterRightRequest,
   MainMenuCharacterSelectSortCharacterRightUpdate,
   MainState,
   MaskDefinition,
@@ -141,8 +151,10 @@ export {
   WorldCharacterUpdate,
   WorldEnterCharacterUpdate,
   WorldExitCharacterUpdate,
+  WorldExitToMainMenuRequest,
   WorldExitToMainMenuUpdate,
   WorldMoveCharacterUpdate,
+  WorldPositionUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
 };
