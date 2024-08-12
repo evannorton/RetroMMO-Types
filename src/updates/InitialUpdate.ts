@@ -5,6 +5,7 @@ import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 export interface InitialWorldUpdate {
   readonly characterID: string;
   readonly characters: WorldCharacterUpdate[];
+  readonly partyID: string;
 }
 export interface InitialUpdate {
   readonly isSubscribed: boolean;
