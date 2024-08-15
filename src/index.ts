@@ -50,6 +50,7 @@ import { PictureDefinition } from "./definitions/PictureDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
+import { ResourcePool } from "./ResourcePool";
 import {
   Savefile,
   SavefileCharacter,
@@ -133,6 +134,7 @@ export {
   ReachableDefinition,
   RectangleDefinition,
   ResourceBarDefinition,
+  ResourcePool,
   Savefile,
   SavefileCharacter,
   SavefileItemInstance,
