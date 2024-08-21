@@ -1,4 +1,5 @@
 import { Definition } from "./Definition";
+import { ResourcePool } from "../ResourcePool";
 
 export interface ClassDefinition extends Definition {
   readonly abbreviation: string;
@@ -11,4 +12,5 @@ export interface ClassDefinition extends Definition {
   readonly defaultSkinColorID: string;
   readonly name: string;
   readonly order: number;
+  readonly resourcePool: ResourcePool;
 }
