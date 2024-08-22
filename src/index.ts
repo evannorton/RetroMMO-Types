@@ -77,6 +77,7 @@ import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUp
 import { WorldJoinPartyUpdate } from "./updates/world/WorldJoinPartyUpdate";
 import { WorldMoveCharacterUpdate } from "./updates/world/WorldMoveCharacterUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
+import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
 
@@ -159,6 +160,7 @@ export {
   WorldJoinPartyUpdate,
   WorldMoveCharacterUpdate,
   WorldPositionUpdate,
+  WorldResourcesUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
 };
