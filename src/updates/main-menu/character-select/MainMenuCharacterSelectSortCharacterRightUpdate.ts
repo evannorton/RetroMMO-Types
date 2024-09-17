@@ -1,3 +1,3 @@
 export interface MainMenuCharacterSelectSortCharacterRightUpdate {
-  readonly characterID: string;
+  readonly mainMenuCharacterID: string;
 }

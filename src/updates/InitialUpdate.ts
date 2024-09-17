@@ -1,16 +1,20 @@
+import { MainMenuCharacterUpdate } from "./world/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
-import { Savefile } from "../Savefile";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
+import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
 
+export interface InitialMainMenuUpdate {
+  readonly mainMenuCharacters: MainMenuCharacterUpdate[];
+}
 export interface InitialWorldUpdate {
-  readonly characterID: string;
-  readonly characters: WorldCharacterUpdate[];
-  readonly partyID: string;
+  readonly parties: WorldPartyUpdate[];
+  readonly worldCharacterID: string;
+  readonly worldCharacters: WorldCharacterUpdate[];
 }
 export interface InitialUpdate {
   readonly isSubscribed: boolean;
+  readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;
-  readonly savefile: Savefile;
   readonly userID: number;
   readonly username: string;
   readonly world?: InitialWorldUpdate;

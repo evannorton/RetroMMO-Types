@@ -1,1 +1,5 @@
-export interface WorldExitToMainMenuUpdate {}
+import { MainMenuCharacterUpdate } from "./MainMenuCharacterUpdate";
+
+export interface WorldExitToMainMenuUpdate {
+  readonly mainMenuCharacters: MainMenuCharacterUpdate[];
+}

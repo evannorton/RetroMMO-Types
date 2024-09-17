@@ -1,8 +1,7 @@
 import { WorldCharacterUpdate } from "./WorldCharacterUpdate";
 import { WorldPartyUpdate } from "./WorldPartyUpdate";
 
-export interface WorldPositionUpdate {
+export interface WorldEnterCharactersUpdate {
   readonly parties: WorldPartyUpdate[];
-  readonly tilemapID: string;
   readonly worldCharacters: WorldCharacterUpdate[];
 }

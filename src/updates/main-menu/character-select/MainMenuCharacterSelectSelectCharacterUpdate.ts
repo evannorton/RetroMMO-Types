@@ -1,7 +1,8 @@
 import { WorldCharacterUpdate } from "../../world/WorldCharacterUpdate";
+import { WorldPartyUpdate } from "../../world/WorldPartyUpdate";
 
 export interface MainMenuCharacterSelectSelectCharacterUpdate {
-  readonly characterID: string;
-  readonly characters: WorldCharacterUpdate[];
-  readonly partyID: string;
+  readonly parties: WorldPartyUpdate[];
+  readonly worldCharacterID: string;
+  readonly worldCharacters: WorldCharacterUpdate[];
 }

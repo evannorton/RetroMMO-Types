@@ -1,17 +1,18 @@
 import { Direction } from "../../Direction";
-import { SavefileItemInstance } from "../../Savefile";
+import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldCharacterUpdate {
   readonly classID: string;
-  readonly clothesDyeItemInstance?: SavefileItemInstance;
+  readonly clothesDyeItemID?: string;
   readonly direction: Direction;
   readonly figureID: string;
-  readonly hairDyeItemInstance?: SavefileItemInstance;
+  readonly hairDyeItemID?: string;
   readonly id: string;
   readonly level: number;
-  readonly maskItemInstance?: SavefileItemInstance;
-  readonly outfitItemInstance?: SavefileItemInstance;
+  readonly maskItemID?: string;
+  readonly outfitItemID?: string;
   readonly partyID: string;
+  readonly resources: WorldResourcesUpdate;
   readonly skinColorID: string;
   readonly tilemapID: string;
   readonly userID: number;

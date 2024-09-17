@@ -1,6 +1,6 @@
 import { Direction } from "../../Direction";
 
 export interface WorldMoveCharacterUpdate {
-  characterID: string;
-  direction: Direction;
+  readonly direction: Direction;
+  readonly worldCharacterID: string;
 }
