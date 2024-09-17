@@ -67,6 +67,7 @@ import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharacters
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
 import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
 import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUpdate";
+import { WorldLeavePartyRequest } from "./requests/world/WorldLeavePartyRequest";
 import { WorldMoveCharacterUpdate } from "./updates/world/WorldMoveCharacterUpdate";
 import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
 import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
@@ -146,6 +147,7 @@ export {
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
   WorldExitToMainMenuUpdate,
+  WorldLeavePartyRequest,
   WorldMoveCharacterUpdate,
   WorldPartyChangesUpdate,
   WorldPartyUpdate,
