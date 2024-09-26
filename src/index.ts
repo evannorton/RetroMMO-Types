@@ -17,6 +17,7 @@ import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
+import { ErrorUpdate } from "./ErrorUpdate";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
@@ -96,6 +97,7 @@ export {
   Direction,
   EmoteDefinition,
   EnterableDefinition,
+  ErrorUpdate,
   FigureDefinition,
   HairColorDefinition,
   HairDyeDefinition,
