@@ -10,6 +10,7 @@ export interface WorldCharacterUpdate {
   readonly id: string;
   readonly level: number;
   readonly maskItemID?: string;
+  readonly order: number;
   readonly outfitItemID?: string;
   readonly partyID: string;
   readonly resources: WorldResourcesUpdate;
