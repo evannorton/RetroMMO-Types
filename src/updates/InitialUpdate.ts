@@ -7,7 +7,6 @@ export interface InitialMainMenuUpdate {
   readonly mainMenuCharacters: MainMenuCharacterUpdate[];
 }
 export interface InitialWorldUpdate {
-  readonly bootTime: number;
   readonly parties: WorldPartyUpdate[];
   readonly worldCharacterID: string;
   readonly worldCharacters: WorldCharacterUpdate[];
