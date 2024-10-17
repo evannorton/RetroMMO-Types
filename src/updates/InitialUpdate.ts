@@ -1,4 +1,4 @@
-import { MainMenuCharacterUpdate } from "./world/MainMenuCharacterUpdate";
+import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldPartyUpdate } from "./world/WorldPartyUpdate";

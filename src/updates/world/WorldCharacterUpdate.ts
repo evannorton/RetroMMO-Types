@@ -13,6 +13,7 @@ export interface WorldCharacterUpdate {
   readonly order: number;
   readonly outfitItemID?: string;
   readonly partyID: string;
+  readonly playerID: string;
   readonly resources: WorldResourcesUpdate;
   readonly skinColorID: string;
   readonly tilemapID: string;

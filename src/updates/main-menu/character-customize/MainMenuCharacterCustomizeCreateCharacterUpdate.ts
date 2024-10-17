@@ -1,4 +1,4 @@
-import { MainMenuCharacterUpdate } from "../../world/MainMenuCharacterUpdate";
+import { MainMenuCharacterUpdate } from "../MainMenuCharacterUpdate";
 
 export interface MainMenuCharacterCustomizeCreateCharacterUpdate {
   readonly mainMenuCharacter: MainMenuCharacterUpdate;

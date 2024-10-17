@@ -36,7 +36,7 @@ import { MainMenuCharacterSelectSortCharacterLeftRequest } from "./requests/main
 import { MainMenuCharacterSelectSortCharacterLeftUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterLeftUpdate";
 import { MainMenuCharacterSelectSortCharacterRightRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightRequest";
 import { MainMenuCharacterSelectSortCharacterRightUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightUpdate";
-import { MainMenuCharacterUpdate } from "./updates/world/MainMenuCharacterUpdate";
+import { MainMenuCharacterUpdate } from "./updates/main-menu/MainMenuCharacterUpdate";
 import { MainState } from "./MainState";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
@@ -63,6 +63,7 @@ import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTi
 import { TransportDefinition } from "./definitions/TransportDefinition";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
+import { WorldClickCharacterUpdate } from "./updates/world/WorldClickCharacterUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
 import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
@@ -143,6 +144,7 @@ export {
   TransportDefinition,
   WorldBonkUpdate,
   WorldCharacterUpdate,
+  WorldClickCharacterUpdate,
   WorldEnterCharactersUpdate,
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
