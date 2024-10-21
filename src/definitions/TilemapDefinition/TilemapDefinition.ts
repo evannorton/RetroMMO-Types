@@ -4,7 +4,7 @@ import { TilemapTilesetDefinition } from "./TilemapTilesetDefinition";
 
 export interface TilemapDefinition extends Definition {
   readonly height: number;
-  readonly tiles: TilemapTileDefinition[][];
-  readonly tilesets: TilemapTilesetDefinition[];
+  readonly tiles: readonly (readonly TilemapTileDefinition[])[];
+  readonly tilesets: readonly TilemapTilesetDefinition[];
   readonly width: number;
 }

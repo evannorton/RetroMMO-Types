@@ -1,7 +1,7 @@
 export interface TilemapTileDefinition {
-  readonly aboveIndices: number[];
+  aboveIndices: readonly number[];
   bankIndex?: number;
-  readonly belowIndices: number[];
+  belowIndices: readonly number[];
   chestIndex?: number;
   combinationLockIndex?: number;
   npcIndex?: number;

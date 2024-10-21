@@ -1,7 +1,7 @@
 import { TilesetTileAnimationFrameDefinition } from "./TilesetTileAnimationFrameDefinition";
 
 export interface TilesetTileDefinition {
-  readonly animationFrames: TilesetTileAnimationFrameDefinition[];
+  readonly animationFrames: readonly TilesetTileAnimationFrameDefinition[];
   readonly bankID?: string;
   readonly chestID?: string;
   readonly combinationLockID?: string;

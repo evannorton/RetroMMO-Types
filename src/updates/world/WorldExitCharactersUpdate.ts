@@ -1,3 +1,3 @@
 export interface WorldExitCharactersUpdate {
-  readonly worldCharacterIDs: string[];
+  readonly worldCharacterIDs: readonly string[];
 }

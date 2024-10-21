@@ -3,6 +3,6 @@ import { TilesetTileDefinition } from "./TilesetTileDefinition";
 
 export interface TilesetDefinition extends Definition {
   readonly height: number;
-  readonly tiles: TilesetTileDefinition[][];
+  readonly tiles: readonly (readonly TilesetTileDefinition[])[];
   readonly width: number;
 }

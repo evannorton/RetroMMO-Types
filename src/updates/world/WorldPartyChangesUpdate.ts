@@ -1,6 +1,6 @@
 import { WorldPartyUpdate } from "./WorldPartyUpdate";
 
 export interface WorldPartyChangesUpdate {
-  readonly parties: WorldPartyUpdate[];
-  readonly partyIDsToRemove: string[];
+  readonly parties: readonly WorldPartyUpdate[];
+  readonly partyIDsToRemove: readonly string[];
 }

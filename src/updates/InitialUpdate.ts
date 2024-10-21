@@ -4,12 +4,12 @@ import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
 
 export interface InitialMainMenuUpdate {
-  readonly mainMenuCharacters: MainMenuCharacterUpdate[];
+  readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
 }
 export interface InitialWorldUpdate {
-  readonly parties: WorldPartyUpdate[];
+  readonly parties: readonly WorldPartyUpdate[];
   readonly worldCharacterID: string;
-  readonly worldCharacters: WorldCharacterUpdate[];
+  readonly worldCharacters: readonly WorldCharacterUpdate[];
 }
 export interface InitialUpdate {
   readonly isSubscribed: boolean;
