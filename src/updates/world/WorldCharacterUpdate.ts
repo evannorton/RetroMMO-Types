@@ -1,4 +1,5 @@
 import { Direction } from "../../Direction";
+import { Step } from "../../Step";
 import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldCharacterUpdate {
@@ -16,6 +17,7 @@ export interface WorldCharacterUpdate {
   readonly playerID: string;
   readonly resources: WorldResourcesUpdate;
   readonly skinColorID: string;
+  readonly step: Step;
   readonly tilemapID: string;
   readonly userID: number;
   readonly username: string;
