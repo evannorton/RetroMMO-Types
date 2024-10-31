@@ -79,6 +79,7 @@ import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
+import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 
 export {
   AbilityDefinition,
@@ -161,4 +162,5 @@ export {
   WorldResourcesUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
+  WorldTurnNPCUpdate,
 };
