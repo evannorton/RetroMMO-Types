@@ -79,6 +79,10 @@ import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
+import {
+  WorldTurnCharactersUpdate,
+  WorldTurnCharactersUpdateTurn,
+} from "./updates/world/WorldTurnCharactersUpdate";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 
 export {
@@ -162,5 +166,7 @@ export {
   WorldResourcesUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
+  WorldTurnCharactersUpdate,
+  WorldTurnCharactersUpdateTurn,
   WorldTurnNPCUpdate,
 };

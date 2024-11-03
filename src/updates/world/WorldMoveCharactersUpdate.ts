@@ -8,5 +8,5 @@ export interface WorldMoveCharactersUpdateMove {
   readonly worldCharacterID: string;
 }
 export interface WorldMoveCharactersUpdate {
-  moves: readonly WorldMoveCharactersUpdateMove[];
+  readonly moves: readonly WorldMoveCharactersUpdateMove[];
 }
