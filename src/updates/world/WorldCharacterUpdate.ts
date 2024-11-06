@@ -11,11 +11,12 @@ export interface WorldCharacterUpdate {
   readonly id: string;
   readonly level: number;
   readonly maskItemID?: string;
+  readonly openedChestIDs?: readonly string[];
   readonly order: number;
   readonly outfitItemID?: string;
   readonly partyID: string;
   readonly playerID: string;
-  readonly resources: WorldResourcesUpdate;
+  readonly resources?: WorldResourcesUpdate;
   readonly skinColorID: string;
   readonly step: Step;
   readonly tilemapID: string;

@@ -74,6 +74,7 @@ import {
   WorldMoveCharactersUpdateMove,
 } from "./updates/world/WorldMoveCharactersUpdate";
 import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
+import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
 import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
@@ -161,6 +162,7 @@ export {
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
   WorldPartyChangesUpdate,
+  WorldPartyCharacterUpdate,
   WorldPartyUpdate,
   WorldPositionUpdate,
   WorldResourcesUpdate,
