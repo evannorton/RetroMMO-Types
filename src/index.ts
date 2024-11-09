@@ -73,6 +73,7 @@ import {
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
 } from "./updates/world/WorldMoveCharactersUpdate";
+import { WorldOpenChestUpdate } from "./updates/world/WorldOpenChestUpdate";
 import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
 import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
 import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
@@ -161,6 +162,7 @@ export {
   WorldLeavePartyRequest,
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
+  WorldOpenChestUpdate,
   WorldPartyChangesUpdate,
   WorldPartyCharacterUpdate,
   WorldPartyUpdate,
