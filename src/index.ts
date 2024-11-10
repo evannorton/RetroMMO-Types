@@ -22,7 +22,11 @@ import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
-import { InitialUpdate, InitialWorldUpdate } from "./updates/InitialUpdate";
+import {
+  InitialMainMenuUpdate,
+  InitialUpdate,
+  InitialWorldUpdate,
+} from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
@@ -117,6 +121,7 @@ export {
   HairDyeDefinition,
   HeadCosmeticDefinition,
   ImageSourceDefinition,
+  InitialMainMenuUpdate,
   InitialUpdate,
   InitialWorldUpdate,
   ItemDefinition,
