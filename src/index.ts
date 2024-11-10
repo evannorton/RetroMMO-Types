@@ -79,6 +79,10 @@ import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate
 import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
 import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
+import {
+  WorldPreparationCharacterUpdate,
+  WorldPreparationUpdate,
+} from "./updates/world/WorldPreparationUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
@@ -169,6 +173,8 @@ export {
   WorldPartyCharacterUpdate,
   WorldPartyUpdate,
   WorldPositionUpdate,
+  WorldPreparationCharacterUpdate,
+  WorldPreparationUpdate,
   WorldResourcesUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
