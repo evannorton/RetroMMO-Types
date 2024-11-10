@@ -68,6 +68,7 @@ import { TransportDefinition } from "./definitions/TransportDefinition";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClickCharacterUpdate } from "./updates/world/WorldClickCharacterUpdate";
+import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
 import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
@@ -165,6 +166,7 @@ export {
   WorldBonkUpdate,
   WorldCharacterUpdate,
   WorldClickCharacterUpdate,
+  WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
