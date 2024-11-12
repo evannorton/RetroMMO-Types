@@ -68,6 +68,7 @@ import { TransportDefinition } from "./definitions/TransportDefinition";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClickCharacterUpdate } from "./updates/world/WorldClickCharacterUpdate";
+import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
@@ -79,6 +80,7 @@ import {
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
 } from "./updates/world/WorldMoveCharactersUpdate";
+import { WorldOpenBankUpdate } from "./updates/world/WorldOpenBankUpdate";
 import { WorldOpenChestUpdate } from "./updates/world/WorldOpenChestUpdate";
 import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
 import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
@@ -166,6 +168,7 @@ export {
   WorldBonkUpdate,
   WorldCharacterUpdate,
   WorldClickCharacterUpdate,
+  WorldCloseBankUpdate,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
   WorldExitCharactersUpdate,
@@ -175,6 +178,7 @@ export {
   WorldLeavePartyRequest,
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
+  WorldOpenBankUpdate,
   WorldOpenChestUpdate,
   WorldPartyChangesUpdate,
   WorldPartyCharacterUpdate,
