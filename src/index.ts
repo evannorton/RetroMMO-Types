@@ -69,7 +69,6 @@ import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClickCharacterUpdate } from "./updates/world/WorldClickCharacterUpdate";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
-import { WorldDirectionInputRequest } from "./requests/world/WorldDirectionInputRequest";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
@@ -170,7 +169,6 @@ export {
   WorldCharacterUpdate,
   WorldClickCharacterUpdate,
   WorldCloseBankUpdate,
-  WorldDirectionInputRequest,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
   WorldExitCharactersUpdate,
