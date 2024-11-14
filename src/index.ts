@@ -68,6 +68,7 @@ import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTi
 import { TransportDefinition } from "./definitions/TransportDefinition";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
+import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import { WorldClickCharacterUpdate } from "./updates/world/WorldClickCharacterUpdate";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
@@ -171,6 +172,7 @@ export {
   TransportDefinition,
   WorldBonkUpdate,
   WorldCharacterUpdate,
+  WorldClearMarkerUpdate,
   WorldClickCharacterUpdate,
   WorldCloseBankUpdate,
   WorldEmoteUpdate,
