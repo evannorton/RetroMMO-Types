@@ -42,6 +42,7 @@ import { MainMenuCharacterSelectSortCharacterRightRequest } from "./requests/mai
 import { MainMenuCharacterSelectSortCharacterRightUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightUpdate";
 import { MainMenuCharacterUpdate } from "./updates/main-menu/MainMenuCharacterUpdate";
 import { MainState } from "./MainState";
+import { MarkerType } from "./MarkerType";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
@@ -76,6 +77,7 @@ import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenu
 import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUpdate";
 import { WorldInnUpdate } from "./updates/world/WorldInnUpdate";
 import { WorldLeavePartyRequest } from "./requests/world/WorldLeavePartyRequest";
+import { WorldMarkerUpdate } from "./updates/world/WorldMarkerUpdate";
 import {
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
@@ -93,6 +95,7 @@ import {
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
+import { WorldTradeUpdate } from "./updates/world/WorldTradeUpdate";
 import {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
@@ -142,6 +145,7 @@ export {
   MainMenuCharacterSelectSortCharacterRightUpdate,
   MainMenuCharacterUpdate,
   MainState,
+  MarkerType,
   MaskDefinition,
   MonsterDefinition,
   MusicTrackDefinition,
@@ -176,6 +180,7 @@ export {
   WorldExitToMainMenuUpdate,
   WorldInnUpdate,
   WorldLeavePartyRequest,
+  WorldMarkerUpdate,
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
   WorldOpenBankUpdate,
@@ -189,6 +194,7 @@ export {
   WorldResourcesUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
+  WorldTradeUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
   WorldTurnNPCUpdate,

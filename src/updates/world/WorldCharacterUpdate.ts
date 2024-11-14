@@ -1,4 +1,5 @@
 import { Direction } from "../../Direction";
+import { MarkerType } from "../../MarkerType";
 import { Step } from "../../Step";
 import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
@@ -10,6 +11,7 @@ export interface WorldCharacterUpdate {
   readonly hairDyeItemID?: string;
   readonly id: string;
   readonly level: number;
+  readonly marker?: MarkerType;
   readonly maskItemID?: string;
   readonly openedChestIDs?: readonly string[];
   readonly order: number;
