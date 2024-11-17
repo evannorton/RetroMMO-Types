@@ -83,6 +83,7 @@ import {
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
 } from "./updates/world/WorldMoveCharactersUpdate";
+import { WorldNPCDialogueUpdate } from "./updates/world/WorldNPCDialogueUpdate";
 import { WorldOpenBankUpdate } from "./updates/world/WorldOpenBankUpdate";
 import { WorldOpenChestUpdate } from "./updates/world/WorldOpenChestUpdate";
 import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
@@ -185,6 +186,7 @@ export {
   WorldMarkerUpdate,
   WorldMoveCharactersUpdate,
   WorldMoveCharactersUpdateMove,
+  WorldNPCDialogueUpdate,
   WorldOpenBankUpdate,
   WorldOpenChestUpdate,
   WorldPartyChangesUpdate,
