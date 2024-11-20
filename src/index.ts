@@ -50,6 +50,7 @@ import { NPCDefinition } from "./definitions/NPCDefinition";
 import { NoiseDefinition } from "./definitions/NoiseDefinition";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
 import { PanelDefinition } from "./definitions/PanelDefinition";
+import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PictureDefinition } from "./definitions/PictureDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
@@ -158,6 +159,7 @@ export {
   NPCDefinition,
   OutfitDefinition,
   PanelDefinition,
+  PianoDefinition,
   PictureDefinition,
   ReachableDefinition,
   RectangleDefinition,

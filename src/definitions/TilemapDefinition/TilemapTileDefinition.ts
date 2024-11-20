@@ -5,5 +5,6 @@ export interface TilemapTileDefinition {
   chestIndex?: number;
   combinationLockIndex?: number;
   npcIndex?: number;
+  pianoIndex?: number;
   reachableIndex?: number;
 }
