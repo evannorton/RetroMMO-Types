@@ -66,6 +66,7 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
+import { VanitySlot } from "./VanitySlot";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
@@ -104,6 +105,7 @@ import {
   WorldTurnCharactersUpdateTurn,
 } from "./updates/world/WorldTurnCharactersUpdate";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
+import { WorldVanityUpdate } from "./updates/world/WorldVanityUpdate";
 
 export {
   AbilityDefinition,
@@ -172,6 +174,7 @@ export {
   TilesetTileAnimationFrameDefinition,
   TilesetTileDefinition,
   TransportDefinition,
+  VanitySlot,
   WorldBonkUpdate,
   WorldCharacterUpdate,
   WorldClearMarkerUpdate,
@@ -204,4 +207,5 @@ export {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
   WorldTurnNPCUpdate,
+  WorldVanityUpdate,
 };
