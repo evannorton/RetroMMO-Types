@@ -51,6 +51,7 @@ import { NoiseDefinition } from "./definitions/NoiseDefinition";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
 import { PanelDefinition } from "./definitions/PanelDefinition";
 import { PianoDefinition } from "./definitions/PianoDefinition";
+import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
@@ -71,7 +72,7 @@ import { VanitySlot } from "./VanitySlot";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
-import { WorldClickCharacterUpdate } from "./updates/world/WorldClickCharacterUpdate";
+import { WorldClickCharacterRequest } from "./requests/world/WorldClickCharacterRequest";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
@@ -92,6 +93,8 @@ import { WorldOpenChestUpdate } from "./updates/world/WorldOpenChestUpdate";
 import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
 import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
 import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
+import { WorldPianoKeyRequest } from "./requests/world/WorldPianoKeyRequest";
+import { WorldPianoKeyUpdate } from "./updates/world/WorldPianoKeyUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
 import {
   WorldPreparationCharacterUpdate,
@@ -160,6 +163,7 @@ export {
   OutfitDefinition,
   PanelDefinition,
   PianoDefinition,
+  PianoKeyType,
   PictureDefinition,
   ReachableDefinition,
   RectangleDefinition,
@@ -180,7 +184,7 @@ export {
   WorldBonkUpdate,
   WorldCharacterUpdate,
   WorldClearMarkerUpdate,
-  WorldClickCharacterUpdate,
+  WorldClickCharacterRequest,
   WorldCloseBankUpdate,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
@@ -199,6 +203,8 @@ export {
   WorldPartyChangesUpdate,
   WorldPartyCharacterUpdate,
   WorldPartyUpdate,
+  WorldPianoKeyRequest,
+  WorldPianoKeyUpdate,
   WorldPositionUpdate,
   WorldPreparationCharacterUpdate,
   WorldPreparationUpdate,
