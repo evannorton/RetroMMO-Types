@@ -57,6 +57,7 @@ import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
+import { ShopDefinition } from "./definitions/ShopDefinition";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { Step } from "./Step";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
@@ -169,6 +170,7 @@ export {
   RectangleDefinition,
   ResourceBarDefinition,
   ResourcePool,
+  ShopDefinition,
   SkinColorDefinition,
   Step,
   SwitchDefinition,
