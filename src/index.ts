@@ -53,6 +53,8 @@ import { PanelDefinition } from "./definitions/PanelDefinition";
 import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
+import { QuestDefinition } from "./definitions/QuestDefinition";
+import { QuestGiverDefinition } from "./definitions/QuestGiverDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
@@ -166,6 +168,8 @@ export {
   PianoDefinition,
   PianoKeyType,
   PictureDefinition,
+  QuestDefinition,
+  QuestGiverDefinition,
   ReachableDefinition,
   RectangleDefinition,
   ResourceBarDefinition,
