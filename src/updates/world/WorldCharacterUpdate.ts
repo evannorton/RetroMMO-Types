@@ -1,6 +1,7 @@
 import { Direction } from "../../Direction";
 import { MarkerType } from "../../MarkerType";
 import { Step } from "../../Step";
+import { WorldQuestInstanceUpdate } from "./WorldQuestInstanceUpdate";
 import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldCharacterUpdate {
@@ -18,6 +19,7 @@ export interface WorldCharacterUpdate {
   readonly outfitItemID?: string;
   readonly partyID: string;
   readonly playerID: string;
+  readonly questInstances?: Record<string, WorldQuestInstanceUpdate>;
   readonly resources?: WorldResourcesUpdate;
   readonly skinColorID: string;
   readonly step: Step;

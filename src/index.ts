@@ -72,6 +72,8 @@ import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefini
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
 import { VanitySlot } from "./VanitySlot";
+import { WorldAcceptQuestRequest } from "./requests/world/WorldAcceptQuestRequest";
+import { WorldAcceptQuestUpdate } from "./updates/world/WorldAcceptQuestUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
@@ -103,6 +105,7 @@ import {
   WorldPreparationCharacterUpdate,
   WorldPreparationUpdate,
 } from "./updates/world/WorldPreparationUpdate";
+import { WorldQuestInstanceUpdate } from "./updates/world/WorldQuestInstanceUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
@@ -187,6 +190,8 @@ export {
   TilesetTileDefinition,
   TransportDefinition,
   VanitySlot,
+  WorldAcceptQuestRequest,
+  WorldAcceptQuestUpdate,
   WorldBonkUpdate,
   WorldCharacterUpdate,
   WorldClearMarkerUpdate,
@@ -214,6 +219,7 @@ export {
   WorldPositionUpdate,
   WorldPreparationCharacterUpdate,
   WorldPreparationUpdate,
+  WorldQuestInstanceUpdate,
   WorldResourcesUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
