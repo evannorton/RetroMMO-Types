@@ -5,6 +5,7 @@ export interface TilesetTileDefinition {
   readonly bankID?: string;
   readonly chestID?: string;
   readonly combinationLockID?: string;
+  readonly enterableID?: string;
   readonly extendsNPC: boolean;
   readonly npcID?: string;
   readonly pianoID?: string;
