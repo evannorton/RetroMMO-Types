@@ -1,5 +1,7 @@
 export interface QuestDefinition {
-  readonly description: string;
+  readonly availableText: string;
+  readonly completedText: string;
+  readonly inProgressText: string;
   readonly monster?: {
     readonly kills: number;
     readonly monsterID: string;
