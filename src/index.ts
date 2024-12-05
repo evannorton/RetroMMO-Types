@@ -107,6 +107,8 @@ import {
 } from "./updates/world/WorldPreparationUpdate";
 import { WorldQuestInstanceUpdate } from "./updates/world/WorldQuestInstanceUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
+import { WorldSelectQuestRequest } from "./requests/world/WorldSelectQuestRequest";
+import { WorldSelectQuestUpdate } from "./updates/world/WorldSelectQuestUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
 import { WorldTradeUpdate } from "./updates/world/WorldTradeUpdate";
@@ -221,6 +223,8 @@ export {
   WorldPreparationUpdate,
   WorldQuestInstanceUpdate,
   WorldResourcesUpdate,
+  WorldSelectQuestRequest,
+  WorldSelectQuestUpdate,
   WorldStartBattleUpdate,
   WorldTeleportUpdate,
   WorldTradeUpdate,
