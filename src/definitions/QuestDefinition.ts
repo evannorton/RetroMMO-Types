@@ -7,4 +7,5 @@ export interface QuestDefinition {
     readonly monsterID: string;
   };
   readonly name: string;
+  readonly npcID: string;
 }
