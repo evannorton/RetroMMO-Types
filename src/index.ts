@@ -116,6 +116,8 @@ import {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
 } from "./updates/world/WorldTurnCharactersUpdate";
+import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestRequest";
+import { WorldTurnInQuestUpdate } from "./updates/world/WorldTurnInQuestUpdate";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 import { WorldVanityUpdate } from "./updates/world/WorldVanityUpdate";
 
@@ -230,6 +232,8 @@ export {
   WorldTradeUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
+  WorldTurnInQuestRequest,
+  WorldTurnInQuestUpdate,
   WorldTurnNPCUpdate,
   WorldVanityUpdate,
 };
