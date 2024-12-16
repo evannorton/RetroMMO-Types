@@ -10,4 +10,5 @@ export interface QuestDefinition {
   };
   readonly name: string;
   readonly npcID: string;
+  readonly prerequisiteQuestID?: string;
 }
