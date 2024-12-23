@@ -1,13 +1,15 @@
 import { Direction } from "../../Direction";
 import { Step } from "../../Step";
+import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
-export interface WorldMoveCharactersUpdateMove {
+export interface WorldMoveCharacterUpdate {
   readonly direction: Direction;
   readonly order: number;
+  readonly resources?: WorldResourcesUpdate;
   readonly step: Step;
   readonly worldCharacterID: string;
 }
 export interface WorldMoveCharactersUpdate {
   readonly clearedMarkerWorldCharacterIDs: string[];
-  readonly moves: readonly WorldMoveCharactersUpdateMove[];
+  readonly worldCharacters: readonly WorldMoveCharacterUpdate[];
 }

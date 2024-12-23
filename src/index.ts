@@ -88,8 +88,8 @@ import { WorldInnUpdate } from "./updates/world/WorldInnUpdate";
 import { WorldLeavePartyRequest } from "./requests/world/WorldLeavePartyRequest";
 import { WorldMarkerUpdate } from "./updates/world/WorldMarkerUpdate";
 import {
+  WorldMoveCharacterUpdate,
   WorldMoveCharactersUpdate,
-  WorldMoveCharactersUpdateMove,
 } from "./updates/world/WorldMoveCharactersUpdate";
 import { WorldNPCInteractRequest } from "./requests/world/WorldNPCInteractRequest";
 import { WorldNPCUpdate } from "./updates/world/WorldNPCUpdate";
@@ -213,7 +213,7 @@ export {
   WorldLeavePartyRequest,
   WorldMarkerUpdate,
   WorldMoveCharactersUpdate,
-  WorldMoveCharactersUpdateMove,
+  WorldMoveCharacterUpdate,
   WorldNPCInteractRequest,
   WorldNPCUpdate,
   WorldOpenBankUpdate,
