@@ -11,6 +11,7 @@ export interface WorldCharacterUpdate {
   readonly figureID: string;
   readonly hairDyeItemID?: string;
   readonly id: string;
+  readonly isRenewing?: boolean;
   readonly level: number;
   readonly marker?: MarkerType;
   readonly maskItemID?: string;

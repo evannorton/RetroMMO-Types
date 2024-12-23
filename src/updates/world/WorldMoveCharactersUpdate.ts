@@ -4,6 +4,7 @@ import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldMoveCharacterUpdate {
   readonly direction: Direction;
+  readonly isRenewing?: boolean;
   readonly order: number;
   readonly resources?: WorldResourcesUpdate;
   readonly step: Step;
