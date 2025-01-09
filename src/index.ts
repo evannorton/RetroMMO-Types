@@ -79,6 +79,7 @@ import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import { WorldClickCharacterRequest } from "./requests/world/WorldClickCharacterRequest";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
+import { WorldEmoteRequest } from "./requests/world/WorldEmoteRequest";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
@@ -204,6 +205,7 @@ export {
   WorldClearMarkerUpdate,
   WorldClickCharacterRequest,
   WorldCloseBankUpdate,
+  WorldEmoteRequest,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
   WorldExitCharactersUpdate,
