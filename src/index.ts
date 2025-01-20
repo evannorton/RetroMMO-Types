@@ -6,7 +6,10 @@ import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
-import { ClassDefinition } from "./definitions/ClassDefinition";
+import {
+  ClassDefinition,
+  ClassDefinitionAbilityUnlock,
+} from "./definitions/ClassDefinition";
 import { ClothesColorDefinition } from "./definitions/ClothesColorDefinition";
 import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
@@ -79,6 +82,10 @@ import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import { WorldClickCharacterRequest } from "./requests/world/WorldClickCharacterRequest";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
+import {
+  WorldCombatCharacterUpdate,
+  WorldCombatUpdate,
+} from "./updates/world/WorldCombatUpdate";
 import { WorldEmoteRequest } from "./requests/world/WorldEmoteRequest";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
@@ -102,10 +109,6 @@ import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
 import { WorldPianoKeyRequest } from "./requests/world/WorldPianoKeyRequest";
 import { WorldPianoKeyUpdate } from "./updates/world/WorldPianoKeyUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
-import {
-  WorldPreparationCharacterUpdate,
-  WorldPreparationUpdate,
-} from "./updates/world/WorldPreparationUpdate";
 import { WorldQuestInstanceUpdate } from "./updates/world/WorldQuestInstanceUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldSelectQuestRequest } from "./requests/world/WorldSelectQuestRequest";
@@ -123,6 +126,7 @@ import {
 } from "./updates/world/WorldTurnInQuestUpdate";
 import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestRequest";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
+import { WorldUseAbilityRequest } from "./requests/world/WorldUseAbilityRequest";
 import { WorldVanityUpdate } from "./updates/world/WorldVanityUpdate";
 
 export {
@@ -135,6 +139,7 @@ export {
   BodyCosmeticDefinition,
   ChestDefinition,
   ClassDefinition,
+  ClassDefinitionAbilityUnlock,
   ClothesColorDefinition,
   ClothesDyeDefinition,
   Color,
@@ -205,6 +210,8 @@ export {
   WorldClearMarkerUpdate,
   WorldClickCharacterRequest,
   WorldCloseBankUpdate,
+  WorldCombatCharacterUpdate,
+  WorldCombatUpdate,
   WorldEmoteRequest,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
@@ -226,8 +233,6 @@ export {
   WorldPianoKeyRequest,
   WorldPianoKeyUpdate,
   WorldPositionUpdate,
-  WorldPreparationCharacterUpdate,
-  WorldPreparationUpdate,
   WorldQuestInstanceUpdate,
   WorldResourcesUpdate,
   WorldSelectQuestRequest,
@@ -241,5 +246,6 @@ export {
   WorldTurnInQuestRequest,
   WorldTurnInQuestUpdate,
   WorldTurnNPCUpdate,
+  WorldUseAbilityRequest,
   WorldVanityUpdate,
 };

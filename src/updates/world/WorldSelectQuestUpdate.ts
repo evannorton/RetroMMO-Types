@@ -1,4 +1,4 @@
 export interface WorldSelectQuestUpdate {
-  readonly questID?: string;
   readonly npcID: string;
+  readonly questID?: string;
 }
