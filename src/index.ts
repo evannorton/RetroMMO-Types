@@ -31,6 +31,7 @@ import {
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
+import { ItemInstanceUpdate } from "./updates/world/ItemInstanceUpdate";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { MainMenuCharacterCustomizeCreateCharacterRequest } from "./requests/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterRequest";
@@ -127,6 +128,7 @@ import {
 import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestRequest";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 import { WorldUseAbilityRequest } from "./requests/world/WorldUseAbilityRequest";
+import { WorldUseItemInstanceRequest } from "./requests/world/WorldUseItemInstanceRequest";
 import { WorldVanityUpdate } from "./updates/world/WorldVanityUpdate";
 
 export {
@@ -159,6 +161,7 @@ export {
   InitialUpdate,
   InitialWorldUpdate,
   ItemDefinition,
+  ItemInstanceUpdate,
   LabelDefinition,
   LandscapeDefinition,
   MainMenuCharacterCustomizeCreateCharacterRequest,
@@ -247,5 +250,6 @@ export {
   WorldTurnInQuestUpdate,
   WorldTurnNPCUpdate,
   WorldUseAbilityRequest,
+  WorldUseItemInstanceRequest,
   WorldVanityUpdate,
 };

@@ -1,3 +1,4 @@
+import { ItemInstanceUpdate } from "./world/ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
@@ -8,6 +9,7 @@ export interface InitialMainMenuUpdate {
   readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
 }
 export interface InitialWorldUpdate {
+  readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly npcs: readonly WorldNPCUpdate[];
   readonly parties: readonly WorldPartyUpdate[];
   readonly worldCharacterID: string;
