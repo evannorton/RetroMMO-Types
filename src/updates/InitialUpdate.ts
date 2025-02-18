@@ -10,6 +10,7 @@ export interface InitialMainMenuUpdate {
 }
 export interface InitialWorldUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly inventoryGold: number;
   readonly npcs: readonly WorldNPCUpdate[];
   readonly parties: readonly WorldPartyUpdate[];
   readonly worldCharacterID: string;

@@ -5,6 +5,7 @@ import { WorldPartyUpdate } from "../../world/WorldPartyUpdate";
 
 export interface MainMenuCharacterSelectSelectCharacterUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly inventoryGold: number;
   readonly npcs: readonly WorldNPCUpdate[];
   readonly parties: readonly WorldPartyUpdate[];
   readonly worldCharacterID: string;

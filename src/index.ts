@@ -19,6 +19,8 @@ import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
+import { EquipmentPieceDefinition } from "./definitions/EquipmentPieceDefinition";
+import { EquipmentSlot } from "./EquipmentSlot";
 import { ErrorUpdate } from "./ErrorUpdate";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
@@ -151,6 +153,8 @@ export {
   Direction,
   EmoteDefinition,
   EnterableDefinition,
+  EquipmentPieceDefinition,
+  EquipmentSlot,
   ErrorUpdate,
   FigureDefinition,
   HairColorDefinition,

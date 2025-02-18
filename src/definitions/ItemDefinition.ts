@@ -8,6 +8,7 @@ export interface ItemDefinition extends Definition {
   readonly characterCustomizeOutfitOrder?: number;
   readonly clothesDyeID?: string;
   readonly description?: string;
+  readonly equipmentPieceID?: string;
   readonly hairDyeID?: string;
   readonly maskID?: string;
   readonly name: string;

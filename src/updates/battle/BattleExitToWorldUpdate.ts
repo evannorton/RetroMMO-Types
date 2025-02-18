@@ -5,6 +5,7 @@ import { WorldPartyUpdate } from "../world/WorldPartyUpdate";
 
 export interface BattleExitToWorldUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly inventoryGold: number;
   readonly npcs: readonly WorldNPCUpdate[];
   readonly parties: readonly WorldPartyUpdate[];
   readonly tilemapID: string;
