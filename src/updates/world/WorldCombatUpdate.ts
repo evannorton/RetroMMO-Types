@@ -8,5 +8,9 @@ export interface WorldCombatCharacterUpdate {
 }
 export interface WorldCombatUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly bodyItemInstance?: ItemInstanceUpdate;
+  readonly headItemInstance?: ItemInstanceUpdate;
+  readonly mainHandItemInstance?: ItemInstanceUpdate;
+  readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly worldCombatCharacters: readonly WorldCombatCharacterUpdate[];
 }
