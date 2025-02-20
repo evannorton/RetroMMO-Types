@@ -1,6 +1,6 @@
 import { Definition } from "./Definition";
 
 export interface CombinationLockDefinition extends Definition {
-  readonly imageSourceID: string;
+  readonly imagePath: string;
   readonly noiseID: string;
 }

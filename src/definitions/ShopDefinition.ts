@@ -1,3 +1,3 @@
 export interface ShopDefinition {
-  readonly indicatorImageSourceID: string;
+  readonly indicatorImagePath: string;
 }

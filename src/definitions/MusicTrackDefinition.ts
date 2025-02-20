@@ -1,6 +1,6 @@
 import { Definition } from "./Definition";
 
 export interface MusicTrackDefinition extends Definition {
-  readonly audioSourceID: string;
+  readonly audioPath: string;
   readonly loopPoint?: number;
 }

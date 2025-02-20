@@ -1,8 +1,8 @@
 import { Definition } from "./Definition";
 
 export interface EmoteDefinition extends Definition {
-  backgroundImageSourceID: string;
-  foregroundImageSourceID?: string;
+  backgroundImagePath: string;
+  foregroundImagePath?: string;
   order: number;
   requiresSubscription?: boolean;
 }
