@@ -92,6 +92,8 @@ import {
 import { WorldEmoteRequest } from "./requests/world/WorldEmoteRequest";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
+import { WorldEquipEquipmentItemRequest } from "./requests/world/WorldEquipEquipmentItemRequest";
+import { WorldEquipVanityItemRequest } from "./requests/world/WorldEquipVanityItemRequest";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
 import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
 import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUpdate";
@@ -131,7 +133,10 @@ import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestReques
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 import { WorldUseAbilityRequest } from "./requests/world/WorldUseAbilityRequest";
 import { WorldUseItemInstanceRequest } from "./requests/world/WorldUseItemInstanceRequest";
-import { WorldVanityUpdate } from "./updates/world/WorldVanityUpdate";
+import {
+  WorldVanityItemsUpdate,
+  WorldVanityUpdate,
+} from "./updates/world/WorldVanityUpdate";
 
 export {
   AbilityDefinition,
@@ -222,6 +227,8 @@ export {
   WorldEmoteRequest,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
+  WorldEquipEquipmentItemRequest,
+  WorldEquipVanityItemRequest,
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
   WorldExitToMainMenuUpdate,
@@ -255,5 +262,6 @@ export {
   WorldTurnNPCUpdate,
   WorldUseAbilityRequest,
   WorldUseItemInstanceRequest,
+  WorldVanityItemsUpdate,
   WorldVanityUpdate,
 };
