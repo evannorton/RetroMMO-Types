@@ -94,6 +94,7 @@ import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
 import { WorldEquipEquipmentItemRequest } from "./requests/world/WorldEquipEquipmentItemRequest";
 import { WorldEquipVanityItemRequest } from "./requests/world/WorldEquipVanityItemRequest";
+import { WorldEquipmentUpdate } from "./updates/world/WorldEquipmentUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
 import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
 import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUpdate";
@@ -229,6 +230,7 @@ export {
   WorldEnterCharactersUpdate,
   WorldEquipEquipmentItemRequest,
   WorldEquipVanityItemRequest,
+  WorldEquipmentUpdate,
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
   WorldExitToMainMenuUpdate,
