@@ -132,6 +132,8 @@ import {
 } from "./updates/world/WorldTurnInQuestUpdate";
 import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestRequest";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
+import { WorldUnequipEquipmentItemRequest } from "./requests/world/WorldUnequipEquipmentItemRequest";
+import { WorldUnequipVanityItemRequest } from "./requests/world/WorldUnequipVanityItemRequest";
 import { WorldUseAbilityRequest } from "./requests/world/WorldUseAbilityRequest";
 import { WorldUseItemInstanceRequest } from "./requests/world/WorldUseItemInstanceRequest";
 import {
@@ -262,6 +264,8 @@ export {
   WorldTurnInQuestRequest,
   WorldTurnInQuestUpdate,
   WorldTurnNPCUpdate,
+  WorldUnequipEquipmentItemRequest,
+  WorldUnequipVanityItemRequest,
   WorldUseAbilityRequest,
   WorldUseItemInstanceRequest,
   WorldVanityItemsUpdate,
