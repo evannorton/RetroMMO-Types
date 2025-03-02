@@ -33,7 +33,7 @@ import {
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
-import { ItemInstanceUpdate } from "./updates/world/ItemInstanceUpdate";
+import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { MainMenuCharacterCustomizeCreateCharacterRequest } from "./requests/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterRequest";
@@ -80,7 +80,10 @@ import { TransportDefinition } from "./definitions/TransportDefinition";
 import { VanitySlot } from "./VanitySlot";
 import { WorldAcceptQuestRequest } from "./requests/world/WorldAcceptQuestRequest";
 import { WorldAcceptQuestUpdate } from "./updates/world/WorldAcceptQuestUpdate";
+import { WorldBankGoldUpdate } from "./updates/world/WorldBankGoldUpdate";
+import { WorldBankItemsUpdate } from "./updates/world/WorldBankItemsUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
+import { WorldBuyShopItemUpdate } from "./updates/world/WorldBuyShopItemUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import { WorldClickCharacterRequest } from "./requests/world/WorldClickCharacterRequest";
@@ -119,8 +122,9 @@ import { WorldQuestInstanceUpdate } from "./updates/world/WorldQuestInstanceUpda
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldSelectQuestRequest } from "./requests/world/WorldSelectQuestRequest";
 import { WorldSelectQuestUpdate } from "./updates/world/WorldSelectQuestUpdate";
+import { WorldSellShopItemUpdate } from "./updates/world/WorldSellShopItemUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
-import { WorldTeleportUpdate } from "./updates/world/WorldTeleportUpdate";
+import { WorldTradeCompleteUpdate } from "./updates/world/WorldTradeCompleteUpdate";
 import { WorldTradeUpdate } from "./updates/world/WorldTradeUpdate";
 import {
   WorldTurnCharactersUpdate,
@@ -220,7 +224,10 @@ export {
   VanitySlot,
   WorldAcceptQuestRequest,
   WorldAcceptQuestUpdate,
+  WorldBankGoldUpdate,
+  WorldBankItemsUpdate,
   WorldBonkUpdate,
+  WorldBuyShopItemUpdate,
   WorldCharacterUpdate,
   WorldClearMarkerUpdate,
   WorldClickCharacterRequest,
@@ -231,8 +238,8 @@ export {
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
   WorldEquipEquipmentItemRequest,
-  WorldEquipVanityItemRequest,
   WorldEquipmentUpdate,
+  WorldEquipVanityItemRequest,
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
   WorldExitToMainMenuUpdate,
@@ -255,8 +262,9 @@ export {
   WorldResourcesUpdate,
   WorldSelectQuestRequest,
   WorldSelectQuestUpdate,
+  WorldSellShopItemUpdate,
   WorldStartBattleUpdate,
-  WorldTeleportUpdate,
+  WorldTradeCompleteUpdate,
   WorldTradeUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,

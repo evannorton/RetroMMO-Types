@@ -1,4 +1,4 @@
-import { ItemInstanceUpdate } from "./world/ItemInstanceUpdate";
+import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
