@@ -6,6 +6,7 @@ export interface WorldTurnInQuestCharacterUpdate {
   readonly worldCharacterID: string;
 }
 export interface WorldTurnInQuestUpdate {
+  readonly experienceUntilLevel?: number;
   readonly npcID: string;
   readonly questID: string;
   readonly worldCharacters: readonly WorldTurnInQuestCharacterUpdate[];

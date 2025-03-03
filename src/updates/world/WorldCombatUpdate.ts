@@ -8,5 +8,6 @@ export interface WorldCombatCharacterUpdate {
 }
 export interface WorldCombatUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly boostItemInstances: readonly ItemInstanceUpdate[];
   readonly worldCombatCharacters: readonly WorldCombatCharacterUpdate[];
 }
