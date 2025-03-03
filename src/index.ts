@@ -5,6 +5,7 @@ import { BattleExitToWorldUpdate } from "./updates/battle/BattleExitToWorldUpdat
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
+import { BoostDefinition } from "./definitions/BoostDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
 import {
   ClassDefinition,
@@ -67,6 +68,7 @@ import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { ShopDefinition } from "./definitions/ShopDefinition";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
+import { Stat } from "./Stat";
 import { Step } from "./Step";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
@@ -153,6 +155,7 @@ export {
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BodyCosmeticDefinition,
+  BoostDefinition,
   ChestDefinition,
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
@@ -211,6 +214,7 @@ export {
   ResourcePool,
   ShopDefinition,
   SkinColorDefinition,
+  Stat,
   Step,
   SwitchDefinition,
   TargetType,
