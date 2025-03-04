@@ -94,6 +94,8 @@ import {
   WorldCombatCharacterUpdate,
   WorldCombatUpdate,
 } from "./updates/world/WorldCombatUpdate";
+import { WorldDestroyBoostRequest } from "./requests/world/WorldDestroyBoostRequest";
+import { WorldDestroyBoostUpdate } from "./updates/world/WorldDestroyBoostUpdate";
 import { WorldEmoteRequest } from "./requests/world/WorldEmoteRequest";
 import { WorldEmoteUpdate } from "./updates/world/WorldEmoteUpdate";
 import { WorldEnterCharactersUpdate } from "./updates/world/WorldEnterCharactersUpdate";
@@ -238,6 +240,8 @@ export {
   WorldCloseBankUpdate,
   WorldCombatCharacterUpdate,
   WorldCombatUpdate,
+  WorldDestroyBoostRequest,
+  WorldDestroyBoostUpdate,
   WorldEmoteRequest,
   WorldEmoteUpdate,
   WorldEnterCharactersUpdate,
