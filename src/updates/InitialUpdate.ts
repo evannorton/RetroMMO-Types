@@ -5,6 +5,16 @@ import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
 
+export interface InitialPlayerCharacterUpdate {
+  readonly classID: string;
+  readonly level: number;
+}
+export interface InitialPlayerUpdate {
+  readonly character?: InitialPlayerCharacterUpdate;
+  readonly id: string;
+  readonly userID: number;
+  readonly username: string;
+}
 export interface InitialMainMenuUpdate {
   readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
 }
@@ -37,7 +47,6 @@ export interface InitialUpdate {
   readonly isSubscribed: boolean;
   readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;
-  readonly userID: number;
-  readonly username: string;
+  readonly players: readonly InitialPlayerUpdate[];
   readonly world?: InitialWorldUpdate;
 }

@@ -9,7 +9,6 @@ export interface WorldCharacterUpdateEmote {
   readonly sinceUsed: number;
 }
 export interface WorldCharacterUpdate {
-  readonly classID: string;
   readonly clothesDyeItemID?: string;
   readonly direction: Direction;
   readonly figureID: string;
@@ -17,7 +16,6 @@ export interface WorldCharacterUpdate {
   readonly hairDyeItemID?: string;
   readonly id: string;
   readonly isRenewing?: boolean;
-  readonly level: number;
   readonly marker?: MarkerType;
   readonly maskItemID?: string;
   readonly openedChestIDs?: readonly string[];
@@ -30,8 +28,6 @@ export interface WorldCharacterUpdate {
   readonly skinColorID: string;
   readonly step: Step;
   readonly tilemapID: string;
-  readonly userID: number;
-  readonly username: string;
   readonly x: number;
   readonly y: number;
 }

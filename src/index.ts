@@ -1,7 +1,7 @@
 import { AbilityDefinition } from "./definitions/AbilityDefinition";
+import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
-import { BattleExitToWorldUpdate } from "./updates/battle/BattleExitToWorldUpdate";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
@@ -19,10 +19,22 @@ import { Constants } from "./Constants";
 import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
+import {
+  EndPlayerBattleCharacterUpdate,
+  EndPlayerBattlePlayerUpdate,
+  EndPlayerBattleUpdate,
+  EndPlayerBattleWorldUpdate,
+} from "./updates/EndPlayerBattleUpdate";
+import {
+  EnterPlayerCharacterUpdate,
+  EnterPlayerUpdate,
+  EnterPlayerWorldUpdate,
+} from "./updates/EnterPlayerUpdate";
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
 import { EquipmentPieceDefinition } from "./definitions/EquipmentPieceDefinition";
 import { EquipmentSlot } from "./EquipmentSlot";
 import { ErrorUpdate } from "./ErrorUpdate";
+import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
@@ -30,6 +42,8 @@ import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
 import {
   InitialMainMenuUpdate,
+  InitialPlayerCharacterUpdate,
+  InitialPlayerUpdate,
   InitialUpdate,
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
@@ -42,7 +56,6 @@ import { MainMenuCharacterCustomizeCreateCharacterUpdate } from "./updates/main-
 import { MainMenuCharacterSelectDeleteCharacterRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectDeleteCharacterRequest";
 import { MainMenuCharacterSelectDeleteCharacterUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectDeleteCharacterUpdate";
 import { MainMenuCharacterSelectSelectCharacterRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSelectCharacterRequest";
-import { MainMenuCharacterSelectSelectCharacterUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSelectCharacterUpdate";
 import { MainMenuCharacterSelectSortCharacterLeftRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSortCharacterLeftRequest";
 import { MainMenuCharacterSelectSortCharacterLeftUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterLeftUpdate";
 import { MainMenuCharacterSelectSortCharacterRightRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightRequest";
@@ -64,6 +77,8 @@ import { QuestDefinition } from "./definitions/QuestDefinition";
 import { QuestGiverDefinition } from "./definitions/QuestGiverDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
+import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
+import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { ShopDefinition } from "./definitions/ShopDefinition";
@@ -79,6 +94,12 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
+import {
+  TurnInQuestPlayerUpdate,
+  TurnInQuestUpdate,
+  TurnInQuestWorldCharacterUpdate,
+  TurnInQuestWorldUpdate,
+} from "./updates/TurnInQuestUpdate";
 import { VanitySlot } from "./VanitySlot";
 import { WorldAcceptQuestRequest } from "./requests/world/WorldAcceptQuestRequest";
 import { WorldAcceptQuestUpdate } from "./updates/world/WorldAcceptQuestUpdate";
@@ -88,7 +109,6 @@ import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldBuyShopItemUpdate } from "./updates/world/WorldBuyShopItemUpdate";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
-import { WorldClickCharacterRequest } from "./requests/world/WorldClickCharacterRequest";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
 import {
   WorldCombatCharacterUpdate,
@@ -134,10 +154,6 @@ import {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
 } from "./updates/world/WorldTurnCharactersUpdate";
-import {
-  WorldTurnInQuestCharacterUpdate,
-  WorldTurnInQuestUpdate,
-} from "./updates/world/WorldTurnInQuestUpdate";
 import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestRequest";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 import { WorldUnequipEquipmentItemRequest } from "./requests/world/WorldUnequipEquipmentItemRequest";
@@ -151,9 +167,9 @@ import {
 
 export {
   AbilityDefinition,
+  AddPlayerUpdate,
   AudioSourceDefinition,
   BankDefinition,
-  BattleExitToWorldUpdate,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BodyCosmeticDefinition,
@@ -169,16 +185,26 @@ export {
   Definition,
   Direction,
   EmoteDefinition,
+  EndPlayerBattleCharacterUpdate,
+  EndPlayerBattlePlayerUpdate,
+  EndPlayerBattleUpdate,
+  EndPlayerBattleWorldUpdate,
   EnterableDefinition,
+  EnterPlayerCharacterUpdate,
+  EnterPlayerUpdate,
+  EnterPlayerWorldUpdate,
   EquipmentPieceDefinition,
   EquipmentSlot,
   ErrorUpdate,
+  ExitPlayerUpdate,
   FigureDefinition,
   HairColorDefinition,
   HairDyeDefinition,
   HeadCosmeticDefinition,
   ImageSourceDefinition,
   InitialMainMenuUpdate,
+  InitialPlayerCharacterUpdate,
+  InitialPlayerUpdate,
   InitialUpdate,
   InitialWorldUpdate,
   ItemDefinition,
@@ -190,7 +216,6 @@ export {
   MainMenuCharacterSelectDeleteCharacterRequest,
   MainMenuCharacterSelectDeleteCharacterUpdate,
   MainMenuCharacterSelectSelectCharacterRequest,
-  MainMenuCharacterSelectSelectCharacterUpdate,
   MainMenuCharacterSelectSortCharacterLeftRequest,
   MainMenuCharacterSelectSortCharacterLeftUpdate,
   MainMenuCharacterSelectSortCharacterRightRequest,
@@ -212,6 +237,8 @@ export {
   QuestGiverDefinition,
   ReachableDefinition,
   RectangleDefinition,
+  RemovePlayerUpdate,
+  RenamePlayerUpdate,
   ResourceBarDefinition,
   ResourcePool,
   ShopDefinition,
@@ -227,6 +254,10 @@ export {
   TilesetTileAnimationFrameDefinition,
   TilesetTileDefinition,
   TransportDefinition,
+  TurnInQuestPlayerUpdate,
+  TurnInQuestUpdate,
+  TurnInQuestWorldCharacterUpdate,
+  TurnInQuestWorldUpdate,
   VanitySlot,
   WorldAcceptQuestRequest,
   WorldAcceptQuestUpdate,
@@ -236,7 +267,6 @@ export {
   WorldBuyShopItemUpdate,
   WorldCharacterUpdate,
   WorldClearMarkerUpdate,
-  WorldClickCharacterRequest,
   WorldCloseBankUpdate,
   WorldCombatCharacterUpdate,
   WorldCombatUpdate,
@@ -276,9 +306,7 @@ export {
   WorldTradeUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
-  WorldTurnInQuestCharacterUpdate,
   WorldTurnInQuestRequest,
-  WorldTurnInQuestUpdate,
   WorldTurnNPCUpdate,
   WorldUnequipEquipmentItemRequest,
   WorldUnequipVanityItemRequest,

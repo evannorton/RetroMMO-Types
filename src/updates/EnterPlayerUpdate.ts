@@ -1,9 +1,13 @@
-import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
-import { WorldCharacterUpdate } from "../world/WorldCharacterUpdate";
-import { WorldNPCUpdate } from "../world/WorldNPCUpdate";
-import { WorldPartyUpdate } from "../world/WorldPartyUpdate";
+import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
+import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
+import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
+import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
 
-export interface BattleExitToWorldUpdate {
+export interface EnterPlayerWorldUpdate {
+  readonly party: WorldPartyUpdate;
+  readonly worldCharacter: WorldCharacterUpdate;
+}
+export interface EnterPlayerCharacterUpdate {
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly bodyItemInstance?: ItemInstanceUpdate;
@@ -23,11 +27,15 @@ export interface BattleExitToWorldUpdate {
   readonly outfitItemInstance?: ItemInstanceUpdate;
   readonly parties: readonly WorldPartyUpdate[];
   readonly strength: number;
-  readonly tilemapID: string;
   readonly timePlayed: number;
   readonly wisdom: number;
   readonly worldCharacterID: string;
   readonly worldCharacters: readonly WorldCharacterUpdate[];
-  readonly x: number;
-  readonly y: number;
+}
+export interface EnterPlayerUpdate {
+  readonly character?: EnterPlayerCharacterUpdate;
+  readonly classID: string;
+  readonly level: number;
+  readonly playerID: string;
+  readonly world?: EnterPlayerWorldUpdate;
 }
