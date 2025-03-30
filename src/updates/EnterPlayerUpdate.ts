@@ -38,4 +38,5 @@ export interface EnterPlayerUpdate {
   readonly level: number;
   readonly playerID: string;
   readonly world?: EnterPlayerWorldUpdate;
+  readonly worldCharacterID?: string;
 }

@@ -14,6 +14,7 @@ export interface InitialPlayerUpdate {
   readonly id: string;
   readonly userID: number;
   readonly username: string;
+  readonly worldCharacterID?: string;
 }
 export interface InitialMainMenuUpdate {
   readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
