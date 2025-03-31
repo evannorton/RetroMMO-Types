@@ -21,7 +21,6 @@ export interface WorldCharacterUpdate {
   readonly openedChestIDs?: readonly string[];
   readonly order: number;
   readonly outfitItemID?: string;
-  readonly partyID: string;
   readonly playerID: string;
   readonly questInstances?: Record<string, WorldQuestInstanceUpdate>;
   readonly resources?: WorldResourcesUpdate;

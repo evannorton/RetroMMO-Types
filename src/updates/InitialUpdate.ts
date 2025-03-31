@@ -8,6 +8,7 @@ import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
 export interface InitialPlayerCharacterUpdate {
   readonly classID: string;
   readonly level: number;
+  readonly partyID: string;
 }
 export interface InitialPlayerUpdate {
   readonly character?: InitialPlayerCharacterUpdate;

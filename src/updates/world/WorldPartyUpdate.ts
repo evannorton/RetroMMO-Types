@@ -1,4 +1,4 @@
 export interface WorldPartyUpdate {
   readonly id: string;
-  readonly worldCharacterIDs: readonly string[];
+  readonly playerIDs: readonly string[];
 }

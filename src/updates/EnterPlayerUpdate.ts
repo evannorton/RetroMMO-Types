@@ -36,6 +36,7 @@ export interface EnterPlayerUpdate {
   readonly character?: EnterPlayerCharacterUpdate;
   readonly classID: string;
   readonly level: number;
+  readonly partyID: string;
   readonly playerID: string;
   readonly world?: EnterPlayerWorldUpdate;
   readonly worldCharacterID?: string;
