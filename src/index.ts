@@ -70,6 +70,7 @@ import { NPCDefinition } from "./definitions/NPCDefinition";
 import { NoiseDefinition } from "./definitions/NoiseDefinition";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
 import { PanelDefinition } from "./definitions/PanelDefinition";
+import { PartyChangesUpdate } from "./updates/PartyChangesUpdate";
 import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
@@ -136,7 +137,6 @@ import { WorldNPCInteractRequest } from "./requests/world/WorldNPCInteractReques
 import { WorldNPCUpdate } from "./updates/world/WorldNPCUpdate";
 import { WorldOpenBankUpdate } from "./updates/world/WorldOpenBankUpdate";
 import { WorldOpenChestUpdate } from "./updates/world/WorldOpenChestUpdate";
-import { WorldPartyChangesUpdate } from "./updates/world/WorldPartyChangesUpdate";
 import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
 import { WorldPartyUpdate } from "./updates/world/WorldPartyUpdate";
 import { WorldPianoKeyRequest } from "./requests/world/WorldPianoKeyRequest";
@@ -229,6 +229,7 @@ export {
   NoiseDefinition,
   NPCDefinition,
   OutfitDefinition,
+  PartyChangesUpdate,
   PanelDefinition,
   PianoDefinition,
   PianoKeyType,
@@ -290,7 +291,6 @@ export {
   WorldNPCUpdate,
   WorldOpenBankUpdate,
   WorldOpenChestUpdate,
-  WorldPartyChangesUpdate,
   WorldPartyCharacterUpdate,
   WorldPartyUpdate,
   WorldPianoKeyRequest,
