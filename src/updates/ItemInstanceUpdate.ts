@@ -1,4 +1,4 @@
 export interface ItemInstanceUpdate {
-  readonly id: string;
+  readonly itemInstanceID: string;
   readonly itemID: string;
 }

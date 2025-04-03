@@ -9,12 +9,12 @@ export interface WorldCharacterUpdateEmote {
   readonly sinceUsed: number;
 }
 export interface WorldCharacterUpdate {
+  readonly characterID: string;
   readonly clothesDyeItemID?: string;
   readonly direction: Direction;
   readonly figureID: string;
   readonly emote?: WorldCharacterUpdateEmote;
   readonly hairDyeItemID?: string;
-  readonly id: string;
   readonly isRenewing?: boolean;
   readonly marker?: MarkerType;
   readonly maskItemID?: string;

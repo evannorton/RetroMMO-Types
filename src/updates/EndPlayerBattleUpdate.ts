@@ -8,6 +8,8 @@ export interface EndPlayerBattleCharacterUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly bodyItemInstance?: ItemInstanceUpdate;
   readonly boostItemInstances: readonly ItemInstanceUpdate[];
+  readonly characterID: string;
+  readonly characters: readonly WorldCharacterUpdate[];
   readonly clothesDyeItemInstance?: ItemInstanceUpdate;
   readonly defense: number;
   readonly experienceUntilLevel?: number;
@@ -26,18 +28,16 @@ export interface EndPlayerBattleCharacterUpdate {
   readonly tilemapID: string;
   readonly timePlayed: number;
   readonly wisdom: number;
-  readonly worldCharacterID: string;
-  readonly worldCharacters: readonly WorldCharacterUpdate[];
   readonly x: number;
   readonly y: number;
 }
 export interface EndPlayerBattlePlayerUpdate {
-  readonly id: string;
   readonly level: number;
+  readonly playerID: string;
 }
 export interface EndPlayerBattleWorldUpdate {
+  readonly characters: readonly WorldCharacterUpdate[];
   readonly parties: readonly PartyUpdate[];
-  readonly worldCharacters: readonly WorldCharacterUpdate[];
 }
 export interface EndPlayerBattleUpdate {
   readonly character?: EndPlayerBattleCharacterUpdate;

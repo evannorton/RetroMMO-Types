@@ -12,10 +12,10 @@ export interface InitialPlayerCharacterUpdate {
 }
 export interface InitialPlayerUpdate {
   readonly character?: InitialPlayerCharacterUpdate;
-  readonly id: string;
+  readonly characterID?: string;
+  readonly playerID: string;
   readonly userID: number;
   readonly username: string;
-  readonly worldCharacterID?: string;
 }
 export interface InitialMainMenuUpdate {
   readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
@@ -25,6 +25,8 @@ export interface InitialWorldUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly bodyItemInstance?: ItemInstanceUpdate;
   readonly boostItemInstances: readonly ItemInstanceUpdate[];
+  readonly characterID: string;
+  readonly characters: readonly WorldCharacterUpdate[];
   readonly clothesDyeItemInstance?: ItemInstanceUpdate;
   readonly defense: number;
   readonly experienceUntilLevel?: number;
@@ -41,8 +43,6 @@ export interface InitialWorldUpdate {
   readonly strength: number;
   readonly timePlayed: number;
   readonly wisdom: number;
-  readonly worldCharacterID: string;
-  readonly worldCharacters: readonly WorldCharacterUpdate[];
 }
 export interface InitialUpdate {
   readonly isSubscribed: boolean;

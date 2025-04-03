@@ -1,4 +1,4 @@
 export interface PartyUpdate {
-  readonly id: string;
+  readonly partyID: string;
   readonly playerIDs: readonly string[];
 }

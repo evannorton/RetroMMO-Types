@@ -2,7 +2,7 @@ import { PartyUpdate } from "./PartyUpdate";
 import { WorldPartyCharacterUpdate } from "./world/WorldPartyCharacterUpdate";
 
 export interface PartyChangesWorldUpdate {
-  readonly worldCharacters: readonly WorldPartyCharacterUpdate[];
+  readonly characters: readonly WorldPartyCharacterUpdate[];
 }
 export interface PartyChangesUpdate {
   readonly parties: readonly PartyUpdate[];

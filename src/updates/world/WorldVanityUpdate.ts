@@ -9,8 +9,8 @@ export interface WorldVanityItemsUpdate {
   readonly outfitItemInstance?: ItemInstanceUpdate;
 }
 export interface WorldVanityUpdate {
+  readonly characterID: string;
   readonly items?: WorldVanityItemsUpdate;
   readonly slot: VanitySlot;
   readonly vanityItemID?: string;
-  readonly worldCharacterID: string;
 }

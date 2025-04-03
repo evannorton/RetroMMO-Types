@@ -4,13 +4,15 @@ import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 
 export interface EnterPlayerWorldUpdate {
-  readonly worldCharacter: WorldCharacterUpdate;
+  readonly character: WorldCharacterUpdate;
 }
 export interface EnterPlayerCharacterUpdate {
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly bodyItemInstance?: ItemInstanceUpdate;
   readonly boostItemInstances: readonly ItemInstanceUpdate[];
+  readonly characterID: string;
+  readonly characters: readonly WorldCharacterUpdate[];
   readonly clothesDyeItemInstance?: ItemInstanceUpdate;
   readonly defense: number;
   readonly experienceUntilLevel?: number;
@@ -28,15 +30,13 @@ export interface EnterPlayerCharacterUpdate {
   readonly strength: number;
   readonly timePlayed: number;
   readonly wisdom: number;
-  readonly worldCharacterID: string;
-  readonly worldCharacters: readonly WorldCharacterUpdate[];
 }
 export interface EnterPlayerUpdate {
   readonly character?: EnterPlayerCharacterUpdate;
+  readonly characterID?: string;
   readonly classID: string;
   readonly level: number;
   readonly partyID: string;
   readonly playerID: string;
   readonly world?: EnterPlayerWorldUpdate;
-  readonly worldCharacterID?: string;
 }

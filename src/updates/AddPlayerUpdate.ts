@@ -1,5 +1,5 @@
 export interface AddPlayerUpdate {
-  readonly id: string;
+  readonly playerID: string;
   readonly userID: number;
   readonly username: string;
 }

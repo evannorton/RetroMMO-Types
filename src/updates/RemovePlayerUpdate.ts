@@ -1,4 +1,4 @@
 export interface RemovePlayerUpdate {
-  readonly id: string;
-  readonly worldCharacterID?: string;
+  readonly characterID?: string;
+  readonly playerID: string;
 }
