@@ -1,7 +1,7 @@
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
+import { PartyUpdate } from "./PartyUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
-import { PartyUpdate } from "./PartyUpdate";
 
 export interface EndPlayerBattleCharacterUpdate {
   readonly agility: number;
