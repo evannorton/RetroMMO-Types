@@ -1,7 +1,7 @@
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
-import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
+import { PartyUpdate } from "./PartyUpdate";
 
 export interface EndPlayerBattleCharacterUpdate {
   readonly agility: number;
@@ -21,7 +21,7 @@ export interface EndPlayerBattleCharacterUpdate {
   readonly npcs: readonly WorldNPCUpdate[];
   readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly outfitItemInstance?: ItemInstanceUpdate;
-  readonly parties: readonly WorldPartyUpdate[];
+  readonly parties: readonly PartyUpdate[];
   readonly strength: number;
   readonly tilemapID: string;
   readonly timePlayed: number;
@@ -36,7 +36,7 @@ export interface EndPlayerBattlePlayerUpdate {
   readonly level: number;
 }
 export interface EndPlayerBattleWorldUpdate {
-  readonly parties: readonly WorldPartyUpdate[];
+  readonly parties: readonly PartyUpdate[];
   readonly worldCharacters: readonly WorldCharacterUpdate[];
 }
 export interface EndPlayerBattleUpdate {

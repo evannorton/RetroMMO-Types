@@ -1,10 +1,9 @@
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
+import { PartyUpdate } from "./PartyUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
-import { WorldPartyUpdate } from "./world/WorldPartyUpdate";
 
 export interface EnterPlayerWorldUpdate {
-  readonly party: WorldPartyUpdate;
   readonly worldCharacter: WorldCharacterUpdate;
 }
 export interface EnterPlayerCharacterUpdate {
@@ -25,7 +24,7 @@ export interface EnterPlayerCharacterUpdate {
   readonly npcs: readonly WorldNPCUpdate[];
   readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly outfitItemInstance?: ItemInstanceUpdate;
-  readonly parties: readonly WorldPartyUpdate[];
+  readonly parties: readonly PartyUpdate[];
   readonly strength: number;
   readonly timePlayed: number;
   readonly wisdom: number;
