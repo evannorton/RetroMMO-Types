@@ -1,1 +1,3 @@
-export interface WorldStartBattleUpdate {}
+export interface WorldStartBattleUpdate {
+  readonly reachableID: string;
+}

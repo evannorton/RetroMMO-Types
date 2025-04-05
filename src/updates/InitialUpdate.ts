@@ -17,6 +17,9 @@ export interface InitialPlayerUpdate {
   readonly userID: number;
   readonly username: string;
 }
+export interface InitialBattleUpdate {
+  readonly reachableID: string;
+}
 export interface InitialMainMenuUpdate {
   readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
 }
@@ -45,6 +48,7 @@ export interface InitialWorldUpdate {
   readonly wisdom: number;
 }
 export interface InitialUpdate {
+  readonly battle?: InitialBattleUpdate;
   readonly isSubscribed: boolean;
   readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;
