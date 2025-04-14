@@ -1,3 +1,4 @@
+import { BattleCharacterUpdate } from "./battle/BattleCharacterUpdate";
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
@@ -18,10 +19,13 @@ export interface InitialPlayerUpdate {
   readonly username: string;
 }
 export interface InitialBattleUpdate {
+  readonly characters: BattleCharacterUpdate[];
+  readonly enemyCharacterIDs: readonly string[];
+  readonly friendlyCharacterIDs: readonly string[];
   readonly reachableID: string;
 }
 export interface InitialMainMenuUpdate {
-  readonly mainMenuCharacters: readonly MainMenuCharacterUpdate[];
+  readonly characters: readonly MainMenuCharacterUpdate[];
 }
 export interface InitialWorldUpdate {
   readonly agility: number;

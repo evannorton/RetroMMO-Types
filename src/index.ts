@@ -2,8 +2,10 @@ import { AbilityDefinition } from "./definitions/AbilityDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
+import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
+import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
@@ -174,8 +176,10 @@ export {
   AddPlayerUpdate,
   AudioSourceDefinition,
   BankDefinition,
+  BattleCharacterUpdate,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
+  BattleResourcesUpdate,
   BodyCosmeticDefinition,
   BoostDefinition,
   ChestDefinition,
