@@ -19,6 +19,7 @@ export interface InitialPlayerUpdate {
   readonly username: string;
 }
 export interface InitialBattleUpdate {
+  readonly battleCharacterID: string;
   readonly characters: BattleCharacterUpdate[];
   readonly enemyCharacterIDs: readonly string[];
   readonly friendlyCharacterIDs: readonly string[];

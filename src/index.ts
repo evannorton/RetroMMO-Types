@@ -7,6 +7,7 @@ import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
+import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
@@ -182,6 +183,7 @@ export {
   BattleImpactAnimationDefinition,
   BattleResourcesUpdate,
   BattleUseAbilityRequest,
+  BattleUseItemInstanceRequest,
   BodyCosmeticDefinition,
   BoostDefinition,
   ChestDefinition,
