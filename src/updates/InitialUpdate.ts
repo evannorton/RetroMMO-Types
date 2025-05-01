@@ -23,6 +23,7 @@ export interface InitialBattleUpdate {
   readonly characters: BattleCharacterUpdate[];
   readonly enemyCharacterIDs: readonly string[];
   readonly friendlyCharacterIDs: readonly string[];
+  readonly itemInstances: readonly ItemInstanceUpdate[];
   readonly reachableID: string;
 }
 export interface InitialMainMenuUpdate {
