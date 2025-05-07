@@ -6,6 +6,7 @@ export interface AbilityDefinition extends Definition {
   readonly canBeUsedInBattle?: boolean;
   readonly canBeUsedInWorld?: boolean;
   readonly description: string;
+  readonly fleeChance?: number;
   readonly iconImagePath: string;
   readonly mpCost: number;
   readonly name: string;

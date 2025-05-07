@@ -1,6 +1,5 @@
-import { BattleResourcesUpdate } from "./BattleResourcesUpdate";
-
 export interface BattleCharacterUpdate {
+  readonly battlerID: string;
   readonly characterID: string;
   readonly clothesDyeItemID?: string;
   readonly figureID: string;
@@ -8,6 +7,5 @@ export interface BattleCharacterUpdate {
   readonly maskItemID?: string;
   readonly outfitItemID?: string;
   readonly playerID: string;
-  readonly resources?: BattleResourcesUpdate;
   readonly skinColorID: string;
 }

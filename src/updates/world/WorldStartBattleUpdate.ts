@@ -1,11 +1,13 @@
 import { BattleCharacterUpdate } from "../battle/BattleCharacterUpdate";
+import { BattlerUpdate } from "../battle/BattlerUpdate";
 import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
 
 export interface WorldStartBattleUpdate {
-  readonly battleCharacterID: string;
+  readonly battlerID: string;
+  readonly battlers: BattlerUpdate[];
   readonly characters: BattleCharacterUpdate[];
-  readonly enemyCharacterIDs: readonly string[];
-  readonly friendlyCharacterIDs: readonly string[];
+  readonly enemyBattlerIDs: readonly string[];
+  readonly friendlyBattlerIDs: readonly string[];
   readonly itemInstances: readonly ItemInstanceUpdate[];
   readonly reachableID: string;
 }
