@@ -2,10 +2,14 @@ import { AbilityDefinition } from "./definitions/AbilityDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
+import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
+import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
+import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityUpdate";
+import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import { BattlerUpdate } from "./updates/battle/BattlerUpdate";
@@ -179,10 +183,14 @@ export {
   AddPlayerUpdate,
   AudioSourceDefinition,
   BankDefinition,
+  BattleCancelSubmittedMoveRequest,
+  BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BattleResourcesUpdate,
+  BattleSubmitAbilityUpdate,
+  BattleSubmittedAbilityUpdate,
   BattleUseAbilityRequest,
   BattleUseItemInstanceRequest,
   BattlerUpdate,
