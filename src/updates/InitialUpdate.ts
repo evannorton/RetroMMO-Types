@@ -1,5 +1,6 @@
 import { BattleCharacterUpdate } from "./battle/BattleCharacterUpdate";
 import { BattleSubmittedAbilityUpdate } from "./battle/BattleSubmittedAbilityUpdate";
+import { BattleSubmittedItemUpdate } from "./battle/BattleSubmittedItemUpdate";
 import { BattlerUpdate } from "./battle/BattlerUpdate";
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
@@ -29,6 +30,7 @@ export interface InitialBattleUpdate {
   readonly itemInstances: readonly ItemInstanceUpdate[];
   readonly reachableID: string;
   readonly submittedAbilities: BattleSubmittedAbilityUpdate[];
+  readonly submittedItems: BattleSubmittedItemUpdate[];
 }
 export interface InitialMainMenuUpdate {
   readonly characters: readonly MainMenuCharacterUpdate[];

@@ -9,7 +9,9 @@ import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityUpdate";
+import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate";
 import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
+import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import { BattlerUpdate } from "./updates/battle/BattlerUpdate";
@@ -190,7 +192,9 @@ export {
   BattleImpactAnimationDefinition,
   BattleResourcesUpdate,
   BattleSubmitAbilityUpdate,
+  BattleSubmitItemUpdate,
   BattleSubmittedAbilityUpdate,
+  BattleSubmittedItemUpdate,
   BattleUseAbilityRequest,
   BattleUseItemInstanceRequest,
   BattlerUpdate,
