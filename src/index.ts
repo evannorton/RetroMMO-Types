@@ -5,13 +5,18 @@ import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
+import { BattleEvent } from "./battle-events/BattleEvent";
+import { BattleEventType } from "./battle-events/BattleEventType";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
+import { BattlePhase } from "./BattlePhase";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
+import { BattleStartRoundUpdate } from "./updates/battle/BattleStartRoundUpdate";
 import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityUpdate";
 import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate";
 import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
+import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import { BattlerUpdate } from "./updates/battle/BattlerUpdate";
@@ -94,6 +99,8 @@ import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
 import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
+import { ServerTimeRequest } from "./requests/ServerTimeRequest";
+import { ServerTimeUpdate } from "./updates/ServerTimeUpdate";
 import { ShopDefinition } from "./definitions/ShopDefinition";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { Stat } from "./Stat";
@@ -188,16 +195,21 @@ export {
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
+  BattleEvent,
+  BattleEventType,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
+  BattlePhase,
   BattleResourcesUpdate,
+  BattleStartRoundUpdate,
+  BattlerUpdate,
   BattleSubmitAbilityUpdate,
   BattleSubmitItemUpdate,
   BattleSubmittedAbilityUpdate,
   BattleSubmittedItemUpdate,
+  BattleUseAbilityEvent,
   BattleUseAbilityRequest,
   BattleUseItemInstanceRequest,
-  BattlerUpdate,
   BodyCosmeticDefinition,
   BoostDefinition,
   ChestDefinition,
@@ -269,6 +281,8 @@ export {
   RenamePlayerUpdate,
   ResourceBarDefinition,
   ResourcePool,
+  ServerTimeRequest,
+  ServerTimeUpdate,
   ShopDefinition,
   SkinColorDefinition,
   Stat,
