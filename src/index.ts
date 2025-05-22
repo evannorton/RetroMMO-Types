@@ -17,6 +17,7 @@ import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityU
 import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate";
 import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
+import { BattleTakeDamageEvent } from "./battle-events/BattleTakeDamageEvent";
 import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
 import {
@@ -214,6 +215,7 @@ export {
   BattleSubmitItemUpdate,
   BattleSubmittedAbilityUpdate,
   BattleSubmittedItemUpdate,
+  BattleTakeDamageEvent,
   BattleUseAbilityEvent,
   BattleUseAbilityRequest,
   BattleUseItemEvent,
