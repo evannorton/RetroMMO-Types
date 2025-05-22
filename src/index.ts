@@ -19,6 +19,11 @@ import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAb
 import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
 import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
+import {
+  BattleUseItemEvent,
+  BattleUseItemEventCaster,
+  BattleUseItemEventTarget,
+} from "./battle-events/BattleUseItemEvent";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import { BattlerUpdate } from "./updates/battle/BattlerUpdate";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
@@ -203,14 +208,17 @@ export {
   BattleImpactAnimationDefinition,
   BattlePhase,
   BattleResourcesUpdate,
-  BattleStartRoundUpdate,
   BattlerUpdate,
+  BattleStartRoundUpdate,
   BattleSubmitAbilityUpdate,
   BattleSubmitItemUpdate,
   BattleSubmittedAbilityUpdate,
   BattleSubmittedItemUpdate,
   BattleUseAbilityEvent,
   BattleUseAbilityRequest,
+  BattleUseItemEvent,
+  BattleUseItemEventCaster,
+  BattleUseItemEventTarget,
   BattleUseItemInstanceRequest,
   BodyCosmeticDefinition,
   BoostDefinition,
