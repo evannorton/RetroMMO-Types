@@ -5,7 +5,10 @@ import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
-import { BattleEndRoundUpdate } from "./updates/battle/BattleEndRoundUpdate";
+import {
+  BattleEndRoundBattlerUpdate,
+  BattleEndRoundUpdate,
+} from "./updates/battle/BattleEndRoundUpdate";
 import { BattleEvent } from "./battle-events/BattleEvent";
 import { BattleEventType } from "./battle-events/BattleEventType";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
@@ -202,6 +205,7 @@ export {
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
+  BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleEvent,
   BattleEventType,
