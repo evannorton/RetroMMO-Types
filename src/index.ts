@@ -6,6 +6,10 @@ import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancel
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
 import {
+  BattleDeathEvent,
+  BattleDeathEventTarget,
+} from "./battle-events/BattleDeathEvent";
+import {
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
 } from "./updates/battle/BattleEndRoundUpdate";
@@ -205,6 +209,8 @@ export {
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
+  BattleDeathEvent,
+  BattleDeathEventTarget,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleEvent,

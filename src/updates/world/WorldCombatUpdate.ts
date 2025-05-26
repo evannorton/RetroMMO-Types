@@ -3,7 +3,7 @@ import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldCombatCharacterUpdate {
   readonly characterID: string;
-  readonly isRenewing: boolean;
+  readonly isRenewing?: boolean;
   readonly resources: WorldResourcesUpdate;
 }
 export interface WorldCombatUpdate {
