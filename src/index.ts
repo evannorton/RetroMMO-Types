@@ -33,6 +33,7 @@ import {
   BattleUseItemEventTarget,
 } from "./battle-events/BattleUseItemEvent";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
+import { BattlerType } from "./BattlerType";
 import { BattlerUpdate } from "./updates/battle/BattlerUpdate";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
@@ -219,6 +220,7 @@ export {
   BattleImpactAnimationDefinition,
   BattlePhase,
   BattleResourcesUpdate,
+  BattlerType,
   BattlerUpdate,
   BattleStartRoundUpdate,
   BattleSubmitAbilityUpdate,
