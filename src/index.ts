@@ -25,6 +25,7 @@ import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate"
 import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
 import { BattleTakeDamageEvent } from "./battle-events/BattleTakeDamageEvent";
+import { BattleType } from "./BattleType";
 import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
 import {
@@ -220,6 +221,7 @@ export {
   BattleImpactAnimationDefinition,
   BattlePhase,
   BattleResourcesUpdate,
+  BattleType,
   BattlerType,
   BattlerUpdate,
   BattleStartRoundUpdate,

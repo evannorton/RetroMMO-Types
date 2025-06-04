@@ -3,6 +3,7 @@ import { BattlePhase } from "../BattlePhase";
 import { BattleRoundUpdate } from "./battle/BattleRoundUpdate";
 import { BattleSubmittedAbilityUpdate } from "./battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./battle/BattleSubmittedItemUpdate";
+import { BattleType } from "../BattleType";
 import { BattlerUpdate } from "./battle/BattlerUpdate";
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
@@ -25,6 +26,7 @@ export interface InitialPlayerUpdate {
 }
 export interface InitialBattleUpdate {
   readonly battlerID: string;
+  readonly battleType: BattleType;
   readonly battlers: BattlerUpdate[];
   readonly characters: BattleCharacterUpdate[];
   readonly enemyBattlerIDs: readonly string[];
