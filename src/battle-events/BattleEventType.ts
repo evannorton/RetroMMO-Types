@@ -1,6 +1,7 @@
 export enum BattleEventType {
+  Damage = "damage",
   Death = "death",
-  TakeDamage = "take-damage",
+  Heal = "heal",
   UseAbility = "use-ability",
   UseItem = "use-item",
 }

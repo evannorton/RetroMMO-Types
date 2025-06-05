@@ -5,6 +5,7 @@ import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
+import { BattleDamageEvent } from "./battle-events/BattleDamageEvent";
 import {
   BattleDeathEvent,
   BattleDeathEventTarget,
@@ -15,6 +16,10 @@ import {
 } from "./updates/battle/BattleEndRoundUpdate";
 import { BattleEvent } from "./battle-events/BattleEvent";
 import { BattleEventType } from "./battle-events/BattleEventType";
+import {
+  BattleHealEvent,
+  BattleHealEventTarget,
+} from "./battle-events/BattleHealEvent";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattlePhase } from "./BattlePhase";
@@ -24,7 +29,6 @@ import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityU
 import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate";
 import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
-import { BattleTakeDamageEvent } from "./battle-events/BattleTakeDamageEvent";
 import { BattleType } from "./BattleType";
 import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
@@ -211,12 +215,15 @@ export {
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
+  BattleDamageEvent,
   BattleDeathEvent,
   BattleDeathEventTarget,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleEvent,
   BattleEventType,
+  BattleHealEvent,
+  BattleHealEventTarget,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BattlePhase,
@@ -229,7 +236,6 @@ export {
   BattleSubmitItemUpdate,
   BattleSubmittedAbilityUpdate,
   BattleSubmittedItemUpdate,
-  BattleTakeDamageEvent,
   BattleUseAbilityEvent,
   BattleUseAbilityRequest,
   BattleUseItemEvent,
