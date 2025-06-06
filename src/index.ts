@@ -17,6 +17,10 @@ import {
 import { BattleEvent } from "./battle-events/BattleEvent";
 import { BattleEventType } from "./battle-events/BattleEventType";
 import {
+  BattleFriendlyTargetFailureEvent,
+  BattleFriendlyTargetFailureEventTarget,
+} from "./battle-events/BattleFriendlyTargetFailureEvent";
+import {
   BattleHealEvent,
   BattleHealEventTarget,
 } from "./battle-events/BattleHealEvent";
@@ -222,13 +226,14 @@ export {
   BattleEndRoundUpdate,
   BattleEvent,
   BattleEventType,
+  BattleFriendlyTargetFailureEvent,
+  BattleFriendlyTargetFailureEventTarget,
   BattleHealEvent,
   BattleHealEventTarget,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BattlePhase,
   BattleResourcesUpdate,
-  BattleType,
   BattlerType,
   BattlerUpdate,
   BattleStartRoundUpdate,
@@ -236,6 +241,7 @@ export {
   BattleSubmitItemUpdate,
   BattleSubmittedAbilityUpdate,
   BattleSubmittedItemUpdate,
+  BattleType,
   BattleUseAbilityEvent,
   BattleUseAbilityRequest,
   BattleUseItemEvent,
