@@ -5,6 +5,7 @@ import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
+import { BattleCritEvent } from "./battle-events/BattleCritEvent";
 import { BattleDamageEvent } from "./battle-events/BattleDamageEvent";
 import {
   BattleDeathEvent,
@@ -26,6 +27,7 @@ import {
 } from "./battle-events/BattleHealEvent";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
+import { BattleMissEvent } from "./battle-events/BattleMissEvent";
 import { BattlePhase } from "./BattlePhase";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BattleStartRoundUpdate } from "./updates/battle/BattleStartRoundUpdate";
@@ -219,6 +221,7 @@ export {
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
+  BattleCritEvent,
   BattleDamageEvent,
   BattleDeathEvent,
   BattleDeathEventTarget,
@@ -232,6 +235,7 @@ export {
   BattleHealEventTarget,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
+  BattleMissEvent,
   BattlePhase,
   BattleResourcesUpdate,
   BattlerType,
