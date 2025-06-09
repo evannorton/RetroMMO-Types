@@ -27,6 +27,7 @@ import {
 } from "./battle-events/BattleHealEvent";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
+import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
 import { BattleMissEvent } from "./battle-events/BattleMissEvent";
 import { BattlePhase } from "./BattlePhase";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
@@ -235,6 +236,7 @@ export {
   BattleHealEventTarget,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
+  BattleInstakillEvent,
   BattleMissEvent,
   BattlePhase,
   BattleResourcesUpdate,

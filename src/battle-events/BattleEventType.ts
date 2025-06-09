@@ -4,6 +4,7 @@ export enum BattleEventType {
   Death = "death",
   FriendlyTargetFailure = "friendly-target-failure",
   Heal = "heal",
+  Instakill = "instakill",
   Miss = "miss",
   UseAbility = "use-ability",
   UseItem = "use-item",
