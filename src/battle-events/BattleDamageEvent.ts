@@ -7,6 +7,7 @@ export interface BattleDamageEventTarget {
 }
 export interface BattleDamageEvent extends BattleEvent {
   readonly amount: number;
+  readonly isRedirected?: boolean;
   readonly target: BattleDamageEventTarget;
   readonly type: BattleEventType.Damage;
 }
