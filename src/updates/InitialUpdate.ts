@@ -1,4 +1,6 @@
+import { BattleAbilityHotkeyUpdate } from "./battle/BattleAbilityHotkeyUpdate";
 import { BattleCharacterUpdate } from "./battle/BattleCharacterUpdate";
+import { BattleItemHotkeyUpdate } from "./battle/BattleItemHotkeyUpdate";
 import { BattlePhase } from "../BattlePhase";
 import { BattleRoundUpdate } from "./battle/BattleRoundUpdate";
 import { BattleSubmittedAbilityUpdate } from "./battle/BattleSubmittedAbilityUpdate";
@@ -25,12 +27,14 @@ export interface InitialPlayerUpdate {
   readonly username: string;
 }
 export interface InitialBattleUpdate {
+  readonly abilityHotkeys: readonly BattleAbilityHotkeyUpdate[];
   readonly battlerID: string;
   readonly battleType: BattleType;
   readonly battlers: BattlerUpdate[];
   readonly characters: BattleCharacterUpdate[];
   readonly enemyBattlerIDs: readonly string[];
   readonly friendlyBattlerIDs: readonly string[];
+  readonly itemHotkeys: readonly BattleItemHotkeyUpdate[];
   readonly itemInstances: readonly ItemInstanceUpdate[];
   readonly phase: BattlePhase;
   readonly reachableID: string;

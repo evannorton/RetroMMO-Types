@@ -2,6 +2,7 @@ import { AbilityDefinition } from "./definitions/AbilityDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
+import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
@@ -28,6 +29,7 @@ import {
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
+import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
 import { BattleMissEvent } from "./battle-events/BattleMissEvent";
 import { BattlePhase } from "./BattlePhase";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
@@ -219,6 +221,7 @@ export {
   AddPlayerUpdate,
   AudioSourceDefinition,
   BankDefinition,
+  BattleAbilityHotkeyUpdate,
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
@@ -237,6 +240,7 @@ export {
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BattleInstakillEvent,
+  BattleItemHotkeyUpdate,
   BattleMissEvent,
   BattlePhase,
   BattleResourcesUpdate,
