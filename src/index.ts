@@ -3,6 +3,10 @@ import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
+import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityRequest";
+import { BattleBindAbilityUpdate } from "./updates/battle/BattleBindAbilityUpdate";
+import { BattleBindItemRequest } from "./requests/battle/BattleBindItemRequest";
+import { BattleBindItemUpdate } from "./updates/battle/BattleBindItemUpdate";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
@@ -222,6 +226,10 @@ export {
   AudioSourceDefinition,
   BankDefinition,
   BattleAbilityHotkeyUpdate,
+  BattleBindAbilityRequest,
+  BattleBindAbilityUpdate,
+  BattleBindItemRequest,
+  BattleBindItemUpdate,
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
