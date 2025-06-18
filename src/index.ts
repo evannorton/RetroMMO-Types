@@ -43,6 +43,8 @@ import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate"
 import { BattleSubmittedAbilityUpdate } from "./updates/battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemUpdate";
 import { BattleType } from "./BattleType";
+import { BattleUnbindHotkeyRequest } from "./requests/battle/BattleUnbindHotkeyRequest";
+import { BattleUnbindHotkeyUpdate } from "./updates/battle/BattleUnbindHotkeyUpdate";
 import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
 import {
@@ -260,6 +262,8 @@ export {
   BattleSubmittedAbilityUpdate,
   BattleSubmittedItemUpdate,
   BattleType,
+  BattleUnbindHotkeyRequest,
+  BattleUnbindHotkeyUpdate,
   BattleUseAbilityEvent,
   BattleUseAbilityRequest,
   BattleUseItemEvent,
