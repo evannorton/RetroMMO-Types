@@ -6,6 +6,7 @@ export interface BattleDamageEventTarget {
   readonly name: string;
 }
 export interface BattleDamageEvent extends BattleEvent {
+  readonly abilityID: string;
   readonly amount: number;
   readonly isRedirected?: boolean;
   readonly target: BattleDamageEventTarget;

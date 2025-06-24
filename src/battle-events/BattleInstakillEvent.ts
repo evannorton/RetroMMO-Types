@@ -6,6 +6,7 @@ export interface BattleInstakillEventTarget {
   readonly name: string;
 }
 export interface BattleInstakillEvent extends BattleEvent {
+  readonly abilityID: string;
   readonly target: BattleInstakillEventTarget;
   readonly type: BattleEventType.Instakill;
 }
