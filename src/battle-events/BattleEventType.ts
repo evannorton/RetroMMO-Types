@@ -6,6 +6,7 @@ export enum BattleEventType {
   Heal = "heal",
   Instakill = "instakill",
   Miss = "miss",
+  Rejuvenate = "rejuvenate",
   UseAbility = "use-ability",
   UseItem = "use-item",
 }

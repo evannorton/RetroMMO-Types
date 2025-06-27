@@ -36,6 +36,7 @@ import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
 import { BattleMissEvent } from "./battle-events/BattleMissEvent";
 import { BattlePhase } from "./BattlePhase";
+import { BattleRejuvenateEvent } from "./battle-events/BattleRejuvenateEvent";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BattleStartRoundUpdate } from "./updates/battle/BattleStartRoundUpdate";
 import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityUpdate";
@@ -253,6 +254,7 @@ export {
   BattleItemHotkeyUpdate,
   BattleMissEvent,
   BattlePhase,
+  BattleRejuvenateEvent,
   BattleResourcesUpdate,
   BattlerType,
   BattlerUpdate,
