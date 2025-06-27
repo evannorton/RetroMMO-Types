@@ -8,13 +8,13 @@ export interface AbilityDefinition extends Definition {
   readonly boostItemID?: string;
   readonly canBeUsedInBattle?: boolean;
   readonly canBeUsedInWorld?: boolean;
-  readonly chargeNoiseID?: string;
+  readonly chargeAudioPath?: string;
   readonly description: string;
   readonly fleeChance?: number;
   readonly iconImagePath: string;
-  readonly impactCritNoiseID?: string;
-  readonly impactInstakillNoiseID?: string;
-  readonly impactNoiseID?: string;
+  readonly impactAudioPath?: string;
+  readonly impactCritAudioPath?: string;
+  readonly impactInstakillAudioPath?: string;
   readonly mpCost: number;
   readonly name: string;
   readonly targetType: TargetType;

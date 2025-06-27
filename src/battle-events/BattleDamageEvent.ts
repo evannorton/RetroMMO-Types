@@ -8,6 +8,8 @@ export interface BattleDamageEventTarget {
 export interface BattleDamageEvent extends BattleEvent {
   readonly abilityID: string;
   readonly amount: number;
+  readonly isCrit?: boolean;
+  readonly isInstakill?: boolean;
   readonly isRedirected?: boolean;
   readonly target: BattleDamageEventTarget;
   readonly type: BattleEventType.Damage;
