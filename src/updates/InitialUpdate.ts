@@ -43,6 +43,7 @@ export interface InitialBattleUpdate {
   readonly round?: BattleRoundUpdate;
   readonly submittedAbilities: BattleSubmittedAbilityUpdate[];
   readonly submittedItems: BattleSubmittedItemUpdate[];
+  readonly teamIndex: 0 | 1;
 }
 export interface InitialMainMenuUpdate {
   readonly characters: readonly MainMenuCharacterUpdate[];

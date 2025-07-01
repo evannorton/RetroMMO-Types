@@ -20,4 +20,5 @@ export interface WorldStartBattleUpdate {
   readonly itemHotkeys: readonly BattleItemHotkeyUpdate[];
   readonly reachableID: string;
   readonly round: BattleRoundUpdate;
+  readonly teamIndex: 0 | 1;
 }

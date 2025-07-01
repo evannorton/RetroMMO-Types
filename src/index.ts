@@ -17,6 +17,7 @@ import {
   BattleDeathEvent,
   BattleDeathEventTarget,
 } from "./battle-events/BattleDeathEvent";
+import { BattleDefeatEvent } from "./battle-events/BattleDefeatEvent";
 import {
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
@@ -242,6 +243,7 @@ export {
   BattleDamageEvent,
   BattleDeathEvent,
   BattleDeathEventTarget,
+  BattleDefeatEvent,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleEvent,
