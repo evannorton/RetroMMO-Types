@@ -24,10 +24,12 @@ import {
 } from "./updates/battle/BattleEndRoundUpdate";
 import { BattleEvent } from "./battle-events/BattleEvent";
 import { BattleEventType } from "./battle-events/BattleEventType";
+import { BattleExperienceEvent } from "./battle-events/BattleExperienceEvent";
 import {
   BattleFriendlyTargetFailureEvent,
   BattleFriendlyTargetFailureEventTarget,
 } from "./battle-events/BattleFriendlyTargetFailureEvent";
+import { BattleGoldEvent } from "./battle-events/BattleGoldEvent";
 import {
   BattleHealEvent,
   BattleHealEventTarget,
@@ -244,12 +246,14 @@ export {
   BattleDeathEvent,
   BattleDeathEventTarget,
   BattleDefeatEvent,
+  BattleExperienceEvent,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleEvent,
   BattleEventType,
   BattleFriendlyTargetFailureEvent,
   BattleFriendlyTargetFailureEventTarget,
+  BattleGoldEvent,
   BattleHealEvent,
   BattleHealEventTarget,
   BattleImpactAlignment,
