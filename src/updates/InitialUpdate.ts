@@ -3,6 +3,7 @@ import { BattleCharacterUpdate } from "./battle/BattleCharacterUpdate";
 import { BattleItemHotkeyUpdate } from "./battle/BattleItemHotkeyUpdate";
 import { BattlePhase } from "../BattlePhase";
 import { BattleRoundUpdate } from "./battle/BattleRoundUpdate";
+import { BattleSelectionUpdate } from "./battle/BattleSelectionUpdate";
 import { BattleSubmittedAbilityUpdate } from "./battle/BattleSubmittedAbilityUpdate";
 import { BattleSubmittedItemUpdate } from "./battle/BattleSubmittedItemUpdate";
 import { BattleType } from "../BattleType";
@@ -41,6 +42,7 @@ export interface InitialBattleUpdate {
   readonly phase: BattlePhase;
   readonly reachableID: string;
   readonly round?: BattleRoundUpdate;
+  readonly selection?: BattleSelectionUpdate;
   readonly submittedAbilities: BattleSubmittedAbilityUpdate[];
   readonly submittedItems: BattleSubmittedItemUpdate[];
   readonly teamIndex: 0 | 1;
