@@ -78,9 +78,9 @@ import { EmoteDefinition } from "./definitions/EmoteDefinition";
 import {
   EndPlayerBattleCharacterUpdate,
   EndPlayerBattlePlayerUpdate,
-  EndPlayerBattleUpdate,
+  EndPlayerBattlesUpdate,
   EndPlayerBattleWorldUpdate,
-} from "./updates/EndPlayerBattleUpdate";
+} from "./updates/EndPlayerBattlesUpdate";
 import {
   EnterPlayerCharacterUpdate,
   EnterPlayerUpdate,
@@ -295,7 +295,7 @@ export {
   EmoteDefinition,
   EndPlayerBattleCharacterUpdate,
   EndPlayerBattlePlayerUpdate,
-  EndPlayerBattleUpdate,
+  EndPlayerBattlesUpdate as EndPlayerBattleUpdate,
   EndPlayerBattleWorldUpdate,
   EnterableDefinition,
   EnterPlayerCharacterUpdate,

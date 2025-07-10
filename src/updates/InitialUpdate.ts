@@ -70,6 +70,7 @@ export interface InitialWorldUpdate {
   readonly npcs: readonly WorldNPCUpdate[];
   readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly outfitItemInstance?: ItemInstanceUpdate;
+  readonly reachableID: string;
   readonly strength: number;
   readonly timePlayed: number;
   readonly wisdom: number;

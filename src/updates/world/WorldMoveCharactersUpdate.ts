@@ -13,4 +13,5 @@ export interface WorldMoveCharacterUpdate {
 export interface WorldMoveCharactersUpdate {
   readonly characters: readonly WorldMoveCharacterUpdate[];
   readonly clearedMarkerWorldCharacterIDs: string[];
+  readonly reachableID: string;
 }

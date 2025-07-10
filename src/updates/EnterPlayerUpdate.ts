@@ -27,6 +27,7 @@ export interface EnterPlayerCharacterUpdate {
   readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly outfitItemInstance?: ItemInstanceUpdate;
   readonly parties: readonly PartyUpdate[];
+  readonly reachableID: string;
   readonly strength: number;
   readonly timePlayed: number;
   readonly wisdom: number;

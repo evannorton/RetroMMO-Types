@@ -24,6 +24,7 @@ export interface EndPlayerBattleCharacterUpdate {
   readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly outfitItemInstance?: ItemInstanceUpdate;
   readonly parties: readonly PartyUpdate[];
+  readonly reachableID: string;
   readonly strength: number;
   readonly tilemapID: string;
   readonly timePlayed: number;
@@ -39,7 +40,7 @@ export interface EndPlayerBattleWorldUpdate {
   readonly characters: readonly WorldCharacterUpdate[];
   readonly parties: readonly PartyUpdate[];
 }
-export interface EndPlayerBattleUpdate {
+export interface EndPlayerBattlesUpdate {
   readonly character?: EndPlayerBattleCharacterUpdate;
   readonly players: readonly EndPlayerBattlePlayerUpdate[];
   readonly world?: EndPlayerBattleWorldUpdate;

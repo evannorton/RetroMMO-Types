@@ -7,5 +7,6 @@ export interface WorldPositionUpdate {
   readonly characters: readonly WorldCharacterUpdate[];
   readonly didTeleport?: boolean;
   readonly npcs: readonly WorldNPCUpdate[];
+  readonly reachableID: string;
   readonly tilemapID: string;
 }
