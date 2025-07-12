@@ -28,6 +28,7 @@ export interface EndPlayerBattleCharacterUpdate {
   readonly strength: number;
   readonly tilemapID: string;
   readonly timePlayed: number;
+  readonly winningTeamIndex: number;
   readonly wisdom: number;
   readonly x: number;
   readonly y: number;
