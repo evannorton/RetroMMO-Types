@@ -1,9 +1,11 @@
 import { BattleEvent } from "./BattleEvent";
 import { BattleEventType } from "./BattleEventType";
+import { MonsterNameData } from "../MonsterNameData";
 
 export interface BattleHealEventTarget {
   readonly battlerID: string;
-  readonly name: string;
+  readonly monsterName?: MonsterNameData;
+  readonly username?: string;
 }
 export interface BattleHealEvent extends BattleEvent {
   readonly abilityID: string;

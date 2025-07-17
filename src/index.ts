@@ -78,8 +78,8 @@ import { EmoteDefinition } from "./definitions/EmoteDefinition";
 import {
   EndPlayerBattleCharacterUpdate,
   EndPlayerBattlePlayerUpdate,
-  EndPlayerBattlesUpdate,
   EndPlayerBattleWorldUpdate,
+  EndPlayerBattlesUpdate,
 } from "./updates/EndPlayerBattlesUpdate";
 import {
   EnterPlayerCharacterUpdate,
@@ -121,6 +121,7 @@ import { MainState } from "./MainState";
 import { MarkerType } from "./MarkerType";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
+import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
 import { NPCDefinition } from "./definitions/NPCDefinition";
 import { NoiseDefinition } from "./definitions/NoiseDefinition";
@@ -333,6 +334,7 @@ export {
   MarkerType,
   MaskDefinition,
   MonsterDefinition,
+  MonsterNameData,
   MusicTrackDefinition,
   NoiseDefinition,
   NPCDefinition,
