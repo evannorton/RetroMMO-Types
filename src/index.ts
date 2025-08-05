@@ -29,6 +29,7 @@ import {
   BattleFriendlyTargetFailureEvent,
   BattleFriendlyTargetFailureEventTarget,
 } from "./battle-events/BattleFriendlyTargetFailureEvent";
+import { BattleGainStatEvent } from "./battle-events/BattleGainStatEvent";
 import { BattleGoldEvent } from "./battle-events/BattleGoldEvent";
 import {
   BattleHealEvent,
@@ -38,7 +39,9 @@ import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
+import { BattleLevelUpEvent } from "./battle-events/BattleLevelUpEvent";
 import { BattleMissEvent } from "./battle-events/BattleMissEvent";
+import { BattleNewLevelEvent } from "./battle-events/BattleNewLevelEvent";
 import { BattlePhase } from "./BattlePhase";
 import { BattleRejuvenateEvent } from "./battle-events/BattleRejuvenateEvent";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
@@ -254,6 +257,9 @@ export {
   BattleEventType,
   BattleFriendlyTargetFailureEvent,
   BattleFriendlyTargetFailureEventTarget,
+  BattleGainStatEvent,
+  BattleLevelUpEvent,
+  BattleNewLevelEvent,
   BattleGoldEvent,
   BattleHealEvent,
   BattleHealEventTarget,
