@@ -18,6 +18,7 @@ import {
   BattleDeathEventTarget,
 } from "./battle-events/BattleDeathEvent";
 import { BattleDefeatEvent } from "./battle-events/BattleDefeatEvent";
+import { BattleDropEvent } from "./battle-events/BattleDropEvent";
 import {
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
@@ -42,6 +43,7 @@ import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate"
 import { BattleLevelUpEvent } from "./battle-events/BattleLevelUpEvent";
 import { BattleMissEvent } from "./battle-events/BattleMissEvent";
 import { BattleNewLevelEvent } from "./battle-events/BattleNewLevelEvent";
+import { BattleObtainEvent } from "./battle-events/BattleObtainEvent";
 import { BattlePhase } from "./BattlePhase";
 import { BattleRejuvenateEvent } from "./battle-events/BattleRejuvenateEvent";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
@@ -106,6 +108,7 @@ import {
   InitialUpdate,
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
+import { BattleInventoryFullEvent } from "./battle-events/BattleInventoryFullEvent";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
 import { LabelDefinition } from "./definitions/LabelDefinition";
@@ -250,6 +253,7 @@ export {
   BattleDeathEvent,
   BattleDeathEventTarget,
   BattleDefeatEvent,
+  BattleDropEvent,
   BattleExperienceEvent,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
@@ -268,6 +272,7 @@ export {
   BattleInstakillEvent,
   BattleItemHotkeyUpdate,
   BattleMissEvent,
+  BattleObtainEvent,
   BattlePhase,
   BattleRejuvenateEvent,
   BattleResourcesUpdate,
@@ -322,6 +327,7 @@ export {
   InitialPlayerUpdate,
   InitialUpdate,
   InitialWorldUpdate,
+  BattleInventoryFullEvent,
   ItemDefinition,
   ItemInstanceUpdate,
   LabelDefinition,
