@@ -26,6 +26,8 @@ import {
 import { BattleEvent } from "./battle-events/BattleEvent";
 import { BattleEventType } from "./battle-events/BattleEventType";
 import { BattleExperienceEvent } from "./battle-events/BattleExperienceEvent";
+import { BattleFleeFailureEvent } from "./battle-events/BattleFleeFailureEvent";
+import { BattleFleeSuccessEvent } from "./battle-events/BattleFleeSuccessEvent";
 import {
   BattleFriendlyTargetFailureEvent,
   BattleFriendlyTargetFailureEventTarget,
@@ -39,6 +41,7 @@ import {
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
+import { BattleInventoryFullEvent } from "./battle-events/BattleInventoryFullEvent";
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
 import { BattleLevelUpEvent } from "./battle-events/BattleLevelUpEvent";
 import { BattleMissEvent } from "./battle-events/BattleMissEvent";
@@ -108,7 +111,6 @@ import {
   InitialUpdate,
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
-import { BattleInventoryFullEvent } from "./battle-events/BattleInventoryFullEvent";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
 import { LabelDefinition } from "./definitions/LabelDefinition";
@@ -259,6 +261,8 @@ export {
   BattleEndRoundUpdate,
   BattleEvent,
   BattleEventType,
+  BattleFleeFailureEvent,
+  BattleFleeSuccessEvent,
   BattleFriendlyTargetFailureEvent,
   BattleFriendlyTargetFailureEventTarget,
   BattleGainStatEvent,
@@ -307,7 +311,7 @@ export {
   EmoteDefinition,
   EndPlayerBattleCharacterUpdate,
   EndPlayerBattlePlayerUpdate,
-  EndPlayerBattlesUpdate as EndPlayerBattleUpdate,
+  EndPlayerBattlesUpdate,
   EndPlayerBattleWorldUpdate,
   EnterableDefinition,
   EnterPlayerCharacterUpdate,

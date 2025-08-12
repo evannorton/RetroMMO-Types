@@ -6,6 +6,8 @@ export enum BattleEventType {
   Defeat = "defeat",
   Drop = "drop",
   Experience = "experience",
+  FleeFailure = "flee-failure",
+  FleeSuccess = "flee-success",
   FriendlyTargetFailure = "friendly-target-failure",
   GainStat = "gain-stat",
   Gold = "gold",
