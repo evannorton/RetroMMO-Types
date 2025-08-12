@@ -3,6 +3,7 @@ import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
+import { BattleAmbushEvent } from "./battle-events/BattleAmbushEvent";
 import { BattleApproachEvent } from "./battle-events/BattleApproachEvent";
 import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityRequest";
 import { BattleBindAbilityUpdate } from "./updates/battle/BattleBindAbilityUpdate";
@@ -242,6 +243,7 @@ export {
   AudioSourceDefinition,
   BankDefinition,
   BattleAbilityHotkeyUpdate,
+  BattleAmbushEvent,
   BattleApproachEvent,
   BattleBindAbilityRequest,
   BattleBindAbilityUpdate,
