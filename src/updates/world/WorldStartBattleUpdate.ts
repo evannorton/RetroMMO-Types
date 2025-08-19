@@ -12,6 +12,7 @@ export interface WorldStartBattleUpdate {
   readonly battleType: BattleType;
   readonly battlers: BattlerUpdate[];
   readonly characters: BattleCharacterUpdate[];
+  readonly encounterID?: string;
   readonly enemyBattlerIDs: readonly string[];
   readonly enemyBattlersCount: number;
   readonly friendlyBattlerIDs: readonly string[];

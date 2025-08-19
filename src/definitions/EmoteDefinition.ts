@@ -1,8 +1,8 @@
 import { Definition } from "./Definition";
 
 export interface EmoteDefinition extends Definition {
-  backgroundImagePath: string;
-  foregroundImagePath?: string;
-  order: number;
-  requiresSubscription?: boolean;
+  readonly backgroundImagePath: string;
+  readonly foregroundImagePath?: string;
+  readonly order: number;
+  readonly requiresSubscription?: boolean;
 }
