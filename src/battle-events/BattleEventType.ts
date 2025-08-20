@@ -14,6 +14,7 @@ export enum BattleEventType {
   Gold = "gold",
   Heal = "heal",
   Instakill = "instakill",
+  InstakillFinish = "instakill-finish",
   InventoryFull = "inventory-full",
   LevelUp = "level-up",
   Miss = "miss",

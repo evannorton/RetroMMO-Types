@@ -42,6 +42,7 @@ import {
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
+import { BattleInstakillFinishEvent } from "./battle-events/BattleInstakillFinishEvent";
 import { BattleInventoryFullEvent } from "./battle-events/BattleInventoryFullEvent";
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
 import { BattleLevelUpEvent } from "./battle-events/BattleLevelUpEvent";
@@ -275,6 +276,7 @@ export {
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BattleInstakillEvent,
+  BattleInstakillFinishEvent,
   BattleInventoryFullEvent,
   BattleItemHotkeyUpdate,
   BattleLevelUpEvent,
