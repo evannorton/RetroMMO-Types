@@ -144,7 +144,7 @@ import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
 import { QuestDefinition } from "./definitions/QuestDefinition";
-import { QuestGiverDefinition } from "./definitions/QuestGiverDefinition";
+import { QuestExchangerDefinition } from "./definitions/QuestExchangerDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
@@ -368,7 +368,7 @@ export {
   PianoKeyType,
   PictureDefinition,
   QuestDefinition,
-  QuestGiverDefinition,
+  QuestExchangerDefinition,
   ReachableDefinition,
   RectangleDefinition,
   RemovePlayerUpdate,

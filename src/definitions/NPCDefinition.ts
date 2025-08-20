@@ -8,7 +8,7 @@ export interface NPCDefinition extends Definition {
   readonly indicatorImagePath: string;
   readonly innCost?: number;
   readonly name: string;
-  readonly questGiverID?: string;
+  readonly questExchangerID?: string;
   readonly shopID?: string;
   readonly startDirection: Direction;
 }
