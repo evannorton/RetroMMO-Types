@@ -1,7 +1,7 @@
 export interface QuestDefinition {
   readonly availableText: string;
-  readonly completedText: string;
   readonly experience: number;
+  readonly giverNPCID: string;
   readonly gold: number;
   readonly inProgressText: string;
   readonly monster?: {
@@ -9,6 +9,6 @@ export interface QuestDefinition {
     readonly monsterID: string;
   };
   readonly name: string;
-  readonly npcID: string;
   readonly prerequisiteQuestID?: string;
+  readonly receiverNPCID: string;
 }
