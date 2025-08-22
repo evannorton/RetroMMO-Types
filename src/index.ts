@@ -181,6 +181,7 @@ import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldBuyShopItemUpdate } from "./updates/world/WorldBuyShopItemUpdate";
 import { WorldCancelInviteRequest } from "./requests/world/WorldCancelInviteRequest";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
+import { WorldChestInteractRequest } from "./requests/world/WorldChestInteractRequest";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
 import {
@@ -403,6 +404,7 @@ export {
   WorldBuyShopItemUpdate,
   WorldCancelInviteRequest,
   WorldCharacterUpdate,
+  WorldChestInteractRequest,
   WorldClearMarkerUpdate,
   WorldCloseBankUpdate,
   WorldCombatCharacterUpdate,
