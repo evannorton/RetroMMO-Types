@@ -3,4 +3,5 @@ export interface BattleResourcesUpdate {
   readonly maxHP: number;
   readonly maxMP?: number;
   readonly mp?: number;
+  readonly will?: number;
 }

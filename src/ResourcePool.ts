@@ -1,4 +1,4 @@
 export enum ResourcePool {
   MP = "mp",
-  WILL = "will",
+  Will = "will",
 }

@@ -15,7 +15,8 @@ export interface AbilityDefinition extends Definition {
   readonly impactAudioPath?: string;
   readonly impactCritAudioPath?: string;
   readonly impactInstakillAudioPath?: string;
-  readonly mpCost: number;
+  readonly mpCost?: number;
   readonly name: string;
   readonly targetType: TargetType;
+  readonly willCost?: number;
 }
