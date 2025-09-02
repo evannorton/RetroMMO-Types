@@ -5,6 +5,7 @@ import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
 export interface BattleEndRoundBattlerUpdate {
   readonly id: string;
   readonly isAlive?: boolean;
+  readonly isBleeding?: boolean;
   readonly resources?: BattleResourcesUpdate;
 }
 export interface BattleEndRoundUpdate {

@@ -9,6 +9,10 @@ import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityReq
 import { BattleBindAbilityUpdate } from "./updates/battle/BattleBindAbilityUpdate";
 import { BattleBindItemRequest } from "./requests/battle/BattleBindItemRequest";
 import { BattleBindItemUpdate } from "./updates/battle/BattleBindItemUpdate";
+import {
+  BattleBleedStartEvent,
+  BattleBleedStartEventTarget,
+} from "./battle-events/BattleBleedStartEvent";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
@@ -252,6 +256,8 @@ export {
   BattleBindAbilityUpdate,
   BattleBindItemRequest,
   BattleBindItemUpdate,
+  BattleBleedStartEvent,
+  BattleBleedStartEventTarget,
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,

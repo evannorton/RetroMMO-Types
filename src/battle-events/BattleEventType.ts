@@ -1,6 +1,8 @@
 export enum BattleEventType {
   Ambush = "ambush",
   Approach = "approach",
+  BleedStart = "bleed-start",
+  BleedStop = "bleed-stop",
   Crit = "crit",
   Damage = "damage",
   Death = "death",
