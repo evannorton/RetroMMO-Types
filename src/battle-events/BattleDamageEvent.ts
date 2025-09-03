@@ -13,6 +13,7 @@ export interface BattleDamageEvent extends BattleEvent {
   readonly isBleed?: boolean;
   readonly isCrit?: boolean;
   readonly isInstakill?: boolean;
+  readonly isPoison?: boolean;
   readonly isRedirected?: boolean;
   readonly target: BattleDamageEventTarget;
   readonly type: BattleEventType.Damage;

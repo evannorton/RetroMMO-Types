@@ -6,6 +6,7 @@ export interface BattleEndRoundBattlerUpdate {
   readonly id: string;
   readonly isAlive?: boolean;
   readonly isBleeding?: boolean;
+  readonly isPoisoned?: boolean;
   readonly resources?: BattleResourcesUpdate;
 }
 export interface BattleEndRoundUpdate {

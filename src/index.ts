@@ -54,6 +54,10 @@ import { BattleMissEvent } from "./battle-events/BattleMissEvent";
 import { BattleNewLevelEvent } from "./battle-events/BattleNewLevelEvent";
 import { BattleObtainEvent } from "./battle-events/BattleObtainEvent";
 import { BattlePhase } from "./BattlePhase";
+import {
+  BattlePoisonStartEvent,
+  BattlePoisonStartEventTarget,
+} from "./battle-events/BattlePoisonStartEvent";
 import { BattleRejuvenateEvent } from "./battle-events/BattleRejuvenateEvent";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BattleStartRoundUpdate } from "./updates/battle/BattleStartRoundUpdate";
@@ -258,6 +262,8 @@ export {
   BattleBindItemUpdate,
   BattleBleedStartEvent,
   BattleBleedStartEventTarget,
+  BattlePoisonStartEvent,
+  BattlePoisonStartEventTarget,
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,

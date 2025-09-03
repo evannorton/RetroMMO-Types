@@ -7,6 +7,7 @@ export interface BattlerUpdate {
   readonly id: string;
   readonly isAlive?: boolean;
   readonly isBleeding?: boolean;
+  readonly isPoisoned?: boolean;
   readonly monsterID?: string;
   readonly resources?: BattleResourcesUpdate;
   readonly type: BattlerType;
