@@ -25,6 +25,8 @@ import {
 import { BattleDefeatEvent } from "./battle-events/BattleDefeatEvent";
 import { BattleDropEvent } from "./battle-events/BattleDropEvent";
 import {
+  BattleEndRoundBattlerBleedUpdate,
+  BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
 } from "./updates/battle/BattleEndRoundUpdate";
@@ -76,8 +78,12 @@ import {
   BattleUseItemEventTarget,
 } from "./battle-events/BattleUseItemEvent";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
+import {
+  BattlerBleedUpdate,
+  BattlerPoisonUpdate,
+  BattlerUpdate,
+} from "./updates/battle/BattlerUpdate";
 import { BattlerType } from "./BattlerType";
-import { BattlerUpdate } from "./updates/battle/BattlerUpdate";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
@@ -262,8 +268,6 @@ export {
   BattleBindItemUpdate,
   BattleBleedStartEvent,
   BattleBleedStartEventTarget,
-  BattlePoisonStartEvent,
-  BattlePoisonStartEventTarget,
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
@@ -273,6 +277,8 @@ export {
   BattleDeathEventTarget,
   BattleDefeatEvent,
   BattleDropEvent,
+  BattleEndRoundBattlerBleedUpdate,
+  BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleEvent,
@@ -297,8 +303,12 @@ export {
   BattleNewLevelEvent,
   BattleObtainEvent,
   BattlePhase,
+  BattlePoisonStartEvent,
+  BattlePoisonStartEventTarget,
+  BattlerBleedUpdate,
   BattleRejuvenateEvent,
   BattleResourcesUpdate,
+  BattlerPoisonUpdate,
   BattlerType,
   BattlerUpdate,
   BattleStartRoundUpdate,

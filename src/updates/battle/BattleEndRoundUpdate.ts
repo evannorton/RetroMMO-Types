@@ -2,11 +2,17 @@ import { BattleResourcesUpdate } from "./BattleResourcesUpdate";
 import { BattleSelectionUpdate } from "./BattleSelectionUpdate";
 import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
 
+export interface BattleEndRoundBattlerPoisonUpdate {
+  readonly order: number;
+}
+export interface BattleEndRoundBattlerBleedUpdate {
+  readonly order: number;
+}
 export interface BattleEndRoundBattlerUpdate {
+  readonly bleed?: BattleEndRoundBattlerBleedUpdate;
   readonly id: string;
   readonly isAlive?: boolean;
-  readonly isBleeding?: boolean;
-  readonly isPoisoned?: boolean;
+  readonly poison?: BattleEndRoundBattlerPoisonUpdate;
   readonly resources?: BattleResourcesUpdate;
 }
 export interface BattleEndRoundUpdate {

@@ -5,6 +5,7 @@ import { MonsterNameData } from "../MonsterNameData";
 export interface BattleBleedStartEventTarget {
   readonly battlerID: string;
   readonly monsterName?: MonsterNameData;
+  readonly order: number;
   readonly username?: string;
 }
 export interface BattleBleedStartEvent extends BattleEvent {
