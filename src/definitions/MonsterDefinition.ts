@@ -6,7 +6,7 @@ export interface MonsterDefinition extends Definition {
   readonly deathAudioPath: string;
   readonly imagePath: string;
   readonly name: string;
-  readonly offset: number;
+  readonly offset?: number;
   readonly shadowXOffset: number;
   readonly shadowXRadius: number;
   readonly shadowYOffset: number;
