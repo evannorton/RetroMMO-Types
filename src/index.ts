@@ -214,6 +214,7 @@ import { WorldEquipmentUpdate } from "./updates/world/WorldEquipmentUpdate";
 import { WorldExitCharactersUpdate } from "./updates/world/WorldExitCharactersUpdate";
 import { WorldExitToMainMenuRequest } from "./requests/world/WorldExitToMainMenuRequest";
 import { WorldExitToMainMenuUpdate } from "./updates/world/WorldExitToMainMenuUpdate";
+import { WorldInnRequest } from "./requests/world/WorldInnRequest";
 import { WorldInnUpdate } from "./updates/world/WorldInnUpdate";
 import { WorldLeavePartyRequest } from "./requests/world/WorldLeavePartyRequest";
 import { WorldMarkerUpdate } from "./updates/world/WorldMarkerUpdate";
@@ -443,6 +444,7 @@ export {
   WorldExitCharactersUpdate,
   WorldExitToMainMenuRequest,
   WorldExitToMainMenuUpdate,
+  WorldInnRequest,
   WorldInnUpdate,
   WorldLeavePartyRequest,
   WorldMarkerUpdate,
