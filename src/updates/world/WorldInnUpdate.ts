@@ -1,1 +1,3 @@
-export interface WorldInnUpdate {}
+export interface WorldInnUpdate {
+  readonly npcID: string;
+}
