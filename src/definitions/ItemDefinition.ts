@@ -14,4 +14,5 @@ export interface ItemDefinition extends Definition {
   readonly maskID?: string;
   readonly name: string;
   readonly outfitID?: string;
+  readonly value: number;
 }

@@ -167,7 +167,10 @@ import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { ServerTimeRequest } from "./requests/ServerTimeRequest";
 import { ServerTimeUpdate } from "./updates/ServerTimeUpdate";
-import { ShopDefinition } from "./definitions/ShopDefinition";
+import {
+  ShopDefinition,
+  ShopItemDefinition,
+} from "./definitions/ShopDefinition";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { Stat } from "./Stat";
 import { Step } from "./Step";
@@ -192,6 +195,7 @@ import { WorldAcceptQuestUpdate } from "./updates/world/WorldAcceptQuestUpdate";
 import { WorldBankGoldUpdate } from "./updates/world/WorldBankGoldUpdate";
 import { WorldBankItemsUpdate } from "./updates/world/WorldBankItemsUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
+import { WorldBuyShopItemRequest } from "./requests/world/WorldBuyShopItemRequest";
 import { WorldBuyShopItemUpdate } from "./updates/world/WorldBuyShopItemUpdate";
 import { WorldCancelInviteRequest } from "./requests/world/WorldCancelInviteRequest";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
@@ -235,6 +239,7 @@ import { WorldQuestInstanceUpdate } from "./updates/world/WorldQuestInstanceUpda
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldSelectQuestRequest } from "./requests/world/WorldSelectQuestRequest";
 import { WorldSelectQuestUpdate } from "./updates/world/WorldSelectQuestUpdate";
+import { WorldSellShopItemRequest } from "./requests/world/WorldSellShopItemRequest";
 import { WorldSellShopItemUpdate } from "./updates/world/WorldSellShopItemUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTradeCompleteUpdate } from "./updates/world/WorldTradeCompleteUpdate";
@@ -402,6 +407,7 @@ export {
   ServerTimeRequest,
   ServerTimeUpdate,
   ShopDefinition,
+  ShopItemDefinition,
   SkinColorDefinition,
   Stat,
   Step,
@@ -424,6 +430,7 @@ export {
   WorldBankGoldUpdate,
   WorldBankItemsUpdate,
   WorldBonkUpdate,
+  WorldBuyShopItemRequest,
   WorldBuyShopItemUpdate,
   WorldCancelInviteRequest,
   WorldCharacterUpdate,
@@ -463,6 +470,7 @@ export {
   WorldResourcesUpdate,
   WorldSelectQuestRequest,
   WorldSelectQuestUpdate,
+  WorldSellShopItemRequest,
   WorldSellShopItemUpdate,
   WorldStartBattleUpdate,
   WorldTradeCompleteUpdate,
