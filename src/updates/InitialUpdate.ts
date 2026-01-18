@@ -54,6 +54,8 @@ export interface InitialMainMenuUpdate {
 export interface InitialWorldUpdate {
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly bankGold: number;
+  readonly bankItemInstances: readonly ItemInstanceUpdate[][];
   readonly bodyItemInstance?: ItemInstanceUpdate;
   readonly boostItemInstances: readonly ItemInstanceUpdate[];
   readonly characterID: string;

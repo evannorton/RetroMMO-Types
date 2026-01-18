@@ -6,6 +6,8 @@ import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 export interface EndPlayerBattleCharacterUpdate {
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
+  readonly bankGold: number;
+  readonly bankItemInstances: readonly ItemInstanceUpdate[][];
   readonly bodyItemInstance?: ItemInstanceUpdate;
   readonly boostItemInstances: readonly ItemInstanceUpdate[];
   readonly characterID: string;

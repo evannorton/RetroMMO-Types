@@ -192,8 +192,14 @@ import {
 import { VanitySlot } from "./VanitySlot";
 import { WorldAcceptQuestRequest } from "./requests/world/WorldAcceptQuestRequest";
 import { WorldAcceptQuestUpdate } from "./updates/world/WorldAcceptQuestUpdate";
-import { WorldBankGoldUpdate } from "./updates/world/WorldBankGoldUpdate";
-import { WorldBankItemsUpdate } from "./updates/world/WorldBankItemsUpdate";
+import { WorldBankDepositGoldRequest } from "./requests/world/WorldBankDepositGoldRequest";
+import { WorldBankDepositGoldUpdate } from "./updates/world/WorldBankDepositGoldUpdate";
+import { WorldBankDepositItemRequest } from "./requests/world/WorldBankDepositItemRequest";
+import { WorldBankDepositItemUpdate } from "./updates/world/WorldBankDepositItemUpdate";
+import { WorldBankWithdrawGoldRequest } from "./requests/world/WorldBankWithdrawGoldRequest";
+import { WorldBankWithdrawGoldUpdate } from "./updates/world/WorldBankWithdrawGoldUpdate";
+import { WorldBankWithdrawItemRequest } from "./requests/world/WorldBankWithdrawItemRequest";
+import { WorldBankWithdrawItemUpdate } from "./updates/world/WorldBankWithdrawItemUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldBuyShopItemRequest } from "./requests/world/WorldBuyShopItemRequest";
 import { WorldBuyShopItemUpdate } from "./updates/world/WorldBuyShopItemUpdate";
@@ -201,7 +207,6 @@ import { WorldCancelInviteRequest } from "./requests/world/WorldCancelInviteRequ
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldChestInteractRequest } from "./requests/world/WorldChestInteractRequest";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
-import { WorldCloseBankUpdate } from "./updates/world/WorldCloseBankUpdate";
 import {
   WorldCombatCharacterUpdate,
   WorldCombatUpdate,
@@ -228,7 +233,6 @@ import {
 } from "./updates/world/WorldMoveCharactersUpdate";
 import { WorldNPCInteractRequest } from "./requests/world/WorldNPCInteractRequest";
 import { WorldNPCUpdate } from "./updates/world/WorldNPCUpdate";
-import { WorldOpenBankUpdate } from "./updates/world/WorldOpenBankUpdate";
 import { WorldOpenChestUpdate } from "./updates/world/WorldOpenChestUpdate";
 import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUpdate";
 import { WorldPartyInviteRequest } from "./requests/world/WorldPartyInviteRequest";
@@ -427,8 +431,14 @@ export {
   VanitySlot,
   WorldAcceptQuestRequest,
   WorldAcceptQuestUpdate,
-  WorldBankGoldUpdate,
-  WorldBankItemsUpdate,
+  WorldBankDepositGoldRequest,
+  WorldBankDepositGoldUpdate,
+  WorldBankDepositItemRequest,
+  WorldBankDepositItemUpdate,
+  WorldBankWithdrawGoldRequest,
+  WorldBankWithdrawGoldUpdate,
+  WorldBankWithdrawItemRequest,
+  WorldBankWithdrawItemUpdate,
   WorldBonkUpdate,
   WorldBuyShopItemRequest,
   WorldBuyShopItemUpdate,
@@ -436,7 +446,6 @@ export {
   WorldCharacterUpdate,
   WorldChestInteractRequest,
   WorldClearMarkerUpdate,
-  WorldCloseBankUpdate,
   WorldCombatCharacterUpdate,
   WorldCombatUpdate,
   WorldDestroyBoostRequest,
@@ -459,7 +468,6 @@ export {
   WorldMoveCharacterUpdate,
   WorldNPCInteractRequest,
   WorldNPCUpdate,
-  WorldOpenBankUpdate,
   WorldOpenChestUpdate,
   WorldPartyCharacterUpdate,
   WorldPartyInviteRequest,
