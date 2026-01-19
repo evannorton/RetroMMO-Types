@@ -1,4 +1,4 @@
-export interface WorldSellShopItemUpdate {
+export interface WorldShopSellItemUpdate {
   readonly itemInstanceID: string;
   readonly gold: number;
 }

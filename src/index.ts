@@ -183,26 +183,16 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
-import {
-  TurnInQuestPlayerUpdate,
-  TurnInQuestUpdate,
-  TurnInQuestWorldCharacterUpdate,
-  TurnInQuestWorldUpdate,
-} from "./updates/TurnInQuestUpdate";
 import { VanitySlot } from "./VanitySlot";
-import { WorldAcceptQuestRequest } from "./requests/world/WorldAcceptQuestRequest";
-import { WorldAcceptQuestUpdate } from "./updates/world/WorldAcceptQuestUpdate";
-import { WorldBankDepositGoldRequest } from "./requests/world/WorldBankDepositGoldRequest";
-import { WorldBankDepositGoldUpdate } from "./updates/world/WorldBankDepositGoldUpdate";
-import { WorldBankDepositItemRequest } from "./requests/world/WorldBankDepositItemRequest";
-import { WorldBankDepositItemUpdate } from "./updates/world/WorldBankDepositItemUpdate";
-import { WorldBankWithdrawGoldRequest } from "./requests/world/WorldBankWithdrawGoldRequest";
-import { WorldBankWithdrawGoldUpdate } from "./updates/world/WorldBankWithdrawGoldUpdate";
-import { WorldBankWithdrawItemRequest } from "./requests/world/WorldBankWithdrawItemRequest";
-import { WorldBankWithdrawItemUpdate } from "./updates/world/WorldBankWithdrawItemUpdate";
+import { WorldBankDepositGoldRequest } from "./requests/world/bank/WorldBankDepositGoldRequest";
+import { WorldBankDepositGoldUpdate } from "./updates/world/bank/WorldBankDepositGoldUpdate";
+import { WorldBankDepositItemRequest } from "./requests/world/bank/WorldBankDepositItemRequest";
+import { WorldBankDepositItemUpdate } from "./updates/world/bank/WorldBankDepositItemUpdate";
+import { WorldBankWithdrawGoldRequest } from "./requests/world/bank/WorldBankWithdrawGoldRequest";
+import { WorldBankWithdrawGoldUpdate } from "./updates/world/bank/WorldBankWithdrawGoldUpdate";
+import { WorldBankWithdrawItemRequest } from "./requests/world/bank/WorldBankWithdrawItemRequest";
+import { WorldBankWithdrawItemUpdate } from "./updates/world/bank/WorldBankWithdrawItemUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
-import { WorldBuyShopItemRequest } from "./requests/world/WorldBuyShopItemRequest";
-import { WorldBuyShopItemUpdate } from "./updates/world/WorldBuyShopItemUpdate";
 import { WorldCancelInviteRequest } from "./requests/world/WorldCancelInviteRequest";
 import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldChestInteractRequest } from "./requests/world/WorldChestInteractRequest";
@@ -239,12 +229,23 @@ import { WorldPartyInviteRequest } from "./requests/world/WorldPartyInviteReques
 import { WorldPianoKeyRequest } from "./requests/world/WorldPianoKeyRequest";
 import { WorldPianoKeyUpdate } from "./updates/world/WorldPianoKeyUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
+import { WorldQuestAcceptRequest } from "./requests/world/quest/WorldQuestAcceptRequest";
+import { WorldQuestAcceptUpdate } from "./updates/world/quest/WorldQuestAcceptUpdate";
 import { WorldQuestInstanceUpdate } from "./updates/world/WorldQuestInstanceUpdate";
+import { WorldQuestSelectRequest } from "./requests/world/quest/WorldQuestSelectRequest";
+import { WorldQuestSelectUpdate } from "./updates/world/quest/WorldQuestSelectUpdate";
+import {
+  WorldQuestTurnInPlayerUpdate,
+  WorldQuestTurnInUpdate,
+  WorldQuestTurnInWorldCharacterUpdate,
+  WorldQuestTurnInWorldUpdate,
+} from "./updates/world/quest/WorldQuestTurnInUpdate";
+import { WorldQuestTurnInRequest } from "./requests/world/quest/WorldQuestTurnInRequest";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
-import { WorldSelectQuestRequest } from "./requests/world/WorldSelectQuestRequest";
-import { WorldSelectQuestUpdate } from "./updates/world/WorldSelectQuestUpdate";
-import { WorldSellShopItemRequest } from "./requests/world/WorldSellShopItemRequest";
-import { WorldSellShopItemUpdate } from "./updates/world/WorldSellShopItemUpdate";
+import { WorldShopBuyItemRequest } from "./requests/world/shop/WorldShopBuyItemRequest";
+import { WorldShopBuyItemUpdate } from "./updates/world/shop/WorldShopBuyItemUpdate";
+import { WorldShopSellItemRequest } from "./requests/world/shop/WorldShopSellItemRequest";
+import { WorldShopSellItemUpdate } from "./updates/world/shop/WorldShopSellItemUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
 import { WorldTradeCompleteUpdate } from "./updates/world/WorldTradeCompleteUpdate";
 import { WorldTradeInviteRequest } from "./requests/world/WorldTradeInviteRequest";
@@ -253,7 +254,6 @@ import {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
 } from "./updates/world/WorldTurnCharactersUpdate";
-import { WorldTurnInQuestRequest } from "./requests/world/WorldTurnInQuestRequest";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 import { WorldUnequipEquipmentItemRequest } from "./requests/world/WorldUnequipEquipmentItemRequest";
 import { WorldUnequipVanityItemRequest } from "./requests/world/WorldUnequipVanityItemRequest";
@@ -424,13 +424,7 @@ export {
   TilesetTileAnimationFrameDefinition,
   TilesetTileDefinition,
   TransportDefinition,
-  TurnInQuestPlayerUpdate,
-  TurnInQuestUpdate,
-  TurnInQuestWorldCharacterUpdate,
-  TurnInQuestWorldUpdate,
   VanitySlot,
-  WorldAcceptQuestRequest,
-  WorldAcceptQuestUpdate,
   WorldBankDepositGoldRequest,
   WorldBankDepositGoldUpdate,
   WorldBankDepositItemRequest,
@@ -440,8 +434,8 @@ export {
   WorldBankWithdrawItemRequest,
   WorldBankWithdrawItemUpdate,
   WorldBonkUpdate,
-  WorldBuyShopItemRequest,
-  WorldBuyShopItemUpdate,
+  WorldShopBuyItemRequest,
+  WorldShopBuyItemUpdate,
   WorldCancelInviteRequest,
   WorldCharacterUpdate,
   WorldChestInteractRequest,
@@ -474,19 +468,25 @@ export {
   WorldPianoKeyRequest,
   WorldPianoKeyUpdate,
   WorldPositionUpdate,
+  WorldQuestAcceptRequest,
+  WorldQuestAcceptUpdate,
   WorldQuestInstanceUpdate,
+  WorldQuestSelectRequest,
+  WorldQuestSelectUpdate,
+  WorldQuestTurnInPlayerUpdate,
+  WorldQuestTurnInRequest,
+  WorldQuestTurnInUpdate,
+  WorldQuestTurnInWorldCharacterUpdate,
+  WorldQuestTurnInWorldUpdate,
   WorldResourcesUpdate,
-  WorldSelectQuestRequest,
-  WorldSelectQuestUpdate,
-  WorldSellShopItemRequest,
-  WorldSellShopItemUpdate,
+  WorldShopSellItemRequest,
+  WorldShopSellItemUpdate,
   WorldStartBattleUpdate,
   WorldTradeCompleteUpdate,
   WorldTradeInviteRequest,
   WorldTradeUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
-  WorldTurnInQuestRequest,
   WorldTurnNPCUpdate,
   WorldUnequipEquipmentItemRequest,
   WorldUnequipVanityItemRequest,
