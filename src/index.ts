@@ -228,6 +228,7 @@ import { WorldPartyCharacterUpdate } from "./updates/world/WorldPartyCharacterUp
 import { WorldPartyInviteRequest } from "./requests/world/WorldPartyInviteRequest";
 import { WorldPianoKeyRequest } from "./requests/world/WorldPianoKeyRequest";
 import { WorldPianoKeyUpdate } from "./updates/world/WorldPianoKeyUpdate";
+import { WorldPlayerBusyUpdate } from "./updates/world/WorldPlayerBusyUpdate";
 import { WorldPositionUpdate } from "./updates/world/WorldPositionUpdate";
 import { WorldQuestAcceptRequest } from "./requests/world/quest/WorldQuestAcceptRequest";
 import { WorldQuestAcceptUpdate } from "./updates/world/quest/WorldQuestAcceptUpdate";
@@ -467,6 +468,7 @@ export {
   WorldPartyInviteRequest,
   WorldPianoKeyRequest,
   WorldPianoKeyUpdate,
+  WorldPlayerBusyUpdate,
   WorldPositionUpdate,
   WorldQuestAcceptRequest,
   WorldQuestAcceptUpdate,
