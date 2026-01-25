@@ -94,7 +94,6 @@ import {
 import { ClothesColorDefinition } from "./definitions/ClothesColorDefinition";
 import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
-import { CombinationLockDefinition } from "./definitions/CombinationLockDefinition";
 import { Constants } from "./Constants";
 import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
@@ -184,6 +183,7 @@ import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefini
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
 import { VanitySlot } from "./VanitySlot";
+import { WorldBagFullUpdate } from "./updates/world/WorldBagFullUpdate";
 import { WorldBankDepositGoldRequest } from "./requests/world/bank/WorldBankDepositGoldRequest";
 import { WorldBankDepositGoldUpdate } from "./updates/world/bank/WorldBankDepositGoldUpdate";
 import { WorldBankDepositItemRequest } from "./requests/world/bank/WorldBankDepositItemRequest";
@@ -344,7 +344,6 @@ export {
   ClothesColorDefinition,
   ClothesDyeDefinition,
   Color,
-  CombinationLockDefinition,
   Constants,
   Definition,
   Direction,
@@ -426,6 +425,7 @@ export {
   TilesetTileDefinition,
   TransportDefinition,
   VanitySlot,
+  WorldBagFullUpdate,
   WorldBankDepositGoldRequest,
   WorldBankDepositGoldUpdate,
   WorldBankDepositItemRequest,
@@ -435,8 +435,6 @@ export {
   WorldBankWithdrawItemRequest,
   WorldBankWithdrawItemUpdate,
   WorldBonkUpdate,
-  WorldShopBuyItemRequest,
-  WorldShopBuyItemUpdate,
   WorldCancelInviteRequest,
   WorldCharacterUpdate,
   WorldChestInteractRequest,
@@ -481,6 +479,8 @@ export {
   WorldQuestTurnInWorldCharacterUpdate,
   WorldQuestTurnInWorldUpdate,
   WorldResourcesUpdate,
+  WorldShopBuyItemRequest,
+  WorldShopBuyItemUpdate,
   WorldShopSellItemRequest,
   WorldShopSellItemUpdate,
   WorldStartBattleUpdate,
