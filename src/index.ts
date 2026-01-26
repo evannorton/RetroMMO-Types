@@ -148,7 +148,6 @@ import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
 import { NPCDefinition } from "./definitions/NPCDefinition";
-import { NoiseDefinition } from "./definitions/NoiseDefinition";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
 import { PanelDefinition } from "./definitions/PanelDefinition";
 import { PartyChangesUpdate } from "./updates/PartyChangesUpdate";
@@ -391,7 +390,6 @@ export {
   MonsterDefinition,
   MonsterNameData,
   MusicTrackDefinition,
-  NoiseDefinition,
   NPCDefinition,
   OutfitDefinition,
   PanelDefinition,
