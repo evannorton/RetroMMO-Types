@@ -1,7 +1,8 @@
-export enum BattleEventType {
+export enum CombatEventType {
   Ambush = "ambush",
   Approach = "approach",
   BleedStart = "bleed-start",
+  Boost = "boost",
   Crit = "crit",
   Damage = "damage",
   Death = "death",
@@ -23,6 +24,8 @@ export enum BattleEventType {
   Obtain = "obtain",
   PoisonStart = "poison-start",
   Rejuvenate = "rejuvenate",
+  RejuvenateFailure = "rejuvenate-failure",
+  Renew = "renew",
   UseAbility = "use-ability",
   UseItem = "use-item",
 }

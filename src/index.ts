@@ -3,64 +3,23 @@ import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
-import { BattleAmbushEvent } from "./battle-events/BattleAmbushEvent";
-import { BattleApproachEvent } from "./battle-events/BattleApproachEvent";
 import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityRequest";
 import { BattleBindAbilityUpdate } from "./updates/battle/BattleBindAbilityUpdate";
 import { BattleBindItemRequest } from "./requests/battle/BattleBindItemRequest";
 import { BattleBindItemUpdate } from "./updates/battle/BattleBindItemUpdate";
-import {
-  BattleBleedStartEvent,
-  BattleBleedStartEventTarget,
-} from "./battle-events/BattleBleedStartEvent";
 import { BattleCancelSubmittedMoveRequest } from "./requests/battle/BattleCancelSubmittedMoveRequest";
 import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSubmittedMoveUpdate";
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
-import { BattleCritEvent } from "./battle-events/BattleCritEvent";
-import { BattleDamageEvent } from "./battle-events/BattleDamageEvent";
-import {
-  BattleDeathEvent,
-  BattleDeathEventTarget,
-} from "./battle-events/BattleDeathEvent";
-import { BattleDefeatEvent } from "./battle-events/BattleDefeatEvent";
-import { BattleDropEvent } from "./battle-events/BattleDropEvent";
 import {
   BattleEndRoundBattlerBleedUpdate,
   BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
 } from "./updates/battle/BattleEndRoundUpdate";
-import { BattleEvent } from "./battle-events/BattleEvent";
-import { BattleEventType } from "./battle-events/BattleEventType";
-import { BattleExperienceEvent } from "./battle-events/BattleExperienceEvent";
-import { BattleFleeFailureEvent } from "./battle-events/BattleFleeFailureEvent";
-import { BattleFleeSuccessEvent } from "./battle-events/BattleFleeSuccessEvent";
-import {
-  BattleFriendlyTargetFailureEvent,
-  BattleFriendlyTargetFailureEventTarget,
-} from "./battle-events/BattleFriendlyTargetFailureEvent";
-import { BattleGainStatEvent } from "./battle-events/BattleGainStatEvent";
-import { BattleGoldEvent } from "./battle-events/BattleGoldEvent";
-import {
-  BattleHealEvent,
-  BattleHealEventTarget,
-} from "./battle-events/BattleHealEvent";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
-import { BattleInstakillEvent } from "./battle-events/BattleInstakillEvent";
-import { BattleInstakillFinishEvent } from "./battle-events/BattleInstakillFinishEvent";
-import { BattleInventoryFullEvent } from "./battle-events/BattleInventoryFullEvent";
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
-import { BattleLevelUpEvent } from "./battle-events/BattleLevelUpEvent";
-import { BattleMissEvent } from "./battle-events/BattleMissEvent";
-import { BattleNewLevelEvent } from "./battle-events/BattleNewLevelEvent";
-import { BattleObtainEvent } from "./battle-events/BattleObtainEvent";
 import { BattlePhase } from "./BattlePhase";
-import {
-  BattlePoisonStartEvent,
-  BattlePoisonStartEventTarget,
-} from "./battle-events/BattlePoisonStartEvent";
-import { BattleRejuvenateEvent } from "./battle-events/BattleRejuvenateEvent";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
 import { BattleStartRoundUpdate } from "./updates/battle/BattleStartRoundUpdate";
 import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityUpdate";
@@ -70,20 +29,13 @@ import { BattleSubmittedItemUpdate } from "./updates/battle/BattleSubmittedItemU
 import { BattleType } from "./BattleType";
 import { BattleUnbindHotkeyRequest } from "./requests/battle/BattleUnbindHotkeyRequest";
 import { BattleUnbindHotkeyUpdate } from "./updates/battle/BattleUnbindHotkeyUpdate";
-import { BattleUseAbilityEvent } from "./battle-events/BattleUseAbilityEvent";
 import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityRequest";
-import {
-  BattleUseItemEvent,
-  BattleUseItemEventCaster,
-  BattleUseItemEventTarget,
-} from "./battle-events/BattleUseItemEvent";
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import {
   BattlerBleedUpdate,
   BattlerPoisonUpdate,
   BattlerUpdate,
 } from "./updates/battle/BattlerUpdate";
-import { BattlerType } from "./BattlerType";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
 import { ChestDefinition } from "./definitions/ChestDefinition";
@@ -94,6 +46,57 @@ import {
 import { ClothesColorDefinition } from "./definitions/ClothesColorDefinition";
 import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
+import { CombatAmbushEvent } from "./combat-events/CombatAmbushEvent";
+import { CombatApproachEvent } from "./combat-events/CombatApproachEvent";
+import {
+  CombatBleedStartEvent,
+  CombatBleedStartEventTarget,
+} from "./combat-events/CombatBleedStartEvent";
+import { CombatBoostEvent } from "./combat-events/CombatBoostEvent";
+import { CombatCritEvent } from "./combat-events/CombatCritEvent";
+import { CombatDamageEvent } from "./combat-events/CombatDamageEvent";
+import {
+  CombatDeathEvent,
+  CombatDeathEventTarget,
+} from "./combat-events/CombatDeathEvent";
+import { CombatDefeatEvent } from "./combat-events/CombatDefeatEvent";
+import { CombatDropEvent } from "./combat-events/CombatDropEvent";
+import { CombatEvent } from "./combat-events/CombatEvent";
+import { CombatEventType } from "./combat-events/CombatEventType";
+import { CombatExperienceEvent } from "./combat-events/CombatExperienceEvent";
+import { CombatFleeFailureEvent } from "./combat-events/CombatFleeFailureEvent";
+import { CombatFleeSuccessEvent } from "./combat-events/CombatFleeSuccessEvent";
+import {
+  CombatFriendlyTargetFailureEvent,
+  CombatFriendlyTargetFailureEventTarget,
+} from "./combat-events/CombatFriendlyTargetFailureEvent";
+import { CombatGainStatEvent } from "./combat-events/CombatGainStatEvent";
+import { CombatGoldEvent } from "./combat-events/CombatGoldEvent";
+import {
+  CombatHealEvent,
+  CombatHealEventTarget,
+} from "./combat-events/CombatHealEvent";
+import { CombatInstakillEvent } from "./combat-events/CombatInstakillEvent";
+import { CombatInstakillFinishEvent } from "./combat-events/CombatInstakillFinishEvent";
+import { CombatInventoryFullEvent } from "./combat-events/CombatInventoryFullEvent";
+import { CombatLevelUpEvent } from "./combat-events/CombatLevelUpEvent";
+import { CombatMissEvent } from "./combat-events/CombatMissEvent";
+import { CombatNewLevelEvent } from "./combat-events/CombatNewLevelEvent";
+import { CombatObtainEvent } from "./combat-events/CombatObtainEvent";
+import {
+  CombatPoisonStartEvent,
+  CombatPoisonStartEventTarget,
+} from "./combat-events/CombatPoisonStartEvent";
+import { CombatRejuvenateEvent } from "./combat-events/CombatRejuvenateEvent";
+import { CombatRejuvenateFailureEvent } from "./combat-events/CombatRejuvenateFailureEvent";
+import { CombatRenewEvent } from "./combat-events/CombatRenewEvent";
+import { CombatUseAbilityEvent } from "./combat-events/CombatUseAbilityEvent";
+import {
+  CombatUseItemEvent,
+  CombatUseItemEventCaster,
+  CombatUseItemEventTarget,
+} from "./combat-events/CombatUseItemEvent";
+import { CombatantType } from "./CombatantType";
 import { Constants } from "./Constants";
 import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
@@ -197,7 +200,7 @@ import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
 import { WorldChestInteractRequest } from "./requests/world/WorldChestInteractRequest";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import {
-  WorldCombatCharacterUpdate,
+  WorldCombatRoundUpdate,
   WorldCombatUpdate,
 } from "./updates/world/WorldCombatUpdate";
 import { WorldDestroyBoostRequest } from "./requests/world/WorldDestroyBoostRequest";
@@ -270,56 +273,25 @@ export {
   AudioSourceDefinition,
   BankDefinition,
   BattleAbilityHotkeyUpdate,
-  BattleAmbushEvent,
-  BattleApproachEvent,
   BattleBindAbilityRequest,
   BattleBindAbilityUpdate,
   BattleBindItemRequest,
   BattleBindItemUpdate,
-  BattleBleedStartEvent,
-  BattleBleedStartEventTarget,
   BattleCancelSubmittedMoveRequest,
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
-  BattleCritEvent,
-  BattleDamageEvent,
-  BattleDeathEvent,
-  BattleDeathEventTarget,
-  BattleDefeatEvent,
-  BattleDropEvent,
   BattleEndRoundBattlerBleedUpdate,
   BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
-  BattleEvent,
-  BattleEventType,
-  BattleExperienceEvent,
-  BattleFleeFailureEvent,
-  BattleFleeSuccessEvent,
-  BattleFriendlyTargetFailureEvent,
-  BattleFriendlyTargetFailureEventTarget,
-  BattleGainStatEvent,
-  BattleGoldEvent,
-  BattleHealEvent,
-  BattleHealEventTarget,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
-  BattleInstakillEvent,
-  BattleInstakillFinishEvent,
-  BattleInventoryFullEvent,
   BattleItemHotkeyUpdate,
-  BattleLevelUpEvent,
-  BattleMissEvent,
-  BattleNewLevelEvent,
-  BattleObtainEvent,
   BattlePhase,
-  BattlePoisonStartEvent,
-  BattlePoisonStartEventTarget,
   BattlerBleedUpdate,
-  BattleRejuvenateEvent,
   BattleResourcesUpdate,
   BattlerPoisonUpdate,
-  BattlerType,
+  CombatantType,
   BattlerUpdate,
   BattleStartRoundUpdate,
   BattleSubmitAbilityUpdate,
@@ -329,11 +301,7 @@ export {
   BattleType,
   BattleUnbindHotkeyRequest,
   BattleUnbindHotkeyUpdate,
-  BattleUseAbilityEvent,
   BattleUseAbilityRequest,
-  BattleUseItemEvent,
-  BattleUseItemEventCaster,
-  BattleUseItemEventTarget,
   BattleUseItemInstanceRequest,
   BodyCosmeticDefinition,
   BoostDefinition,
@@ -343,6 +311,44 @@ export {
   ClothesColorDefinition,
   ClothesDyeDefinition,
   Color,
+  CombatAmbushEvent,
+  CombatApproachEvent,
+  CombatBleedStartEvent,
+  CombatBleedStartEventTarget,
+  CombatBoostEvent,
+  CombatCritEvent,
+  CombatDamageEvent,
+  CombatDeathEvent,
+  CombatDeathEventTarget,
+  CombatDefeatEvent,
+  CombatDropEvent,
+  CombatEvent,
+  CombatEventType,
+  CombatExperienceEvent,
+  CombatFleeFailureEvent,
+  CombatFleeSuccessEvent,
+  CombatFriendlyTargetFailureEvent,
+  CombatFriendlyTargetFailureEventTarget,
+  CombatGainStatEvent,
+  CombatGoldEvent,
+  CombatHealEvent,
+  CombatHealEventTarget,
+  CombatInstakillEvent,
+  CombatInstakillFinishEvent,
+  CombatInventoryFullEvent,
+  CombatLevelUpEvent,
+  CombatMissEvent,
+  CombatNewLevelEvent,
+  CombatObtainEvent,
+  CombatPoisonStartEvent,
+  CombatPoisonStartEventTarget,
+  CombatRejuvenateEvent,
+  CombatRejuvenateFailureEvent,
+  CombatRenewEvent,
+  CombatUseAbilityEvent,
+  CombatUseItemEvent,
+  CombatUseItemEventCaster,
+  CombatUseItemEventTarget,
   Constants,
   Definition,
   Direction,
@@ -437,7 +443,7 @@ export {
   WorldCharacterUpdate,
   WorldChestInteractRequest,
   WorldClearMarkerUpdate,
-  WorldCombatCharacterUpdate,
+  WorldCombatRoundUpdate,
   WorldCombatUpdate,
   WorldDestroyBoostRequest,
   WorldDestroyBoostUpdate,

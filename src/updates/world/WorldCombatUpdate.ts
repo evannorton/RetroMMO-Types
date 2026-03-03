@@ -1,13 +1,13 @@
+import { CombatEvent } from "../../combat-events/CombatEvent";
 import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
-import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
-export interface WorldCombatCharacterUpdate {
-  readonly characterID: string;
-  readonly isRenewing?: boolean;
-  readonly resources: WorldResourcesUpdate;
+export interface WorldCombatRoundUpdate {
+  readonly duration: number;
+  readonly events: readonly CombatEvent[];
+  readonly serverTime: number;
 }
 export interface WorldCombatUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly boostItemInstances: readonly ItemInstanceUpdate[];
-  readonly worldCombatCharacters: readonly WorldCombatCharacterUpdate[];
+  readonly round: WorldCombatRoundUpdate;
 }

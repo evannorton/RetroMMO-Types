@@ -13,6 +13,7 @@ import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
 import { PartyUpdate } from "./PartyUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
+import { WorldCombatRoundUpdate } from "./world/WorldCombatUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 
 export interface InitialPlayerCharacterUpdate {
@@ -61,6 +62,7 @@ export interface InitialWorldUpdate {
   readonly characterID: string;
   readonly characters: readonly WorldCharacterUpdate[];
   readonly clothesDyeItemInstance?: ItemInstanceUpdate;
+  readonly combatRound?: WorldCombatRoundUpdate;
   readonly defense: number;
   readonly experienceUntilLevel?: number;
   readonly hairDyeItemInstance?: ItemInstanceUpdate;

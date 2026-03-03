@@ -1,5 +1,5 @@
 import { BattleResourcesUpdate } from "./BattleResourcesUpdate";
-import { BattlerType } from "../../BattlerType";
+import { CombatantType } from "../../CombatantType";
 
 export interface BattlerBleedUpdate {
   readonly order: number;
@@ -16,5 +16,5 @@ export interface BattlerUpdate {
   readonly monsterID?: string;
   readonly poison?: BattlerPoisonUpdate;
   readonly resources?: BattleResourcesUpdate;
-  readonly type: BattlerType;
+  readonly type: CombatantType;
 }

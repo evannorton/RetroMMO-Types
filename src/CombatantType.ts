@@ -1,4 +1,4 @@
-export enum BattlerType {
+export enum CombatantType {
   "Monster" = "monster",
   "Player" = "player",
 }
