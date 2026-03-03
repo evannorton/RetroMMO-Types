@@ -53,6 +53,7 @@ import {
   CombatBleedStartEventTarget,
 } from "./combat-events/CombatBleedStartEvent";
 import { CombatBoostEvent } from "./combat-events/CombatBoostEvent";
+import { CombatBoostFailureEvent } from "./combat-events/CombatBoostFailureEvent";
 import { CombatCritEvent } from "./combat-events/CombatCritEvent";
 import { CombatDamageEvent } from "./combat-events/CombatDamageEvent";
 import {
@@ -291,7 +292,6 @@ export {
   BattlerBleedUpdate,
   BattleResourcesUpdate,
   BattlerPoisonUpdate,
-  CombatantType,
   BattlerUpdate,
   BattleStartRoundUpdate,
   BattleSubmitAbilityUpdate,
@@ -312,10 +312,12 @@ export {
   ClothesDyeDefinition,
   Color,
   CombatAmbushEvent,
+  CombatantType,
   CombatApproachEvent,
   CombatBleedStartEvent,
   CombatBleedStartEventTarget,
   CombatBoostEvent,
+  CombatBoostFailureEvent,
   CombatCritEvent,
   CombatDamageEvent,
   CombatDeathEvent,

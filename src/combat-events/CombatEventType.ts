@@ -3,6 +3,7 @@ export enum CombatEventType {
   Approach = "approach",
   BleedStart = "bleed-start",
   Boost = "boost",
+  BoostFailure = "boost-failure",
   Crit = "crit",
   Damage = "damage",
   Death = "death",

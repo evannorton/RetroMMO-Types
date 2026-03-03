@@ -1,8 +1,7 @@
 import { CombatEvent } from "./CombatEvent";
 import { CombatEventType } from "./CombatEventType";
 
-export interface CombatBoostEvent extends CombatEvent {
-  readonly abilityID: string;
-  readonly type: CombatEventType.Boost;
+export interface CombatBoostFailureEvent extends CombatEvent {
+  readonly type: CombatEventType.BoostFailure;
   readonly username: string;
 }
