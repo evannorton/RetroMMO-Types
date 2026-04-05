@@ -21,6 +21,8 @@ import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnima
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
 import { BattlePhase } from "./BattlePhase";
 import { BattleResourcesUpdate } from "./updates/battle/BattleResourcesUpdate";
+import { BattleRoundUpdate } from "./updates/battle/BattleRoundUpdate";
+import { BattleSelectionUpdate } from "./updates/battle/BattleSelectionUpdate";
 import { BattleStartRoundUpdate } from "./updates/battle/BattleStartRoundUpdate";
 import { BattleSubmitAbilityUpdate } from "./updates/battle/BattleSubmitAbilityUpdate";
 import { BattleSubmitItemUpdate } from "./updates/battle/BattleSubmitItemUpdate";
@@ -55,7 +57,10 @@ import {
 import { CombatBoostEvent } from "./combat-events/CombatBoostEvent";
 import { CombatBoostFailureEvent } from "./combat-events/CombatBoostFailureEvent";
 import { CombatCritEvent } from "./combat-events/CombatCritEvent";
-import { CombatDamageEvent } from "./combat-events/CombatDamageEvent";
+import {
+  CombatDamageEvent,
+  CombatDamageEventTarget,
+} from "./combat-events/CombatDamageEvent";
 import {
   CombatDeathEvent,
   CombatDeathEventTarget,
@@ -77,8 +82,14 @@ import {
   CombatHealEvent,
   CombatHealEventTarget,
 } from "./combat-events/CombatHealEvent";
-import { CombatInstakillEvent } from "./combat-events/CombatInstakillEvent";
-import { CombatInstakillFinishEvent } from "./combat-events/CombatInstakillFinishEvent";
+import {
+  CombatInstakillEvent,
+  CombatInstakillEventTarget,
+} from "./combat-events/CombatInstakillEvent";
+import {
+  CombatInstakillFinishEvent,
+  CombatInstakillFinishEventTarget,
+} from "./combat-events/CombatInstakillFinishEvent";
 import { CombatInventoryFullEvent } from "./combat-events/CombatInventoryFullEvent";
 import { CombatLevelUpEvent } from "./combat-events/CombatLevelUpEvent";
 import { CombatMissEvent } from "./combat-events/CombatMissEvent";
@@ -88,10 +99,20 @@ import {
   CombatPoisonStartEvent,
   CombatPoisonStartEventTarget,
 } from "./combat-events/CombatPoisonStartEvent";
-import { CombatRejuvenateEvent } from "./combat-events/CombatRejuvenateEvent";
-import { CombatRejuvenateFailureEvent } from "./combat-events/CombatRejuvenateFailureEvent";
+import {
+  CombatRejuvenateEvent,
+  CombatRejuvenateEventTarget,
+} from "./combat-events/CombatRejuvenateEvent";
+import {
+  CombatRejuvenateFailureEvent,
+  CombatRejuvenateFailureEventTarget,
+} from "./combat-events/CombatRejuvenateFailureEvent";
 import { CombatRenewEvent } from "./combat-events/CombatRenewEvent";
-import { CombatUseAbilityEvent } from "./combat-events/CombatUseAbilityEvent";
+import {
+  CombatUseAbilityEvent,
+  CombatUseAbilityEventCaster,
+  CombatUseAbilityEventTarget,
+} from "./combat-events/CombatUseAbilityEvent";
 import {
   CombatUseItemEvent,
   CombatUseItemEventCaster,
@@ -125,6 +146,7 @@ import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
 import {
+  InitialBattleUpdate,
   InitialMainMenuUpdate,
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
@@ -156,7 +178,10 @@ import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
 import { NPCDefinition } from "./definitions/NPCDefinition";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
 import { PanelDefinition } from "./definitions/PanelDefinition";
-import { PartyChangesUpdate } from "./updates/PartyChangesUpdate";
+import {
+  PartyChangesUpdate,
+  PartyChangesWorldUpdate,
+} from "./updates/PartyChangesUpdate";
 import { PartyUpdate } from "./updates/PartyUpdate";
 import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
@@ -199,7 +224,10 @@ import { WorldBankWithdrawItemRequest } from "./requests/world/bank/WorldBankWit
 import { WorldBankWithdrawItemUpdate } from "./updates/world/bank/WorldBankWithdrawItemUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCancelInviteRequest } from "./requests/world/WorldCancelInviteRequest";
-import { WorldCharacterUpdate } from "./updates/world/WorldCharacterUpdate";
+import {
+  WorldCharacterUpdate,
+  WorldCharacterUpdateEmote,
+} from "./updates/world/WorldCharacterUpdate";
 import { WorldChestInteractRequest } from "./requests/world/WorldChestInteractRequest";
 import { WorldClearMarkerUpdate } from "./updates/world/WorldClearMarkerUpdate";
 import {
@@ -307,8 +335,10 @@ export {
   BattlePhase,
   BattlerBleedUpdate,
   BattleResourcesUpdate,
+  BattleRoundUpdate,
   BattlerPoisonUpdate,
   BattlerUpdate,
+  BattleSelectionUpdate,
   BattleStartRoundUpdate,
   BattleSubmitAbilityUpdate,
   BattleSubmitItemUpdate,
@@ -336,6 +366,7 @@ export {
   CombatBoostFailureEvent,
   CombatCritEvent,
   CombatDamageEvent,
+  CombatDamageEventTarget,
   CombatDeathEvent,
   CombatDeathEventTarget,
   CombatDefeatEvent,
@@ -352,7 +383,9 @@ export {
   CombatHealEvent,
   CombatHealEventTarget,
   CombatInstakillEvent,
+  CombatInstakillEventTarget,
   CombatInstakillFinishEvent,
+  CombatInstakillFinishEventTarget,
   CombatInventoryFullEvent,
   CombatLevelUpEvent,
   CombatMissEvent,
@@ -361,9 +394,13 @@ export {
   CombatPoisonStartEvent,
   CombatPoisonStartEventTarget,
   CombatRejuvenateEvent,
+  CombatRejuvenateEventTarget,
   CombatRejuvenateFailureEvent,
+  CombatRejuvenateFailureEventTarget,
   CombatRenewEvent,
   CombatUseAbilityEvent,
+  CombatUseAbilityEventCaster,
+  CombatUseAbilityEventTarget,
   CombatUseItemEvent,
   CombatUseItemEventCaster,
   CombatUseItemEventTarget,
@@ -389,6 +426,7 @@ export {
   HairDyeDefinition,
   HeadCosmeticDefinition,
   ImageSourceDefinition,
+  InitialBattleUpdate,
   InitialMainMenuUpdate,
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
@@ -420,6 +458,7 @@ export {
   OutfitDefinition,
   PanelDefinition,
   PartyChangesUpdate,
+  PartyChangesWorldUpdate,
   PartyUpdate,
   PianoDefinition,
   PianoKeyType,
@@ -461,6 +500,7 @@ export {
   WorldBonkUpdate,
   WorldCancelInviteRequest,
   WorldCharacterUpdate,
+  WorldCharacterUpdateEmote,
   WorldChestInteractRequest,
   WorldClearMarkerUpdate,
   WorldCombatRoundUpdate,
@@ -510,8 +550,6 @@ export {
   WorldStartBattleUpdate,
   WorldTradeAcceptRequest,
   WorldTradeAcceptUpdate,
-  WorldTradeUnacceptRequest,
-  WorldTradeUnacceptUpdate,
   WorldTradeCancelRequest,
   WorldTradeCancelUpdate,
   WorldTradeCompleteUpdate,
@@ -523,6 +561,8 @@ export {
   WorldTradeOfferItemRequest,
   WorldTradeOfferItemUpdate,
   WorldTradeStartUpdate,
+  WorldTradeUnacceptRequest,
+  WorldTradeUnacceptUpdate,
   WorldTradeUnofferGoldRequest,
   WorldTradeUnofferGoldUpdate,
   WorldTurnCharactersUpdate,
