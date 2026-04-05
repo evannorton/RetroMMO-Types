@@ -1,4 +1,4 @@
-import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
+import { ItemInstanceUpdate } from "../../ItemInstanceUpdate";
 
 export interface WorldTradeCompleteUpdate {
   readonly bagItemInstances: readonly ItemInstanceUpdate[];

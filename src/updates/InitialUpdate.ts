@@ -52,6 +52,19 @@ export interface InitialBattleUpdate {
 export interface InitialMainMenuUpdate {
   readonly characters: readonly MainMenuCharacterUpdate[];
 }
+export interface InitialWorldTradeTraderUpdate {
+  readonly hasAccepted?: boolean;
+  readonly isGoldIdentified?: boolean;
+  readonly offeredGold: number;
+  readonly offeredItemInstances: readonly ItemInstanceUpdate[];
+  readonly worldCharacterID: string;
+}
+export interface InitialWorldTradeUpdate {
+  readonly traders: readonly [
+    InitialWorldTradeTraderUpdate,
+    InitialWorldTradeTraderUpdate,
+  ];
+}
 export interface InitialWorldUpdate {
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
@@ -78,6 +91,7 @@ export interface InitialWorldUpdate {
   readonly reachableID: string;
   readonly strength: number;
   readonly timePlayed: number;
+  readonly trade?: InitialWorldTradeUpdate;
   readonly wisdom: number;
 }
 export interface InitialUpdate {

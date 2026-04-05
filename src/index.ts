@@ -129,6 +129,8 @@ import {
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
   InitialUpdate,
+  InitialWorldTradeTraderUpdate,
+  InitialWorldTradeUpdate,
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
 import { ItemDefinition } from "./definitions/ItemDefinition";
@@ -251,9 +253,23 @@ import { WorldShopBuyItemUpdate } from "./updates/world/shop/WorldShopBuyItemUpd
 import { WorldShopSellItemRequest } from "./requests/world/shop/WorldShopSellItemRequest";
 import { WorldShopSellItemUpdate } from "./updates/world/shop/WorldShopSellItemUpdate";
 import { WorldStartBattleUpdate } from "./updates/world/WorldStartBattleUpdate";
-import { WorldTradeCompleteUpdate } from "./updates/world/WorldTradeCompleteUpdate";
+import { WorldTradeAcceptRequest } from "./requests/world/trade/WorldTradeAcceptRequest";
+import { WorldTradeAcceptUpdate } from "./updates/world/trade/WorldTradeAcceptUpdate";
+import { WorldTradeCancelRequest } from "./requests/world/trade/WorldTradeCancelRequest";
+import { WorldTradeCancelUpdate } from "./updates/world/trade/WorldTradeCancelUpdate";
+import { WorldTradeCompleteUpdate } from "./updates/world/trade/WorldTradeCompleteUpdate";
+import { WorldTradeIdentifyGoldRequest } from "./requests/world/trade/WorldTradeIdentifyGoldRequest";
+import { WorldTradeIdentifyGoldUpdate } from "./updates/world/trade/WorldTradeIdentifyGoldUpdate";
 import { WorldTradeInviteRequest } from "./requests/world/WorldTradeInviteRequest";
-import { WorldTradeUpdate } from "./updates/world/WorldTradeUpdate";
+import { WorldTradeOfferGoldRequest } from "./requests/world/trade/WorldTradeOfferGoldRequest";
+import { WorldTradeOfferGoldUpdate } from "./updates/world/trade/WorldTradeOfferGoldUpdate";
+import { WorldTradeOfferItemRequest } from "./requests/world/trade/WorldTradeOfferItemRequest";
+import { WorldTradeOfferItemUpdate } from "./updates/world/trade/WorldTradeOfferItemUpdate";
+import { WorldTradeStartUpdate } from "./updates/world/trade/WorldTradeStartUpdate";
+import { WorldTradeUnacceptRequest } from "./requests/world/trade/WorldTradeUnacceptRequest";
+import { WorldTradeUnacceptUpdate } from "./updates/world/trade/WorldTradeUnacceptUpdate";
+import { WorldTradeUnofferGoldRequest } from "./requests/world/trade/WorldTradeUnofferGoldRequest";
+import { WorldTradeUnofferGoldUpdate } from "./updates/world/trade/WorldTradeUnofferGoldUpdate";
 import {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
@@ -377,6 +393,8 @@ export {
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
   InitialUpdate,
+  InitialWorldTradeTraderUpdate,
+  InitialWorldTradeUpdate,
   InitialWorldUpdate,
   ItemDefinition,
   ItemInstanceUpdate,
@@ -490,9 +508,23 @@ export {
   WorldShopSellItemRequest,
   WorldShopSellItemUpdate,
   WorldStartBattleUpdate,
+  WorldTradeAcceptRequest,
+  WorldTradeAcceptUpdate,
+  WorldTradeUnacceptRequest,
+  WorldTradeUnacceptUpdate,
+  WorldTradeCancelRequest,
+  WorldTradeCancelUpdate,
   WorldTradeCompleteUpdate,
+  WorldTradeIdentifyGoldRequest,
+  WorldTradeIdentifyGoldUpdate,
   WorldTradeInviteRequest,
-  WorldTradeUpdate,
+  WorldTradeOfferGoldRequest,
+  WorldTradeOfferGoldUpdate,
+  WorldTradeOfferItemRequest,
+  WorldTradeOfferItemUpdate,
+  WorldTradeStartUpdate,
+  WorldTradeUnofferGoldRequest,
+  WorldTradeUnofferGoldUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
   WorldTurnNPCUpdate,
