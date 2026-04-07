@@ -54,6 +54,8 @@ export interface InitialMainMenuUpdate {
 }
 export interface InitialWorldTradeTraderUpdate {
   readonly hasAccepted?: boolean;
+  readonly hasRoomForGold?: boolean;
+  readonly hasRoomForItems?: boolean;
   readonly isGoldIdentified?: boolean;
   readonly offeredGold: number;
   readonly offeredItemInstances: readonly ItemInstanceUpdate[];

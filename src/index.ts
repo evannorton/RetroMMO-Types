@@ -286,9 +286,11 @@ import { WorldTradeAcceptUpdate } from "./updates/world/trade/WorldTradeAcceptUp
 import { WorldTradeCancelRequest } from "./requests/world/trade/WorldTradeCancelRequest";
 import { WorldTradeCancelUpdate } from "./updates/world/trade/WorldTradeCancelUpdate";
 import { WorldTradeCompleteUpdate } from "./updates/world/trade/WorldTradeCompleteUpdate";
+import { WorldTradeGoldRoomUpdate } from "./updates/world/trade/WorldTradeGoldRoomUpdate";
 import { WorldTradeIdentifyGoldRequest } from "./requests/world/trade/WorldTradeIdentifyGoldRequest";
 import { WorldTradeIdentifyGoldUpdate } from "./updates/world/trade/WorldTradeIdentifyGoldUpdate";
 import { WorldTradeInviteRequest } from "./requests/world/WorldTradeInviteRequest";
+import { WorldTradeItemRoomUpdate } from "./updates/world/trade/WorldTradeItemRoomUpdate";
 import { WorldTradeOfferGoldRequest } from "./requests/world/trade/WorldTradeOfferGoldRequest";
 import { WorldTradeOfferGoldUpdate } from "./updates/world/trade/WorldTradeOfferGoldUpdate";
 import { WorldTradeOfferItemRequest } from "./requests/world/trade/WorldTradeOfferItemRequest";
@@ -553,6 +555,8 @@ export {
   WorldTradeCancelRequest,
   WorldTradeCancelUpdate,
   WorldTradeCompleteUpdate,
+  WorldTradeGoldRoomUpdate,
+  WorldTradeItemRoomUpdate,
   WorldTradeIdentifyGoldRequest,
   WorldTradeIdentifyGoldUpdate,
   WorldTradeInviteRequest,
