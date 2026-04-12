@@ -52,13 +52,17 @@ export interface InitialBattleUpdate {
 export interface InitialMainMenuUpdate {
   readonly characters: readonly MainMenuCharacterUpdate[];
 }
+export interface InitialWorldTradeTraderItemUpdate {
+  readonly isIdentified?: boolean;
+  readonly itemInstance: ItemInstanceUpdate;
+}
 export interface InitialWorldTradeTraderUpdate {
   readonly hasAccepted?: boolean;
   readonly hasRoomForGold?: boolean;
   readonly hasRoomForItems?: boolean;
   readonly isGoldIdentified?: boolean;
   readonly offeredGold: number;
-  readonly offeredItemInstances: readonly ItemInstanceUpdate[];
+  readonly offeredItemInstances: readonly InitialWorldTradeTraderItemUpdate[];
   readonly worldCharacterID: string;
 }
 export interface InitialWorldTradeUpdate {

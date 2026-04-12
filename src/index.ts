@@ -151,6 +151,7 @@ import {
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
   InitialUpdate,
+  InitialWorldTradeTraderItemUpdate,
   InitialWorldTradeTraderUpdate,
   InitialWorldTradeUpdate,
   InitialWorldUpdate,
@@ -289,6 +290,8 @@ import { WorldTradeCompleteUpdate } from "./updates/world/trade/WorldTradeComple
 import { WorldTradeGoldRoomUpdate } from "./updates/world/trade/WorldTradeGoldRoomUpdate";
 import { WorldTradeIdentifyGoldRequest } from "./requests/world/trade/WorldTradeIdentifyGoldRequest";
 import { WorldTradeIdentifyGoldUpdate } from "./updates/world/trade/WorldTradeIdentifyGoldUpdate";
+import { WorldTradeIdentifyItemRequest } from "./requests/world/trade/WorldTradeIdentifyItemRequest";
+import { WorldTradeIdentifyItemUpdate } from "./updates/world/trade/WorldTradeIdentifyItemUpdate";
 import { WorldTradeInviteRequest } from "./requests/world/WorldTradeInviteRequest";
 import { WorldTradeItemRoomUpdate } from "./updates/world/trade/WorldTradeItemRoomUpdate";
 import { WorldTradeOfferGoldRequest } from "./requests/world/trade/WorldTradeOfferGoldRequest";
@@ -300,6 +303,8 @@ import { WorldTradeUnacceptRequest } from "./requests/world/trade/WorldTradeUnac
 import { WorldTradeUnacceptUpdate } from "./updates/world/trade/WorldTradeUnacceptUpdate";
 import { WorldTradeUnofferGoldRequest } from "./requests/world/trade/WorldTradeUnofferGoldRequest";
 import { WorldTradeUnofferGoldUpdate } from "./updates/world/trade/WorldTradeUnofferGoldUpdate";
+import { WorldTradeUnofferItemRequest } from "./requests/world/trade/WorldTradeUnofferItemRequest";
+import { WorldTradeUnofferItemUpdate } from "./updates/world/trade/WorldTradeUnofferItemUpdate";
 import {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
@@ -433,6 +438,7 @@ export {
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
   InitialUpdate,
+  InitialWorldTradeTraderItemUpdate,
   InitialWorldTradeTraderUpdate,
   InitialWorldTradeUpdate,
   InitialWorldUpdate,
@@ -556,10 +562,12 @@ export {
   WorldTradeCancelUpdate,
   WorldTradeCompleteUpdate,
   WorldTradeGoldRoomUpdate,
-  WorldTradeItemRoomUpdate,
   WorldTradeIdentifyGoldRequest,
   WorldTradeIdentifyGoldUpdate,
+  WorldTradeIdentifyItemRequest,
+  WorldTradeIdentifyItemUpdate,
   WorldTradeInviteRequest,
+  WorldTradeItemRoomUpdate,
   WorldTradeOfferGoldRequest,
   WorldTradeOfferGoldUpdate,
   WorldTradeOfferItemRequest,
@@ -569,6 +577,8 @@ export {
   WorldTradeUnacceptUpdate,
   WorldTradeUnofferGoldRequest,
   WorldTradeUnofferGoldUpdate,
+  WorldTradeUnofferItemRequest,
+  WorldTradeUnofferItemUpdate,
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
   WorldTurnNPCUpdate,
