@@ -1,3 +1,3 @@
 export interface WorldTradeStartUpdate {
-  readonly worldCharacterIDs: readonly [string, string];
+  readonly characterIDs: readonly [string, string];
 }

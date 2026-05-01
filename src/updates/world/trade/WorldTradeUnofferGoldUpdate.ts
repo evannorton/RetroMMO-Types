@@ -2,5 +2,5 @@ import { WorldTradeGoldRoomUpdate } from "./WorldTradeGoldRoomUpdate";
 
 export interface WorldTradeUnofferGoldUpdate {
   readonly room: readonly [WorldTradeGoldRoomUpdate, WorldTradeGoldRoomUpdate];
-  readonly worldCharacterID: string;
+  readonly characterID: string;
 }

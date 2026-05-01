@@ -1,3 +1,3 @@
 export interface WorldTradeIdentifyGoldUpdate {
-  readonly worldCharacterID: string;
+  readonly characterID: string;
 }

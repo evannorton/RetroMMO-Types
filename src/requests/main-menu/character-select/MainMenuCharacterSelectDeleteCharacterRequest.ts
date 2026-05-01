@@ -1,3 +1,3 @@
 export interface MainMenuCharacterSelectDeleteCharacterRequest {
-  readonly mainMenuCharacterID: string;
+  readonly characterID: string;
 }

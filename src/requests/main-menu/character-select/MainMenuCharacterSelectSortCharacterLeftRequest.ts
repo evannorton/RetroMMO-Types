@@ -1,3 +1,3 @@
 export interface MainMenuCharacterSelectSortCharacterLeftRequest {
-  readonly mainMenuCharacterID: string;
+  readonly characterID: string;
 }

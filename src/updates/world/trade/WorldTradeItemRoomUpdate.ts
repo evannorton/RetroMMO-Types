@@ -1,4 +1,4 @@
 export interface WorldTradeItemRoomUpdate {
   readonly hasRoom?: boolean;
-  readonly worldCharacterID: string;
+  readonly characterID: string;
 }

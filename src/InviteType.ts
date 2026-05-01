@@ -1,6 +1,5 @@
-export enum MarkerType {
+export enum InviteType {
   Duel = "duel",
   Party = "party",
-  Selected = "selected",
   Trade = "trade",
 }

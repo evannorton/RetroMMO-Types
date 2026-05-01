@@ -1,5 +1,6 @@
 import { ItemInstanceUpdate } from "../ItemInstanceUpdate";
 import { WorldCharacterUpdate } from "./WorldCharacterUpdate";
+import { WorldInvitePromptsUpdate } from "./invites/WorldInvitePromptsUpdate";
 import { WorldNPCUpdate } from "./WorldNPCUpdate";
 
 export interface WorldPositionUpdate {
@@ -7,6 +8,7 @@ export interface WorldPositionUpdate {
   readonly characters: readonly WorldCharacterUpdate[];
   readonly didTeleport?: boolean;
   readonly enterableID?: string;
+  readonly invites?: WorldInvitePromptsUpdate;
   readonly npcs: readonly WorldNPCUpdate[];
   readonly reachableID: string;
   readonly tilemapID: string;

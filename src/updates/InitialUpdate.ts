@@ -8,6 +8,7 @@ import { BattleSubmittedAbilityUpdate } from "./battle/BattleSubmittedAbilityUpd
 import { BattleSubmittedItemUpdate } from "./battle/BattleSubmittedItemUpdate";
 import { BattleType } from "../BattleType";
 import { BattlerUpdate } from "./battle/BattlerUpdate";
+import { InviteType } from "../InviteType";
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
@@ -52,18 +53,22 @@ export interface InitialBattleUpdate {
 export interface InitialMainMenuUpdate {
   readonly characters: readonly MainMenuCharacterUpdate[];
 }
+export interface InitialWorldInviteUpdate {
+  readonly playerID: string;
+  readonly type: InviteType;
+}
 export interface InitialWorldTradeTraderItemUpdate {
   readonly isIdentified?: boolean;
   readonly itemInstance: ItemInstanceUpdate;
 }
 export interface InitialWorldTradeTraderUpdate {
+  readonly characterID: string;
   readonly hasAccepted?: boolean;
   readonly hasRoomForGold?: boolean;
   readonly hasRoomForItems?: boolean;
   readonly isGoldIdentified?: boolean;
   readonly offeredGold: number;
   readonly offeredItemInstances: readonly InitialWorldTradeTraderItemUpdate[];
-  readonly worldCharacterID: string;
 }
 export interface InitialWorldTradeUpdate {
   readonly traders: readonly [
@@ -88,6 +93,7 @@ export interface InitialWorldUpdate {
   readonly headItemInstance?: ItemInstanceUpdate;
   readonly intelligence: number;
   readonly inventoryGold: number;
+  readonly invite?: InitialWorldInviteUpdate;
   readonly luck: number;
   readonly mainHandItemInstance?: ItemInstanceUpdate;
   readonly maskItemInstance?: ItemInstanceUpdate;

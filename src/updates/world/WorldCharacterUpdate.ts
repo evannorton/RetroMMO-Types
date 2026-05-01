@@ -1,5 +1,5 @@
 import { Direction } from "../../Direction";
-import { MarkerType } from "../../MarkerType";
+import { InviteType } from "../../InviteType";
 import { Step } from "../../Step";
 import { WorldQuestInstanceUpdate } from "./WorldQuestInstanceUpdate";
 import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
@@ -15,8 +15,8 @@ export interface WorldCharacterUpdate {
   readonly figureID: string;
   readonly emote?: WorldCharacterUpdateEmote;
   readonly hairDyeItemID?: string;
+  readonly invite?: InviteType;
   readonly isRenewing?: boolean;
-  readonly marker?: MarkerType;
   readonly maskItemID?: string;
   readonly openedChestIDs?: readonly string[];
   readonly order: number;

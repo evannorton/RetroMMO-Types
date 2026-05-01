@@ -1,6 +1,7 @@
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { PartyUpdate } from "./PartyUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
+import { WorldInvitePromptsUpdate } from "./world/invites/WorldInvitePromptsUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 
 export interface EndPlayerBattleCharacterUpdate {
@@ -41,6 +42,7 @@ export interface EndPlayerBattlePlayerUpdate {
 }
 export interface EndPlayerBattleWorldUpdate {
   readonly characters: readonly WorldCharacterUpdate[];
+  readonly invites?: WorldInvitePromptsUpdate;
   readonly parties: readonly PartyUpdate[];
 }
 export interface EndPlayerBattlesUpdate {

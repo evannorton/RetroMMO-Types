@@ -1,5 +1,6 @@
 import { Direction } from "../../Direction";
 import { Step } from "../../Step";
+import { WorldInvitePromptsUpdate } from "./invites/WorldInvitePromptsUpdate";
 import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldMoveCharacterUpdate {
@@ -12,6 +13,6 @@ export interface WorldMoveCharacterUpdate {
 }
 export interface WorldMoveCharactersUpdate {
   readonly characters: readonly WorldMoveCharacterUpdate[];
-  readonly clearedMarkerWorldCharacterIDs: string[];
+  readonly invites?: WorldInvitePromptsUpdate;
   readonly reachableID: string;
 }
