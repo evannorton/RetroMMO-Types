@@ -40,6 +40,7 @@ export interface InitialBattleUpdate {
   readonly enemyBattlersCount: number;
   readonly friendlyBattlerIDs: readonly string[];
   readonly friendlyBattlersCount: number;
+  readonly gameOverServerTime?: number;
   readonly itemHotkeys: readonly BattleItemHotkeyUpdate[];
   readonly itemInstances: readonly ItemInstanceUpdate[];
   readonly phase: BattlePhase;

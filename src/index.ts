@@ -16,6 +16,7 @@ import {
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
 } from "./updates/battle/BattleEndRoundUpdate";
+import { BattleGameOverUpdate } from "./updates/battle/BattleGameOverUpdate";
 import { BattleImpactAlignment } from "./BattleImpactAlignment";
 import { BattleImpactAnimationDefinition } from "./definitions/BattleImpactAnimationDefinition";
 import { BattleItemHotkeyUpdate } from "./updates/battle/BattleItemHotkeyUpdate";
@@ -354,6 +355,7 @@ export {
   BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
+  BattleGameOverUpdate,
   BattleImpactAlignment,
   BattleImpactAnimationDefinition,
   BattleItemHotkeyUpdate,

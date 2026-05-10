@@ -5,6 +5,7 @@ export interface Constants {
   "battle-selection-duration": number;
   "emote-duration": number;
   "free-character-slots": number;
+  "game-over-duration": number;
   "leaderboards-entries": number;
   "leaderboards-entries-per-page": number;
   "maximum-bag-items": number;
