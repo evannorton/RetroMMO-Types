@@ -2,6 +2,7 @@ export interface Constants {
   "bank-storage-free-pages": number;
   "bank-storage-page-size": number;
   "bank-storage-subscriber-pages": number;
+  "battle-intro-duration": number;
   "battle-selection-duration": number;
   "emote-duration": number;
   "free-character-slots": number;
