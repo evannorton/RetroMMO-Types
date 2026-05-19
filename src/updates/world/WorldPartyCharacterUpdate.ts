@@ -3,6 +3,7 @@ import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 
 export interface WorldPartyCharacterUpdate {
   readonly characterID: string;
+  readonly isPoisoned: boolean;
   readonly isRenewing: boolean;
   readonly openedChestIDs: readonly string[];
   readonly order: number;

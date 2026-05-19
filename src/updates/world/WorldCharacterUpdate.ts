@@ -16,6 +16,7 @@ export interface WorldCharacterUpdate {
   readonly emote?: WorldCharacterUpdateEmote;
   readonly hairDyeItemID?: string;
   readonly invite?: InviteType;
+  readonly isPoisoned?: boolean;
   readonly isRenewing?: boolean;
   readonly maskItemID?: string;
   readonly openedChestIDs?: readonly string[];

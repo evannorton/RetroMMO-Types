@@ -6,6 +6,7 @@ import { WorldResourcesUpdate } from "./WorldResourcesUpdate";
 export interface WorldMoveCharacterUpdate {
   readonly characterID: string;
   readonly direction: Direction;
+  readonly isPoisoned?: boolean;
   readonly isRenewing?: boolean;
   readonly order: number;
   readonly resources?: WorldResourcesUpdate;
