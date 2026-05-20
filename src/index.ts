@@ -46,6 +46,8 @@ import { BoostDefinition } from "./definitions/BoostDefinition";
 import { Chat } from "./chats/Chat";
 import { ChatChannel } from "./ChatChannel";
 import { ChatType } from "./ChatType";
+import { ChatUpdate } from "./updates/ChatUpdate";
+import { ChatUpstreamWindowMessage } from "./upstream-window-messages/ChatUpstreamWindowMessage";
 import { ChestDefinition } from "./definitions/ChestDefinition";
 import {
   ClassDefinition,
@@ -214,6 +216,7 @@ import { QuestExchangerDefinition } from "./definitions/QuestExchangerDefinition
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
+import { RenameChat } from "./chats/RenameChat";
 import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
@@ -414,6 +417,8 @@ export {
   Chat,
   ChatChannel,
   ChatType,
+  ChatUpdate,
+  ChatUpstreamWindowMessage,
   ChestDefinition,
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
@@ -548,6 +553,7 @@ export {
   ReachableDefinition,
   RectangleDefinition,
   RemovePlayerUpdate,
+  RenameChat,
   RenamePlayerUpdate,
   ResourceBarDefinition,
   ResourcePool,

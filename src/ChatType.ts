@@ -8,6 +8,7 @@ export enum ChatType {
   Mute = "mute",
   PartyJoin = "party-join",
   PartyLeave = "party-leave",
+  Rename = "rename",
   Unban = "unban",
   Unmute = "unmute",
   Warn = "warn",

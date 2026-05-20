@@ -1,7 +1,6 @@
-import { ChatType } from "../ChatType";
 import { Chat } from "./Chat";
+import { ChatType } from "../ChatType";
 
 export interface PartyLeaveChat extends Chat {
-  readonly partyPlayersIDs: string[];
   readonly type: ChatType.PartyLeave;
 }
