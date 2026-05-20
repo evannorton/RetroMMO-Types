@@ -1,6 +1,7 @@
 import { AbilityDefinition } from "./definitions/AbilityDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
+import { AuthDownstreamWindowMessage } from "./downstream-window-messages/AuthDownstreamWindowMessage";
 import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
 import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityRequest";
@@ -141,6 +142,7 @@ import { EquipmentPieceDefinition } from "./definitions/EquipmentPieceDefinition
 import { EquipmentSlot } from "./EquipmentSlot";
 import { ErrorUpdate } from "./ErrorUpdate";
 import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
+import { FPSUpstreamWindowMessage } from "./upstream-window-messages/FPSUpstreamWindowMessage";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
@@ -161,8 +163,10 @@ import {
 import { InviteType } from "./InviteType";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
+import { JoystickDownstreamWindowMessage } from "./downstream-window-messages/JoystickDownstreamWindowMessage";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
+import { LimitFpsDownstreamWindowMessage } from "./downstream-window-messages/LimitFpsDownstreamWindowMessage";
 import { MainMenuCharacterCustomizeCreateCharacterRequest } from "./requests/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterRequest";
 import { MainMenuCharacterCustomizeCreateCharacterUpdate } from "./updates/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterUpdate";
 import { MainMenuCharacterSelectDeleteCharacterRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectDeleteCharacterRequest";
@@ -174,11 +178,14 @@ import { MainMenuCharacterSelectSortCharacterRightRequest } from "./requests/mai
 import { MainMenuCharacterSelectSortCharacterRightUpdate } from "./updates/main-menu/character-select/MainMenuCharacterSelectSortCharacterRightUpdate";
 import { MainMenuCharacterUpdate } from "./updates/main-menu/MainMenuCharacterUpdate";
 import { MainState } from "./MainState";
+import { MainVolumeDownstreamWindowMessage } from "./downstream-window-messages/MainVolumeDownstreamWindowMessage";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
+import { MusicVolumeDownstreamWindowMessage } from "./downstream-window-messages/MusicVolumeDownstreamWindowMessage";
 import { NPCDefinition } from "./definitions/NPCDefinition";
+import { OpenChatUpstreamWindowMessage } from "./upstream-window-messages/OpenChatUpstreamWindowMessage";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
 import { PanelDefinition } from "./definitions/PanelDefinition";
 import {
@@ -189,6 +196,7 @@ import { PartyUpdate } from "./updates/PartyUpdate";
 import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
+import { PingUpstreamWindowMessage } from "./upstream-window-messages/PingUpstreamWindowMessage";
 import { QuestDefinition } from "./definitions/QuestDefinition";
 import { QuestExchangerDefinition } from "./definitions/QuestExchangerDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
@@ -197,6 +205,11 @@ import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
 import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
+import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
+import { SFXVolumeDownstreamWindowMessage } from "./downstream-window-messages/SFXVolumeDownstreamWindowMessage";
+import { ScreenshotClipboardDownstreamWindowMessage } from "./downstream-window-messages/ScreenshotClipboardDownstreamWindowMessage";
+import { ScreenshotDownstreamWindowMessage } from "./downstream-window-messages/ScreenshotDownstreamWindowMessage";
+import { ScreenshotScaleDownstreamWindowMessage } from "./downstream-window-messages/ScreenshotScaleDownstreamWindowMessage";
 import { ServerTimeRequest } from "./requests/ServerTimeRequest";
 import { ServerTimeUpdate } from "./updates/ServerTimeUpdate";
 import {
@@ -206,6 +219,9 @@ import {
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { Stat } from "./Stat";
 import { Step } from "./Step";
+import { SubscribeCharacterLimitUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeCharacterLimitUpstreamWindowMessage";
+import { SubscribeEmoteUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeEmoteUpstreamWindowMessage";
+import { SubscribeItemStorageUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeItemStorageUpstreamWindowMessage";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
 import { TilemapDefinition } from "./definitions/TilemapDefinition/TilemapDefinition";
@@ -342,6 +358,7 @@ export {
   AbilityDefinition,
   AddPlayerUpdate,
   AudioSourceDefinition,
+  AuthDownstreamWindowMessage,
   BankDefinition,
   BattleAbilityHotkeyUpdate,
   BattleBindAbilityRequest,
@@ -449,6 +466,7 @@ export {
   ErrorUpdate,
   ExitPlayerUpdate,
   FigureDefinition,
+  FPSUpstreamWindowMessage,
   HairColorDefinition,
   HairDyeDefinition,
   HeadCosmeticDefinition,
@@ -466,8 +484,10 @@ export {
   InviteType,
   ItemDefinition,
   ItemInstanceUpdate,
+  JoystickDownstreamWindowMessage,
   LabelDefinition,
   LandscapeDefinition,
+  LimitFpsDownstreamWindowMessage,
   MainMenuCharacterCustomizeCreateCharacterRequest,
   MainMenuCharacterCustomizeCreateCharacterUpdate,
   MainMenuCharacterSelectDeleteCharacterRequest,
@@ -479,11 +499,14 @@ export {
   MainMenuCharacterSelectSortCharacterRightUpdate,
   MainMenuCharacterUpdate,
   MainState,
+  MainVolumeDownstreamWindowMessage,
   MaskDefinition,
   MonsterDefinition,
   MonsterNameData,
   MusicTrackDefinition,
+  MusicVolumeDownstreamWindowMessage,
   NPCDefinition,
+  OpenChatUpstreamWindowMessage,
   OutfitDefinition,
   PanelDefinition,
   PartyChangesUpdate,
@@ -492,6 +515,7 @@ export {
   PianoDefinition,
   PianoKeyType,
   PictureDefinition,
+  PingUpstreamWindowMessage,
   QuestDefinition,
   QuestExchangerDefinition,
   ReachableDefinition,
@@ -500,13 +524,21 @@ export {
   RenamePlayerUpdate,
   ResourceBarDefinition,
   ResourcePool,
+  RunUpstreamWindowMessage,
+  ScreenshotClipboardDownstreamWindowMessage,
+  ScreenshotDownstreamWindowMessage,
+  ScreenshotScaleDownstreamWindowMessage,
   ServerTimeRequest,
   ServerTimeUpdate,
+  SFXVolumeDownstreamWindowMessage,
   ShopDefinition,
   ShopItemDefinition,
   SkinColorDefinition,
   Stat,
   Step,
+  SubscribeCharacterLimitUpstreamWindowMessage,
+  SubscribeEmoteUpstreamWindowMessage,
+  SubscribeItemStorageUpstreamWindowMessage,
   SwitchDefinition,
   TargetType,
   TilemapDefinition,
