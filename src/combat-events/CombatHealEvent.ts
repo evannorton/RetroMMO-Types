@@ -1,5 +1,5 @@
 import { CombatEvent } from "./CombatEvent";
-import { CombatEventType } from "./CombatEventType";
+import { CombatEventType } from "../CombatEventType";
 import { MonsterNameData } from "../MonsterNameData";
 
 export interface CombatHealEventTarget {

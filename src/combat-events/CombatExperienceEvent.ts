@@ -1,5 +1,5 @@
 import { CombatEvent } from "./CombatEvent";
-import { CombatEventType } from "./CombatEventType";
+import { CombatEventType } from "../CombatEventType";
 
 export interface CombatExperienceEvent extends CombatEvent {
   readonly amount: number;

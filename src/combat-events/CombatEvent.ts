@@ -1,4 +1,4 @@
-import { CombatEventType } from "./CombatEventType";
+import { CombatEventType } from "../CombatEventType";
 
 export interface CombatEvent {
   readonly channel: number;

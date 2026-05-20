@@ -2,6 +2,7 @@ import { AbilityDefinition } from "./definitions/AbilityDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { AuthDownstreamWindowMessage } from "./downstream-window-messages/AuthDownstreamWindowMessage";
+import { BanChat } from "./chats/BanChat";
 import { BankDefinition } from "./definitions/BankDefinition";
 import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
 import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityRequest";
@@ -42,6 +43,9 @@ import {
 } from "./updates/battle/BattlerUpdate";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
+import { Chat } from "./chats/Chat";
+import { ChatChannel } from "./ChatChannel";
+import { ChatType } from "./ChatType";
 import { ChestDefinition } from "./definitions/ChestDefinition";
 import {
   ClassDefinition,
@@ -70,7 +74,7 @@ import {
 import { CombatDefeatEvent } from "./combat-events/CombatDefeatEvent";
 import { CombatDropEvent } from "./combat-events/CombatDropEvent";
 import { CombatEvent } from "./combat-events/CombatEvent";
-import { CombatEventType } from "./combat-events/CombatEventType";
+import { CombatEventType } from "./CombatEventType";
 import { CombatExperienceEvent } from "./combat-events/CombatExperienceEvent";
 import { CombatFleeFailureEvent } from "./combat-events/CombatFleeFailureEvent";
 import { CombatFleeSuccessEvent } from "./combat-events/CombatFleeSuccessEvent";
@@ -147,6 +151,7 @@ import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
+import { IPBanChat } from "./chats/IPBanChat";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
 import {
   InitialBattleUpdate,
@@ -164,9 +169,12 @@ import { InviteType } from "./InviteType";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
 import { JoystickDownstreamWindowMessage } from "./downstream-window-messages/JoystickDownstreamWindowMessage";
+import { KickChat } from "./chats/KickChat";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { LimitFpsDownstreamWindowMessage } from "./downstream-window-messages/LimitFpsDownstreamWindowMessage";
+import { LoginChat } from "./chats/LoginChat";
+import { LogoutChat } from "./chats/LogoutChat";
 import { MainMenuCharacterCustomizeCreateCharacterRequest } from "./requests/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterRequest";
 import { MainMenuCharacterCustomizeCreateCharacterUpdate } from "./updates/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterUpdate";
 import { MainMenuCharacterSelectDeleteCharacterRequest } from "./requests/main-menu/character-select/MainMenuCharacterSelectDeleteCharacterRequest";
@@ -180,10 +188,12 @@ import { MainMenuCharacterUpdate } from "./updates/main-menu/MainMenuCharacterUp
 import { MainState } from "./MainState";
 import { MainVolumeDownstreamWindowMessage } from "./downstream-window-messages/MainVolumeDownstreamWindowMessage";
 import { MaskDefinition } from "./definitions/MaskDefinition";
+import { MessageChat } from "./chats/MessageChat";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
 import { MusicVolumeDownstreamWindowMessage } from "./downstream-window-messages/MusicVolumeDownstreamWindowMessage";
+import { MuteChat } from "./chats/MuteChat";
 import { NPCDefinition } from "./definitions/NPCDefinition";
 import { OpenChatUpstreamWindowMessage } from "./upstream-window-messages/OpenChatUpstreamWindowMessage";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
@@ -192,6 +202,8 @@ import {
   PartyChangesUpdate,
   PartyChangesWorldUpdate,
 } from "./updates/PartyChangesUpdate";
+import { PartyJoinChat } from "./chats/PartyJoinChat";
+import { PartyLeaveChat } from "./chats/PartyLeaveChat";
 import { PartyUpdate } from "./updates/PartyUpdate";
 import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
@@ -231,7 +243,10 @@ import { TilesetDefinition } from "./definitions/TilesetDefinition/TilesetDefini
 import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefinition/TilesetTileAnimationFrameDefinition";
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
+import { UnbanChat } from "./chats/UnbanChat";
+import { UnmuteChat } from "./chats/UnmuteChat";
 import { VanitySlot } from "./VanitySlot";
+import { WarnChat } from "./chats/WarnChat";
 import { WorldAcceptDuelInviteRequest } from "./requests/world/WorldAcceptDuelInviteRequest";
 import { WorldAcceptPartyInviteRequest } from "./requests/world/WorldAcceptPartyInviteRequest";
 import { WorldAcceptTradeInviteRequest } from "./requests/world/WorldAcceptTradeInviteRequest";
@@ -359,6 +374,7 @@ export {
   AddPlayerUpdate,
   AudioSourceDefinition,
   AuthDownstreamWindowMessage,
+  BanChat,
   BankDefinition,
   BattleAbilityHotkeyUpdate,
   BattleBindAbilityRequest,
@@ -395,6 +411,9 @@ export {
   BattleUseItemInstanceRequest,
   BodyCosmeticDefinition,
   BoostDefinition,
+  Chat,
+  ChatChannel,
+  ChatType,
   ChestDefinition,
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
@@ -482,12 +501,16 @@ export {
   InitialWorldTradeUpdate,
   InitialWorldUpdate,
   InviteType,
+  IPBanChat,
   ItemDefinition,
   ItemInstanceUpdate,
   JoystickDownstreamWindowMessage,
+  KickChat,
   LabelDefinition,
   LandscapeDefinition,
   LimitFpsDownstreamWindowMessage,
+  LoginChat,
+  LogoutChat,
   MainMenuCharacterCustomizeCreateCharacterRequest,
   MainMenuCharacterCustomizeCreateCharacterUpdate,
   MainMenuCharacterSelectDeleteCharacterRequest,
@@ -501,16 +524,20 @@ export {
   MainState,
   MainVolumeDownstreamWindowMessage,
   MaskDefinition,
+  MessageChat,
   MonsterDefinition,
   MonsterNameData,
   MusicTrackDefinition,
   MusicVolumeDownstreamWindowMessage,
+  MuteChat,
   NPCDefinition,
   OpenChatUpstreamWindowMessage,
   OutfitDefinition,
   PanelDefinition,
   PartyChangesUpdate,
   PartyChangesWorldUpdate,
+  PartyJoinChat,
+  PartyLeaveChat,
   PartyUpdate,
   PianoDefinition,
   PianoKeyType,
@@ -548,7 +575,10 @@ export {
   TilesetTileAnimationFrameDefinition,
   TilesetTileDefinition,
   TransportDefinition,
+  UnbanChat,
+  UnmuteChat,
   VanitySlot,
+  WarnChat,
   WorldAcceptDuelInviteRequest,
   WorldAcceptPartyInviteRequest,
   WorldAcceptTradeInviteRequest,
