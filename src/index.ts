@@ -140,7 +140,7 @@ import {
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
 import { EquipmentPieceDefinition } from "./definitions/EquipmentPieceDefinition";
 import { EquipmentSlot } from "./EquipmentSlot";
-import { ErrorUpdate } from "./ErrorUpdate";
+import { ErrorRequest } from "./requests/ErrorRequest";
 import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
 import { FPSUpstreamWindowMessage } from "./upstream-window-messages/FPSUpstreamWindowMessage";
 import { FigureDefinition } from "./definitions/FigureDefinition";
@@ -463,7 +463,7 @@ export {
   EnterPlayerWorldUpdate,
   EquipmentPieceDefinition,
   EquipmentSlot,
-  ErrorUpdate,
+  ErrorRequest,
   ExitPlayerUpdate,
   FigureDefinition,
   FPSUpstreamWindowMessage,
