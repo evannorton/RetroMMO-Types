@@ -331,6 +331,8 @@ import {
   WorldQuestTurnInWorldUpdate,
 } from "./updates/world/quest/WorldQuestTurnInUpdate";
 import { WorldQuestTurnInRequest } from "./requests/world/quest/WorldQuestTurnInRequest";
+import { WorldReadableRequest } from "./requests/world/WorldReadableRequest";
+import { WorldReadableUpdate } from "./updates/world/WorldReadableUpdate";
 import { WorldResourcesUpdate } from "./updates/world/WorldResourcesUpdate";
 import { WorldShopBuyItemRequest } from "./requests/world/shop/WorldShopBuyItemRequest";
 import { WorldShopBuyItemUpdate } from "./updates/world/shop/WorldShopBuyItemUpdate";
@@ -658,6 +660,8 @@ export {
   WorldQuestTurnInUpdate,
   WorldQuestTurnInWorldCharacterUpdate,
   WorldQuestTurnInWorldUpdate,
+  WorldReadableRequest,
+  WorldReadableUpdate,
   WorldResourcesUpdate,
   WorldShopBuyItemRequest,
   WorldShopBuyItemUpdate,
