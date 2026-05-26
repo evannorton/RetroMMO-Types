@@ -109,10 +109,11 @@ export interface InitialWorldUpdate {
 }
 export interface InitialUpdate {
   readonly battle?: InitialBattleUpdate;
-  readonly isSubscribed: boolean;
+  readonly isSubscriptionCanceled?: boolean;
   readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;
   readonly parties: readonly PartyUpdate[];
   readonly players: readonly InitialPlayerUpdate[];
+  readonly subscriptionOverAt?: number;
   readonly world?: InitialWorldUpdate;
 }

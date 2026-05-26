@@ -237,6 +237,7 @@ import { Step } from "./Step";
 import { SubscribeCharacterLimitUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeCharacterLimitUpstreamWindowMessage";
 import { SubscribeEmoteUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeEmoteUpstreamWindowMessage";
 import { SubscribeItemStorageUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeItemStorageUpstreamWindowMessage";
+import { SubscriptionUpstreamWindowMessage } from "./upstream-window-messages/SubscriptionUpstreamWindowMessage";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
 import { TilemapDefinition } from "./definitions/TilemapDefinition/TilemapDefinition";
@@ -572,6 +573,7 @@ export {
   SubscribeCharacterLimitUpstreamWindowMessage,
   SubscribeEmoteUpstreamWindowMessage,
   SubscribeItemStorageUpstreamWindowMessage,
+  SubscriptionUpstreamWindowMessage,
   SwitchDefinition,
   TargetType,
   TilemapDefinition,
