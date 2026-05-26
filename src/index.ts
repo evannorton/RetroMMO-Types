@@ -214,6 +214,7 @@ import { PingUpstreamWindowMessage } from "./upstream-window-messages/PingUpstre
 import { QuestDefinition } from "./definitions/QuestDefinition";
 import { QuestExchangerDefinition } from "./definitions/QuestExchangerDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
+import { ReadableDefinition } from "./definitions/ReadableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
 import { RenameChat } from "./chats/RenameChat";
@@ -552,6 +553,7 @@ export {
   QuestDefinition,
   QuestExchangerDefinition,
   ReachableDefinition,
+  ReadableDefinition,
   RectangleDefinition,
   RemovePlayerUpdate,
   RenameChat,
