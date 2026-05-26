@@ -8,4 +8,5 @@ export interface TilemapTileDefinition {
   npcIndex?: number;
   pianoIndex?: number;
   reachableIndex?: number;
+  readableIndex?: number;
 }

@@ -10,4 +10,5 @@ export interface TilesetTileDefinition {
   readonly npcID?: string;
   readonly pianoID?: string;
   readonly reachableID?: string;
+  readonly readableID?: string;
 }
