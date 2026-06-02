@@ -167,6 +167,7 @@ import {
   InitialWorldTradeUpdate,
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
+import { InitialUpstreamWindowMessage } from "./upstream-window-messages/InitialUpstreamWindowMessage";
 import { InviteType } from "./InviteType";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
@@ -238,7 +239,6 @@ import { Step } from "./Step";
 import { SubscribeCharacterLimitUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeCharacterLimitUpstreamWindowMessage";
 import { SubscribeEmoteUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeEmoteUpstreamWindowMessage";
 import { SubscribeItemStorageUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeItemStorageUpstreamWindowMessage";
-import { SubscriptionUpstreamWindowMessage } from "./upstream-window-messages/SubscriptionUpstreamWindowMessage";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
 import { TilemapDefinition } from "./definitions/TilemapDefinition/TilemapDefinition";
@@ -504,6 +504,7 @@ export {
   InitialPlayerCharacterUpdate,
   InitialPlayerUpdate,
   InitialUpdate,
+  InitialUpstreamWindowMessage,
   InitialWorldInviteUpdate,
   InitialWorldTradeTraderItemUpdate,
   InitialWorldTradeTraderUpdate,
@@ -577,7 +578,6 @@ export {
   SubscribeCharacterLimitUpstreamWindowMessage,
   SubscribeEmoteUpstreamWindowMessage,
   SubscribeItemStorageUpstreamWindowMessage,
-  SubscriptionUpstreamWindowMessage,
   SwitchDefinition,
   TargetType,
   TilemapDefinition,

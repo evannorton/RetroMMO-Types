@@ -113,6 +113,7 @@ export interface InitialUpdate {
   readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;
   readonly parties: readonly PartyUpdate[];
+  readonly playerID: string;
   readonly players: readonly InitialPlayerUpdate[];
   readonly subscriptionOverAt?: number;
   readonly world?: InitialWorldUpdate;
