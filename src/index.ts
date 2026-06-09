@@ -258,6 +258,8 @@ import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefini
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
 import { UnbanChat } from "./chats/UnbanChat";
+import { UnlinkDiscordUpdate } from "./updates/UnlinkDiscordUpdate";
+import { UnlinkDiscordUpstreamWindowMessage } from "./upstream-window-messages/UnlinkDiscordUpstreamWindowMessage";
 import { UnmuteChat } from "./chats/UnmuteChat";
 import { VanitySlot } from "./VanitySlot";
 import { WarnChat } from "./chats/WarnChat";
@@ -604,6 +606,8 @@ export {
   TilesetTileDefinition,
   TransportDefinition,
   UnbanChat,
+  UnlinkDiscordUpdate,
+  UnlinkDiscordUpstreamWindowMessage,
   UnmuteChat,
   VanitySlot,
   WarnChat,

@@ -111,6 +111,7 @@ export interface InitialWorldUpdate {
 }
 export interface InitialUpdate {
   readonly battle?: InitialBattleUpdate;
+  readonly discordID?: string;
   readonly isSubscriptionCanceled?: boolean;
   readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;

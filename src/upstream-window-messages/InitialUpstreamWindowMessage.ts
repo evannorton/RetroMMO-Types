@@ -4,6 +4,7 @@ export interface InitialUpstreamWindowMessagePlayer {
   readonly username: string;
 }
 export interface InitialUpstreamWindowMessage {
+  readonly discordID?: string;
   readonly isSubscriptionCanceled?: boolean;
   readonly subscriptionOverAt?: number;
   readonly username: string;
