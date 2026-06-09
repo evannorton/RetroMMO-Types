@@ -119,5 +119,6 @@ export interface InitialUpdate {
   readonly playerID: string;
   readonly players: readonly InitialPlayerUpdate[];
   readonly subscriptionOverAt?: number;
+  readonly untilShutdown: number;
   readonly world?: InitialWorldUpdate;
 }

@@ -242,6 +242,8 @@ import {
   ShopDefinition,
   ShopItemDefinition,
 } from "./definitions/ShopDefinition";
+import { ShutdownUpdate } from "./updates/ShutdownUpdate";
+import { ShutdownUpstreamWindowMessage } from "./upstream-window-messages/ShutdownUpstreamWindowMessage";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
 import { Stat } from "./Stat";
 import { Step } from "./Step";
@@ -590,6 +592,8 @@ export {
   SFXVolumeDownstreamWindowMessage,
   ShopDefinition,
   ShopItemDefinition,
+  ShutdownUpdate,
+  ShutdownUpstreamWindowMessage,
   SkinColorDefinition,
   Stat,
   Step,
