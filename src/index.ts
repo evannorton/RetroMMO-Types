@@ -1,5 +1,6 @@
 import { AbilityDefinition } from "./definitions/AbilityDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
+import { AddPlayerUpstreamWindowMessage } from "./upstream-window-messages/AddPlayerUpstreamWindowMessage";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { AuthDownstreamWindowMessage } from "./downstream-window-messages/AuthDownstreamWindowMessage";
 import { BanChat } from "./chats/BanChat";
@@ -45,6 +46,7 @@ import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
 import { Chat } from "./chats/Chat";
 import { ChatChannel } from "./ChatChannel";
+import { ChatChannelsUpstreamWindowMessage } from "./upstream-window-messages/ChatChannelsUpstreamWindowMessage";
 import { ChatType } from "./ChatType";
 import { ChatUpdate } from "./updates/ChatUpdate";
 import { ChatUpstreamWindowMessage } from "./upstream-window-messages/ChatUpstreamWindowMessage";
@@ -167,7 +169,10 @@ import {
   InitialWorldTradeUpdate,
   InitialWorldUpdate,
 } from "./updates/InitialUpdate";
-import { InitialUpstreamWindowMessage } from "./upstream-window-messages/InitialUpstreamWindowMessage";
+import {
+  InitialUpstreamWindowMessage,
+  InitialUpstreamWindowMessagePlayer,
+} from "./upstream-window-messages/InitialUpstreamWindowMessage";
 import { InviteType } from "./InviteType";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
@@ -208,6 +213,8 @@ import {
 import { PartyJoinChat } from "./chats/PartyJoinChat";
 import { PartyLeaveChat } from "./chats/PartyLeaveChat";
 import { PartyUpdate } from "./updates/PartyUpdate";
+import { PermitPlayerUpdate } from "./updates/PermitPlayerUpdate";
+import { PermitPlayerUpstreamWindowMessage } from "./upstream-window-messages/PermitPlayerUpstreamWindowMessage";
 import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
@@ -218,8 +225,10 @@ import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { ReadableDefinition } from "./definitions/ReadableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
+import { RemovePlayerUpstreamWindowMessage } from "./upstream-window-messages/RemovePlayerUpstreamWindowMessage";
 import { RenameChat } from "./chats/RenameChat";
 import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
+import { RenamePlayerUpstreamWindowMessage } from "./upstream-window-messages/RenamePlayerUpstreamWindowMessage";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
@@ -379,6 +388,7 @@ import {
 export {
   AbilityDefinition,
   AddPlayerUpdate,
+  AddPlayerUpstreamWindowMessage,
   AudioSourceDefinition,
   AuthDownstreamWindowMessage,
   BanChat,
@@ -420,6 +430,7 @@ export {
   BoostDefinition,
   Chat,
   ChatChannel,
+  ChatChannelsUpstreamWindowMessage,
   ChatType,
   ChatUpdate,
   ChatUpstreamWindowMessage,
@@ -505,6 +516,7 @@ export {
   InitialPlayerUpdate,
   InitialUpdate,
   InitialUpstreamWindowMessage,
+  InitialUpstreamWindowMessagePlayer,
   InitialWorldInviteUpdate,
   InitialWorldTradeTraderItemUpdate,
   InitialWorldTradeTraderUpdate,
@@ -549,6 +561,8 @@ export {
   PartyJoinChat,
   PartyLeaveChat,
   PartyUpdate,
+  PermitPlayerUpdate,
+  PermitPlayerUpstreamWindowMessage,
   PianoDefinition,
   PianoKeyType,
   PictureDefinition,
@@ -559,8 +573,10 @@ export {
   ReadableDefinition,
   RectangleDefinition,
   RemovePlayerUpdate,
+  RemovePlayerUpstreamWindowMessage,
   RenameChat,
   RenamePlayerUpdate,
+  RenamePlayerUpstreamWindowMessage,
   ResourceBarDefinition,
   ResourcePool,
   RunUpstreamWindowMessage,

@@ -25,6 +25,8 @@ export interface InitialPlayerCharacterUpdate {
 export interface InitialPlayerUpdate {
   readonly character?: InitialPlayerCharacterUpdate;
   readonly characterID?: string;
+  readonly monthsSubscribed?: number;
+  readonly permission: number;
   readonly playerID: string;
   readonly userID: number;
   readonly username: string;

@@ -1,7 +1,5 @@
-export interface AddPlayerUpdate {
+export interface AddPlayerUpstreamWindowMessage {
   readonly monthsSubscribed?: number;
   readonly permission: number;
-  readonly playerID: string;
-  readonly userID: number;
   readonly username: string;
 }

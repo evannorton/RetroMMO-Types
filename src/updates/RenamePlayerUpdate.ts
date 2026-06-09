@@ -1,4 +1,5 @@
 export interface RenamePlayerUpdate {
-  readonly playerID: string;
-  readonly username: string;
+  readonly newUsername: string;
+  readonly oldUsername: string;
+  readonly playerID?: string;
 }

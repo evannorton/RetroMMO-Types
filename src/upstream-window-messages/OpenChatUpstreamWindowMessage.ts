@@ -1,3 +1,5 @@
+import { ChatChannel } from "../ChatChannel";
+
 export interface OpenChatUpstreamWindowMessage {
-  readonly chatChannelID: string;
+  readonly chatChannel: ChatChannel;
 }
