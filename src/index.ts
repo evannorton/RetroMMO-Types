@@ -50,11 +50,15 @@ import { ChatChannelsUpstreamWindowMessage } from "./upstream-window-messages/Ch
 import { ChatType } from "./ChatType";
 import { ChatUpdate } from "./updates/ChatUpdate";
 import { ChatUpstreamWindowMessage } from "./upstream-window-messages/ChatUpstreamWindowMessage";
+import { CheckoutDownstreamWindowMessage } from "./downstream-window-messages/CheckoutDownstreamWindowMessage";
+import { CheckoutRequest } from "./requests/CheckoutRequest";
 import { ChestDefinition } from "./definitions/ChestDefinition";
 import {
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
 } from "./definitions/ClassDefinition";
+import { ClientErrorDownstreamWindowMessage } from "./downstream-window-messages/ClientErrorDownstreamWindowMessage";
+import { ClientErrorRequest } from "./requests/ClientErrorRequest";
 import { ClothesColorDefinition } from "./definitions/ClothesColorDefinition";
 import { ClothesDyeDefinition } from "./definitions/ClothesDyeDefinition";
 import { Color } from "./Color";
@@ -130,6 +134,8 @@ import {
 } from "./combat-events/CombatUseItemEvent";
 import { CombatantType } from "./CombatantType";
 import { Constants } from "./Constants";
+import { CustomerPortalDownstreamWindowMessage } from "./downstream-window-messages/CustomerPortalDownstreamWindowMessage";
+import { CustomerPortalRequest } from "./requests/CustomerPortalRequest";
 import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
@@ -148,7 +154,6 @@ import {
 import { EnterableDefinition } from "./definitions/EnterableDefinition";
 import { EquipmentPieceDefinition } from "./definitions/EquipmentPieceDefinition";
 import { EquipmentSlot } from "./EquipmentSlot";
-import { ErrorRequest } from "./requests/ErrorRequest";
 import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
 import { FPSUpstreamWindowMessage } from "./upstream-window-messages/FPSUpstreamWindowMessage";
 import { FigureDefinition } from "./definitions/FigureDefinition";
@@ -181,6 +186,8 @@ import { KickChat } from "./chats/KickChat";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { LimitFpsDownstreamWindowMessage } from "./downstream-window-messages/LimitFpsDownstreamWindowMessage";
+import { LogOutDownstreamWindowMessage } from "./downstream-window-messages/LogOutDownstreamWindowMessage";
+import { LogOutRequest } from "./requests/LogOutRequest";
 import { LoginChat } from "./chats/LoginChat";
 import { LogoutChat } from "./chats/LogoutChat";
 import { MainMenuCharacterCustomizeCreateCharacterRequest } from "./requests/main-menu/character-customize/MainMenuCharacterCustomizeCreateCharacterRequest";
@@ -197,6 +204,8 @@ import { MainState } from "./MainState";
 import { MainVolumeDownstreamWindowMessage } from "./downstream-window-messages/MainVolumeDownstreamWindowMessage";
 import { MaskDefinition } from "./definitions/MaskDefinition";
 import { MessageChat } from "./chats/MessageChat";
+import { MessageDownstreamWindowMessage } from "./downstream-window-messages/MessageDownstreamWindowMessage";
+import { MessageRequest } from "./requests/MessageRequest";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
@@ -233,6 +242,7 @@ import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
 import { SFXVolumeDownstreamWindowMessage } from "./downstream-window-messages/SFXVolumeDownstreamWindowMessage";
+import { ScreenErrorRequest } from "./requests/ScreenErrorRequest";
 import { ScreenshotClipboardDownstreamWindowMessage } from "./downstream-window-messages/ScreenshotClipboardDownstreamWindowMessage";
 import { ScreenshotDownstreamWindowMessage } from "./downstream-window-messages/ScreenshotDownstreamWindowMessage";
 import { ScreenshotScaleDownstreamWindowMessage } from "./downstream-window-messages/ScreenshotScaleDownstreamWindowMessage";
@@ -260,6 +270,8 @@ import { TilesetTileAnimationFrameDefinition } from "./definitions/TilesetDefini
 import { TilesetTileDefinition } from "./definitions/TilesetDefinition/TilesetTileDefinition";
 import { TransportDefinition } from "./definitions/TransportDefinition";
 import { UnbanChat } from "./chats/UnbanChat";
+import { UnlinkDiscordDownstreamWindowMessage } from "./downstream-window-messages/UnlinkDiscordDownstreamWindowMessage";
+import { UnlinkDiscordRequest } from "./requests/UnlinkDiscordRequest";
 import { UnlinkDiscordUpdate } from "./updates/UnlinkDiscordUpdate";
 import { UnlinkDiscordUpstreamWindowMessage } from "./upstream-window-messages/UnlinkDiscordUpstreamWindowMessage";
 import { UnmuteChat } from "./chats/UnmuteChat";
@@ -438,9 +450,13 @@ export {
   ChatType,
   ChatUpdate,
   ChatUpstreamWindowMessage,
+  CheckoutDownstreamWindowMessage,
+  CheckoutRequest,
   ChestDefinition,
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
+  ClientErrorDownstreamWindowMessage,
+  ClientErrorRequest,
   ClothesColorDefinition,
   ClothesDyeDefinition,
   Color,
@@ -492,6 +508,8 @@ export {
   CombatUseItemEventCaster,
   CombatUseItemEventTarget,
   Constants,
+  CustomerPortalDownstreamWindowMessage,
+  CustomerPortalRequest,
   Definition,
   Direction,
   EmoteDefinition,
@@ -506,7 +524,6 @@ export {
   EnterPlayerWorldUpdate,
   EquipmentPieceDefinition,
   EquipmentSlot,
-  ErrorRequest,
   ExitPlayerUpdate,
   FigureDefinition,
   FPSUpstreamWindowMessage,
@@ -537,6 +554,8 @@ export {
   LimitFpsDownstreamWindowMessage,
   LoginChat,
   LogoutChat,
+  LogOutDownstreamWindowMessage,
+  LogOutRequest,
   MainMenuCharacterCustomizeCreateCharacterRequest,
   MainMenuCharacterCustomizeCreateCharacterUpdate,
   MainMenuCharacterSelectDeleteCharacterRequest,
@@ -551,6 +570,8 @@ export {
   MainVolumeDownstreamWindowMessage,
   MaskDefinition,
   MessageChat,
+  MessageDownstreamWindowMessage,
+  MessageRequest,
   MonsterDefinition,
   MonsterNameData,
   MusicTrackDefinition,
@@ -584,6 +605,7 @@ export {
   ResourceBarDefinition,
   ResourcePool,
   RunUpstreamWindowMessage,
+  ScreenErrorRequest,
   ScreenshotClipboardDownstreamWindowMessage,
   ScreenshotDownstreamWindowMessage,
   ScreenshotScaleDownstreamWindowMessage,
@@ -610,6 +632,8 @@ export {
   TilesetTileDefinition,
   TransportDefinition,
   UnbanChat,
+  UnlinkDiscordDownstreamWindowMessage,
+  UnlinkDiscordRequest,
   UnlinkDiscordUpdate,
   UnlinkDiscordUpstreamWindowMessage,
   UnmuteChat,
