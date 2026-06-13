@@ -4,7 +4,11 @@ import { AddPlayerUpstreamWindowMessage } from "./upstream-window-messages/AddPl
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
 import { AuthDownstreamWindowMessage } from "./downstream-window-messages/AuthDownstreamWindowMessage";
 import { BanChat } from "./chats/BanChat";
+import { BanNoticeUpdate } from "./updates/BanNoticeUpdate";
+import { BanNoticeUpstreamWindowMessage } from "./upstream-window-messages/BanNoticeUpstreamWindowMessage";
 import { BankDefinition } from "./definitions/BankDefinition";
+import { BannedUpdate } from "./updates/BannedUpdate";
+import { BannedUpstreamWindowMessage } from "./upstream-window-messages/BannedUpstreamWindowMessage";
 import { BattleAbilityHotkeyUpdate } from "./updates/battle/BattleAbilityHotkeyUpdate";
 import { BattleBindAbilityRequest } from "./requests/battle/BattleBindAbilityRequest";
 import { BattleBindAbilityUpdate } from "./updates/battle/BattleBindAbilityUpdate";
@@ -52,6 +56,8 @@ import { ChatUpdate } from "./updates/ChatUpdate";
 import { ChatUpstreamWindowMessage } from "./upstream-window-messages/ChatUpstreamWindowMessage";
 import { CheckoutDownstreamWindowMessage } from "./downstream-window-messages/CheckoutDownstreamWindowMessage";
 import { CheckoutRequest } from "./requests/CheckoutRequest";
+import { CheckoutSessionUpdate } from "./updates/CheckoutSessionUpdate";
+import { CheckoutSessionUpstreamWindowMessage } from "./upstream-window-messages/CheckoutSessionUpstreamWindowMessage";
 import { ChestDefinition } from "./definitions/ChestDefinition";
 import {
   ClassDefinition,
@@ -136,6 +142,8 @@ import { CombatantType } from "./CombatantType";
 import { Constants } from "./Constants";
 import { CustomerPortalDownstreamWindowMessage } from "./downstream-window-messages/CustomerPortalDownstreamWindowMessage";
 import { CustomerPortalRequest } from "./requests/CustomerPortalRequest";
+import { CustomerPortalUpdate } from "./updates/CustomerPortalUpdate";
+import { CustomerPortalUpstreamWindowMessage } from "./upstream-window-messages/CustomerPortalUpstreamWindowMessage";
 import { Definition } from "./definitions/Definition";
 import { Direction } from "./Direction";
 import { EmoteDefinition } from "./definitions/EmoteDefinition";
@@ -155,12 +163,18 @@ import { EnterableDefinition } from "./definitions/EnterableDefinition";
 import { EquipmentPieceDefinition } from "./definitions/EquipmentPieceDefinition";
 import { EquipmentSlot } from "./EquipmentSlot";
 import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
+import { ExpiredSessionNoticeUpdate } from "./updates/ExpiredSessionNoticeUpdate";
+import { ExpiredSessionNoticeUpstreamWindowMessage } from "./upstream-window-messages/ExpiredSessionNoticeUpstreamWindowMessage";
 import { FPSUpstreamWindowMessage } from "./upstream-window-messages/FPSUpstreamWindowMessage";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
 import { HairDyeDefinition } from "./definitions/HairDyeDefinition";
 import { HeadCosmeticDefinition } from "./definitions/HeadCosmeticDefinition";
 import { IPBanChat } from "./chats/IPBanChat";
+import { IPBanNoticeUpdate } from "./updates/IPBanNoticeUpdate";
+import { IPBanNoticeUpstreamWindowMessage } from "./upstream-window-messages/IPBanNoticeUpstreamWindowMessage";
+import { IPBannedUpdate } from "./updates/IPBannedUpdate";
+import { IPBannedUpstreamWindowMessage } from "./upstream-window-messages/IPBannedUpstreamWindowMessage";
 import { ImageSourceDefinition } from "./definitions/ImageSourceDefinition";
 import {
   InitialBattleUpdate,
@@ -183,6 +197,8 @@ import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
 import { JoystickDownstreamWindowMessage } from "./downstream-window-messages/JoystickDownstreamWindowMessage";
 import { KickChat } from "./chats/KickChat";
+import { KickedUpdate } from "./updates/KickedUpdate";
+import { KickedUpstreamWindowMessage } from "./upstream-window-messages/KickedUpstreamWindowMessage";
 import { LabelDefinition } from "./definitions/LabelDefinition";
 import { LandscapeDefinition } from "./definitions/LandscapeDefinition";
 import { LimitFpsDownstreamWindowMessage } from "./downstream-window-messages/LimitFpsDownstreamWindowMessage";
@@ -203,14 +219,20 @@ import { MainMenuCharacterUpdate } from "./updates/main-menu/MainMenuCharacterUp
 import { MainState } from "./MainState";
 import { MainVolumeDownstreamWindowMessage } from "./downstream-window-messages/MainVolumeDownstreamWindowMessage";
 import { MaskDefinition } from "./definitions/MaskDefinition";
+import { MaximumPlayersCountUpdate } from "./updates/MaximumPlayersCountUpdate";
+import { MaximumPlayersCountUpstreamWindowMessage } from "./upstream-window-messages/MaximumPlayersCountUpstreamWindowMessage";
 import { MessageChat } from "./chats/MessageChat";
 import { MessageDownstreamWindowMessage } from "./downstream-window-messages/MessageDownstreamWindowMessage";
 import { MessageRequest } from "./requests/MessageRequest";
+import { MessagesLimitNoticeUpdate } from "./updates/MessagesLimitNoticeUpdate";
+import { MessagesLimitNoticeUpstreamWindowMessage } from "./upstream-window-messages/MessagesLimitNoticeUpstreamWindowMessage";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
 import { MusicVolumeDownstreamWindowMessage } from "./downstream-window-messages/MusicVolumeDownstreamWindowMessage";
 import { MuteChat } from "./chats/MuteChat";
+import { MuteNoticeUpdate } from "./updates/MuteNoticeUpdate";
+import { MuteNoticeUpstreamWindowMessage } from "./upstream-window-messages/MuteNoticeUpstreamWindowMessage";
 import { NPCDefinition } from "./definitions/NPCDefinition";
 import { OpenChatUpstreamWindowMessage } from "./upstream-window-messages/OpenChatUpstreamWindowMessage";
 import { OutfitDefinition } from "./definitions/OutfitDefinition";
@@ -228,16 +250,24 @@ import { PianoDefinition } from "./definitions/PianoDefinition";
 import { PianoKeyType } from "./PianoKeyType";
 import { PictureDefinition } from "./definitions/PictureDefinition";
 import { PingUpstreamWindowMessage } from "./upstream-window-messages/PingUpstreamWindowMessage";
+import { PurgedUpdate } from "./updates/PurgedUpdate";
+import { PurgedUpstreamWindowMessage } from "./upstream-window-messages/PurgedUpstreamWindowMessage";
 import { QuestDefinition } from "./definitions/QuestDefinition";
 import { QuestExchangerDefinition } from "./definitions/QuestExchangerDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { ReadableDefinition } from "./definitions/ReadableDefinition";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
+import { RemoveAllUpdate } from "./updates/RemoveAllUpdate";
+import { RemoveAllUpstreamWindowMessage } from "./upstream-window-messages/RemoveAllUpstreamWindowMessage";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
 import { RemovePlayerUpstreamWindowMessage } from "./upstream-window-messages/RemovePlayerUpstreamWindowMessage";
+import { RemoveUpdate } from "./updates/RemoveUpdate";
+import { RemoveUpstreamWindowMessage } from "./upstream-window-messages/RemoveUpstreamWindowMessage";
 import { RenameChat } from "./chats/RenameChat";
 import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { RenamePlayerUpstreamWindowMessage } from "./upstream-window-messages/RenamePlayerUpstreamWindowMessage";
+import { ReplacedUpdate } from "./updates/ReplacedUpdate";
+import { ReplacedUpstreamWindowMessage } from "./upstream-window-messages/ReplacedUpstreamWindowMessage";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
@@ -409,6 +439,10 @@ export {
   AuthDownstreamWindowMessage,
   BanChat,
   BankDefinition,
+  BannedUpdate,
+  BannedUpstreamWindowMessage,
+  BanNoticeUpdate,
+  BanNoticeUpstreamWindowMessage,
   BattleAbilityHotkeyUpdate,
   BattleBindAbilityRequest,
   BattleBindAbilityUpdate,
@@ -452,6 +486,8 @@ export {
   ChatUpstreamWindowMessage,
   CheckoutDownstreamWindowMessage,
   CheckoutRequest,
+  CheckoutSessionUpdate,
+  CheckoutSessionUpstreamWindowMessage,
   ChestDefinition,
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
@@ -510,6 +546,8 @@ export {
   Constants,
   CustomerPortalDownstreamWindowMessage,
   CustomerPortalRequest,
+  CustomerPortalUpdate,
+  CustomerPortalUpstreamWindowMessage,
   Definition,
   Direction,
   EmoteDefinition,
@@ -525,6 +563,8 @@ export {
   EquipmentPieceDefinition,
   EquipmentSlot,
   ExitPlayerUpdate,
+  ExpiredSessionNoticeUpdate,
+  ExpiredSessionNoticeUpstreamWindowMessage,
   FigureDefinition,
   FPSUpstreamWindowMessage,
   HairColorDefinition,
@@ -545,10 +585,16 @@ export {
   InitialWorldUpdate,
   InviteType,
   IPBanChat,
+  IPBannedUpdate,
+  IPBannedUpstreamWindowMessage,
+  IPBanNoticeUpdate,
+  IPBanNoticeUpstreamWindowMessage,
   ItemDefinition,
   ItemInstanceUpdate,
   JoystickDownstreamWindowMessage,
   KickChat,
+  KickedUpdate,
+  KickedUpstreamWindowMessage,
   LabelDefinition,
   LandscapeDefinition,
   LimitFpsDownstreamWindowMessage,
@@ -569,14 +615,20 @@ export {
   MainState,
   MainVolumeDownstreamWindowMessage,
   MaskDefinition,
+  MaximumPlayersCountUpdate,
+  MaximumPlayersCountUpstreamWindowMessage,
   MessageChat,
   MessageDownstreamWindowMessage,
   MessageRequest,
+  MessagesLimitNoticeUpdate,
+  MessagesLimitNoticeUpstreamWindowMessage,
   MonsterDefinition,
   MonsterNameData,
   MusicTrackDefinition,
   MusicVolumeDownstreamWindowMessage,
   MuteChat,
+  MuteNoticeUpdate,
+  MuteNoticeUpstreamWindowMessage,
   NPCDefinition,
   OpenChatUpstreamWindowMessage,
   OutfitDefinition,
@@ -592,16 +644,24 @@ export {
   PianoKeyType,
   PictureDefinition,
   PingUpstreamWindowMessage,
+  PurgedUpdate,
+  PurgedUpstreamWindowMessage,
   QuestDefinition,
   QuestExchangerDefinition,
   ReachableDefinition,
   ReadableDefinition,
   RectangleDefinition,
+  RemoveAllUpdate,
+  RemoveAllUpstreamWindowMessage,
   RemovePlayerUpdate,
   RemovePlayerUpstreamWindowMessage,
+  RemoveUpdate,
+  RemoveUpstreamWindowMessage,
   RenameChat,
   RenamePlayerUpdate,
   RenamePlayerUpstreamWindowMessage,
+  ReplacedUpdate,
+  ReplacedUpstreamWindowMessage,
   ResourceBarDefinition,
   ResourcePool,
   RunUpstreamWindowMessage,
