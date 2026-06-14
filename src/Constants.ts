@@ -16,6 +16,7 @@ export interface Constants {
   "maximum-party-size": number;
   "maximum-will": number;
   "movement-duration": number;
+  "reconnection-duration": number;
   "starting-will": number;
   "subscriber-character-slots": number;
   "tile-size": number;

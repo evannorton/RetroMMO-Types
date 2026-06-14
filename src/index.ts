@@ -256,6 +256,7 @@ import { QuestDefinition } from "./definitions/QuestDefinition";
 import { QuestExchangerDefinition } from "./definitions/QuestExchangerDefinition";
 import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { ReadableDefinition } from "./definitions/ReadableDefinition";
+import { ReconnectionFailedUpstreamWindowMessage } from "./upstream-window-messages/ReconnectionFailedUpstreamWindowMessage";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
 import { RemoveAllUpdate } from "./updates/RemoveAllUpdate";
 import { RemoveAllUpstreamWindowMessage } from "./upstream-window-messages/RemoveAllUpstreamWindowMessage";
@@ -650,6 +651,7 @@ export {
   QuestExchangerDefinition,
   ReachableDefinition,
   ReadableDefinition,
+  ReconnectionFailedUpstreamWindowMessage,
   RectangleDefinition,
   RemoveAllUpdate,
   RemoveAllUpstreamWindowMessage,
