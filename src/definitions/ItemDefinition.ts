@@ -11,6 +11,7 @@ export interface ItemDefinition extends Definition {
   readonly equipmentPieceID?: string;
   readonly hairDyeID?: string;
   readonly iconImagePath: string;
+  readonly isTradable?: boolean;
   readonly maskID?: string;
   readonly name: string;
   readonly outfitID?: string;
