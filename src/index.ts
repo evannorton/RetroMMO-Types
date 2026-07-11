@@ -286,8 +286,10 @@ import {
 import { ShutdownUpdate } from "./updates/ShutdownUpdate";
 import { ShutdownUpstreamWindowMessage } from "./upstream-window-messages/ShutdownUpstreamWindowMessage";
 import { SkinColorDefinition } from "./definitions/SkinColorDefinition";
+import { StartRecordingDownstreamWindowMessage } from "./downstream-window-messages/StartRecordingDownstreamWindowMessage";
 import { Stat } from "./Stat";
 import { Step } from "./Step";
+import { StopRecordingDownstreamWindowMessage } from "./downstream-window-messages/StopRecordingDownstreamWindowMessage";
 import { SubscribeCharacterLimitUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeCharacterLimitUpstreamWindowMessage";
 import { SubscribeEmoteUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeEmoteUpstreamWindowMessage";
 import { SubscribeItemStorageUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeItemStorageUpstreamWindowMessage";
@@ -679,8 +681,10 @@ export {
   ShutdownUpdate,
   ShutdownUpstreamWindowMessage,
   SkinColorDefinition,
+  StartRecordingDownstreamWindowMessage,
   Stat,
   Step,
+  StopRecordingDownstreamWindowMessage,
   SubscribeCharacterLimitUpstreamWindowMessage,
   SubscribeEmoteUpstreamWindowMessage,
   SubscribeItemStorageUpstreamWindowMessage,
