@@ -309,6 +309,7 @@ import { UnlinkDiscordUpdate } from "./updates/UnlinkDiscordUpdate";
 import { UnlinkDiscordUpstreamWindowMessage } from "./upstream-window-messages/UnlinkDiscordUpstreamWindowMessage";
 import { UnmuteChat } from "./chats/UnmuteChat";
 import { VanitySlot } from "./VanitySlot";
+import { VideoRecordingScaleDownstreamWindowMessage } from "./downstream-window-messages/VideoRecordingScaleDownstreamWindowMessage";
 import { WarnChat } from "./chats/WarnChat";
 import { WorldAcceptDuelInviteRequest } from "./requests/world/WorldAcceptDuelInviteRequest";
 import { WorldAcceptPartyInviteRequest } from "./requests/world/WorldAcceptPartyInviteRequest";
@@ -704,6 +705,7 @@ export {
   UnlinkDiscordUpstreamWindowMessage,
   UnmuteChat,
   VanitySlot,
+  VideoRecordingScaleDownstreamWindowMessage,
   WarnChat,
   WorldAcceptDuelInviteRequest,
   WorldAcceptPartyInviteRequest,
