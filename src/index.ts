@@ -165,6 +165,7 @@ import { EquipmentSlot } from "./EquipmentSlot";
 import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
 import { ExpiredSessionNoticeUpdate } from "./updates/ExpiredSessionNoticeUpdate";
 import { ExpiredSessionNoticeUpstreamWindowMessage } from "./upstream-window-messages/ExpiredSessionNoticeUpstreamWindowMessage";
+import { FPSRequest } from "./requests/FPSRequest";
 import { FPSUpstreamWindowMessage } from "./upstream-window-messages/FPSUpstreamWindowMessage";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
@@ -570,6 +571,7 @@ export {
   ExpiredSessionNoticeUpdate,
   ExpiredSessionNoticeUpstreamWindowMessage,
   FigureDefinition,
+  FPSRequest,
   FPSUpstreamWindowMessage,
   HairColorDefinition,
   HairDyeDefinition,
