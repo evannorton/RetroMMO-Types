@@ -28,7 +28,6 @@ export interface InitialPlayerUpdate {
   readonly monthsSubscribed?: number;
   readonly permission: number;
   readonly playerID: string;
-  readonly userID: number;
   readonly username: string;
 }
 export interface InitialBattleUpdate {
@@ -118,6 +117,7 @@ export interface InitialUpdate {
   readonly parties: readonly PartyUpdate[];
   readonly playerID: string;
   readonly players: readonly InitialPlayerUpdate[];
+  readonly starwatchUserID: string;
   readonly subscriptionOverAt?: number;
   readonly untilShutdown: number;
   readonly world?: InitialWorldUpdate;
