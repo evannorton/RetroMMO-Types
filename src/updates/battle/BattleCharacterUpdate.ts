@@ -9,4 +9,7 @@ export interface BattleCharacterUpdate {
   readonly outfitItemID?: string;
   readonly playerID: string;
   readonly skinColorID: string;
+  readonly tilemapID: string;
+  readonly x: number;
+  readonly y: number;
 }
