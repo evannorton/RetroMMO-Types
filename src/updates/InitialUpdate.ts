@@ -118,6 +118,10 @@ export interface InitialUpdate {
   readonly parties: readonly PartyUpdate[];
   readonly playerID: string;
   readonly players: readonly InitialPlayerUpdate[];
+  readonly starwatchBearer?: {
+    readonly expiresAtSeconds: number;
+    readonly token: string;
+  };
   readonly starwatchUserID: string;
   readonly subscriptionOverAt?: number;
   readonly untilShutdown: number;
