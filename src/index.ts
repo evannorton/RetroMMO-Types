@@ -293,6 +293,10 @@ import { StopRecordingDownstreamWindowMessage } from "./downstream-window-messag
 import { SubscribeCharacterLimitUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeCharacterLimitUpstreamWindowMessage";
 import { SubscribeEmoteUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeEmoteUpstreamWindowMessage";
 import { SubscribeItemStorageUpstreamWindowMessage } from "./upstream-window-messages/subscribe/SubscribeItemStorageUpstreamWindowMessage";
+import { SubscribeToEmailsDownstreamWindowMessage } from "./downstream-window-messages/SubscribeToEmailsDownstreamWindowMessage";
+import { SubscribeToEmailsRequest } from "./requests/SubscribeToEmailsRequest";
+import { SubscribeToEmailsUpdate } from "./updates/SubscribeToEmailsUpdate";
+import { SubscribeToEmailsUpstreamWindowMessage } from "./upstream-window-messages/SubscribeToEmailsUpstreamWindowMessage";
 import { SwitchDefinition } from "./definitions/SwitchDefinition";
 import { TargetType } from "./TargetType";
 import { TilemapDefinition } from "./definitions/TilemapDefinition/TilemapDefinition";
@@ -689,6 +693,10 @@ export {
   SubscribeCharacterLimitUpstreamWindowMessage,
   SubscribeEmoteUpstreamWindowMessage,
   SubscribeItemStorageUpstreamWindowMessage,
+  SubscribeToEmailsDownstreamWindowMessage,
+  SubscribeToEmailsRequest,
+  SubscribeToEmailsUpdate,
+  SubscribeToEmailsUpstreamWindowMessage,
   SwitchDefinition,
   TargetType,
   TilemapDefinition,
