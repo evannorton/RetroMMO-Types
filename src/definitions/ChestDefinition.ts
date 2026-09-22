@@ -6,4 +6,5 @@ export interface ChestDefinition extends Definition {
   readonly itemID?: string;
   readonly mapImagePath: string;
   readonly panelImagePath: string;
+  readonly slotImagePath: string;
 }
