@@ -259,6 +259,8 @@ import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { ReadableDefinition } from "./definitions/ReadableDefinition";
 import { ReconnectionFailedUpstreamWindowMessage } from "./upstream-window-messages/ReconnectionFailedUpstreamWindowMessage";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
+import { RefreshStarwatchBearerRequest } from "./requests/RefreshStarwatchBearerRequest";
+import { RefreshStarwatchBearerUpdate } from "./updates/RefreshStarwatchBearerUpdate";
 import { RemoveAllUpdate } from "./updates/RemoveAllUpdate";
 import { RemoveAllUpstreamWindowMessage } from "./upstream-window-messages/RemoveAllUpstreamWindowMessage";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
@@ -658,6 +660,8 @@ export {
   ReadableDefinition,
   ReconnectionFailedUpstreamWindowMessage,
   RectangleDefinition,
+  RefreshStarwatchBearerRequest,
+  RefreshStarwatchBearerUpdate,
   RemoveAllUpdate,
   RemoveAllUpstreamWindowMessage,
   RemovePlayerUpdate,
