@@ -272,6 +272,8 @@ import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { RenamePlayerUpstreamWindowMessage } from "./upstream-window-messages/RenamePlayerUpstreamWindowMessage";
 import { ReplacedUpdate } from "./updates/ReplacedUpdate";
 import { ReplacedUpstreamWindowMessage } from "./upstream-window-messages/ReplacedUpstreamWindowMessage";
+import { ReportIssueDownstreamWindowMessage } from "./downstream-window-messages/ReportIssueDownstreamWindowMessage";
+import { ReportIssueRequest } from "./requests/ReportIssueRequest";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
@@ -673,6 +675,8 @@ export {
   RenamePlayerUpstreamWindowMessage,
   ReplacedUpdate,
   ReplacedUpstreamWindowMessage,
+  ReportIssueDownstreamWindowMessage,
+  ReportIssueRequest,
   ResourceBarDefinition,
   ResourcePool,
   RunUpstreamWindowMessage,
