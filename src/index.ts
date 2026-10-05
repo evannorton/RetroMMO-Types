@@ -165,6 +165,7 @@ import { EquipmentSlot } from "./EquipmentSlot";
 import { ExitPlayerUpdate } from "./updates/world/ExitPlayerUpdate";
 import { ExpiredSessionNoticeUpdate } from "./updates/ExpiredSessionNoticeUpdate";
 import { ExpiredSessionNoticeUpstreamWindowMessage } from "./upstream-window-messages/ExpiredSessionNoticeUpstreamWindowMessage";
+import { FPSRequest } from "./requests/FPSRequest";
 import { FPSUpstreamWindowMessage } from "./upstream-window-messages/FPSUpstreamWindowMessage";
 import { FigureDefinition } from "./definitions/FigureDefinition";
 import { HairColorDefinition } from "./definitions/HairColorDefinition";
@@ -258,6 +259,8 @@ import { ReachableDefinition } from "./definitions/ReachableDefinition";
 import { ReadableDefinition } from "./definitions/ReadableDefinition";
 import { ReconnectionFailedUpstreamWindowMessage } from "./upstream-window-messages/ReconnectionFailedUpstreamWindowMessage";
 import { RectangleDefinition } from "./definitions/RectangleDefinition";
+import { RefreshStarwatchBearerRequest } from "./requests/RefreshStarwatchBearerRequest";
+import { RefreshStarwatchBearerUpdate } from "./updates/RefreshStarwatchBearerUpdate";
 import { RemoveAllUpdate } from "./updates/RemoveAllUpdate";
 import { RemoveAllUpstreamWindowMessage } from "./upstream-window-messages/RemoveAllUpstreamWindowMessage";
 import { RemovePlayerUpdate } from "./updates/RemovePlayerUpdate";
@@ -269,6 +272,8 @@ import { RenamePlayerUpdate } from "./updates/RenamePlayerUpdate";
 import { RenamePlayerUpstreamWindowMessage } from "./upstream-window-messages/RenamePlayerUpstreamWindowMessage";
 import { ReplacedUpdate } from "./updates/ReplacedUpdate";
 import { ReplacedUpstreamWindowMessage } from "./upstream-window-messages/ReplacedUpstreamWindowMessage";
+import { ReportIssueDownstreamWindowMessage } from "./downstream-window-messages/ReportIssueDownstreamWindowMessage";
+import { ReportIssueRequest } from "./requests/ReportIssueRequest";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
@@ -574,6 +579,7 @@ export {
   ExpiredSessionNoticeUpdate,
   ExpiredSessionNoticeUpstreamWindowMessage,
   FigureDefinition,
+  FPSRequest,
   FPSUpstreamWindowMessage,
   HairColorDefinition,
   HairDyeDefinition,
@@ -660,6 +666,8 @@ export {
   ReadableDefinition,
   ReconnectionFailedUpstreamWindowMessage,
   RectangleDefinition,
+  RefreshStarwatchBearerRequest,
+  RefreshStarwatchBearerUpdate,
   RemoveAllUpdate,
   RemoveAllUpstreamWindowMessage,
   RemovePlayerUpdate,
@@ -671,6 +679,8 @@ export {
   RenamePlayerUpstreamWindowMessage,
   ReplacedUpdate,
   ReplacedUpstreamWindowMessage,
+  ReportIssueDownstreamWindowMessage,
+  ReportIssueRequest,
   ResourceBarDefinition,
   ResourcePool,
   RunUpstreamWindowMessage,
