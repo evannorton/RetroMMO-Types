@@ -3,6 +3,8 @@ import { Definition } from "./Definition";
 export interface ChestDefinition extends Definition {
   readonly countsTowardTotal?: boolean;
   readonly gold?: number;
-  readonly imagePath: string;
   readonly itemID?: string;
+  readonly mapImagePath: string;
+  readonly panelImagePath: string;
+  readonly slotImagePath: string;
 }

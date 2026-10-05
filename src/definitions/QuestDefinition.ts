@@ -1,5 +1,6 @@
 export interface QuestDefinition {
   readonly availableText: string;
+  readonly countsTowardTotal?: boolean;
   readonly experience: number;
   readonly giverNPCID: string;
   readonly gold: number;

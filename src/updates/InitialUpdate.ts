@@ -112,6 +112,7 @@ export interface InitialUpdate {
   readonly battle?: InitialBattleUpdate;
   readonly discordID?: string;
   readonly isFirstLogin?: boolean;
+  readonly isSubscribedToEmails: boolean;
   readonly isSubscriptionCanceled?: boolean;
   readonly mainMenu?: InitialMainMenuUpdate;
   readonly mainState: MainState;
