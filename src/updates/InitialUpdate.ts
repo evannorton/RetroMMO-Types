@@ -1,3 +1,4 @@
+import { AchievementUpdate } from "./AchievementUpdate";
 import { BattleAbilityHotkeyUpdate } from "./battle/BattleAbilityHotkeyUpdate";
 import { BattleCharacterUpdate } from "./battle/BattleCharacterUpdate";
 import { BattleItemHotkeyUpdate } from "./battle/BattleItemHotkeyUpdate";
@@ -125,6 +126,7 @@ export interface InitialUpdate {
   };
   readonly starwatchUserID: string;
   readonly subscriptionOverAt?: number;
+  readonly unlockedAchievements: readonly AchievementUpdate[];
   readonly untilShutdown: number;
   readonly world?: InitialWorldUpdate;
 }

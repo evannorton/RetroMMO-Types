@@ -1,4 +1,5 @@
 import { AbilityDefinition } from "./definitions/AbilityDefinition";
+import { AchievementDefinition } from "./definitions/AchievementDefinition";
 import { AddPlayerUpdate } from "./updates/AddPlayerUpdate";
 import { AddPlayerUpstreamWindowMessage } from "./upstream-window-messages/AddPlayerUpstreamWindowMessage";
 import { AudioSourceDefinition } from "./definitions/AudioSourceDefinition";
@@ -446,6 +447,7 @@ import {
 
 export {
   AbilityDefinition,
+  AchievementDefinition,
   AddPlayerUpdate,
   AddPlayerUpstreamWindowMessage,
   AudioSourceDefinition,
