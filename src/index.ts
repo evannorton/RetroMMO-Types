@@ -131,6 +131,14 @@ import {
 } from "./combat-events/CombatRejuvenateFailureEvent";
 import { CombatRenewEvent } from "./combat-events/CombatRenewEvent";
 import {
+  CombatReviveEvent,
+  CombatReviveEventTarget,
+} from "./combat-events/CombatReviveEvent";
+import {
+  CombatReviveFailureEvent,
+  CombatReviveFailureEventTarget,
+} from "./combat-events/CombatReviveFailureEvent";
+import {
   CombatUseAbilityEvent,
   CombatUseAbilityEventCaster,
   CombatUseAbilityEventTarget,
@@ -554,6 +562,10 @@ export {
   CombatRejuvenateFailureEvent,
   CombatRejuvenateFailureEventTarget,
   CombatRenewEvent,
+  CombatReviveEvent,
+  CombatReviveEventTarget,
+  CombatReviveFailureEvent,
+  CombatReviveFailureEventTarget,
   CombatUseAbilityEvent,
   CombatUseAbilityEventCaster,
   CombatUseAbilityEventTarget,

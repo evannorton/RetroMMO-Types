@@ -27,6 +27,8 @@ export enum CombatEventType {
   Rejuvenate = "rejuvenate",
   RejuvenateFailure = "rejuvenate-failure",
   Renew = "renew",
+  Revive = "revive",
+  ReviveFailure = "revive-failure",
   UseAbility = "use-ability",
   UseItem = "use-item",
 }
