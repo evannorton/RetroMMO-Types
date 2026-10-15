@@ -64,6 +64,7 @@ import { ChestDefinition } from "./definitions/ChestDefinition";
 import {
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
+  ClassDefinitionMilestone,
 } from "./definitions/ClassDefinition";
 import { ClientErrorDownstreamWindowMessage } from "./downstream-window-messages/ClientErrorDownstreamWindowMessage";
 import { ClientErrorRequest } from "./requests/ClientErrorRequest";
@@ -237,6 +238,7 @@ import { MessageDownstreamWindowMessage } from "./downstream-window-messages/Mes
 import { MessageRequest } from "./requests/MessageRequest";
 import { MessagesLimitNoticeUpdate } from "./updates/MessagesLimitNoticeUpdate";
 import { MessagesLimitNoticeUpstreamWindowMessage } from "./upstream-window-messages/MessagesLimitNoticeUpstreamWindowMessage";
+import { MilestoneChoiceDefinition } from "./definitions/MilestoneChoiceDefinition";
 import { MonsterDefinition } from "./definitions/MonsterDefinition";
 import { MonsterNameData } from "./MonsterNameData";
 import { MusicTrackDefinition } from "./definitions/MusicTrackDefinition";
@@ -447,6 +449,8 @@ import {
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
 import { WorldUnequipEquipmentItemRequest } from "./requests/world/WorldUnequipEquipmentItemRequest";
 import { WorldUnequipVanityItemRequest } from "./requests/world/WorldUnequipVanityItemRequest";
+import { WorldUnlockMilestoneChoiceRequest } from "./requests/world/WorldUnlockMilestoneChoiceRequest";
+import { WorldUnlockMilestoneChoiceUpdate } from "./updates/world/WorldUnlockMilestoneChoiceUpdate";
 import { WorldUseAbilityRequest } from "./requests/world/WorldUseAbilityRequest";
 import { WorldUseItemInstanceRequest } from "./requests/world/WorldUseItemInstanceRequest";
 import {
@@ -516,6 +520,7 @@ export {
   ChestDefinition,
   ClassDefinition,
   ClassDefinitionAbilityUnlock,
+  ClassDefinitionMilestone,
   ClientErrorDownstreamWindowMessage,
   ClientErrorRequest,
   ClothesColorDefinition,
@@ -652,6 +657,7 @@ export {
   MessageRequest,
   MessagesLimitNoticeUpdate,
   MessagesLimitNoticeUpstreamWindowMessage,
+  MilestoneChoiceDefinition,
   MonsterDefinition,
   MonsterNameData,
   MusicTrackDefinition,
@@ -846,6 +852,8 @@ export {
   WorldTurnNPCUpdate,
   WorldUnequipEquipmentItemRequest,
   WorldUnequipVanityItemRequest,
+  WorldUnlockMilestoneChoiceRequest,
+  WorldUnlockMilestoneChoiceUpdate,
   WorldUseAbilityRequest,
   WorldUseItemInstanceRequest,
   WorldVanityItemsUpdate,

@@ -21,6 +21,7 @@ import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 export interface InitialPlayerCharacterUpdate {
   readonly classID: string;
   readonly level: number;
+  readonly milestoneChoiceIDs?: Record<number, string>;
   readonly partyID: string;
 }
 export interface InitialPlayerUpdate {

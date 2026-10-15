@@ -5,10 +5,15 @@ export interface ClassDefinitionAbilityUnlock {
   readonly abilityID: string;
   readonly level: number;
 }
+export interface ClassDefinitionMilestone {
+  readonly choiceIDs: readonly string[];
+  readonly level: number;
+}
 export interface ClassDefinition extends Definition {
   readonly abbreviation: string;
   readonly abilityUnlocks: ClassDefinitionAbilityUnlock[];
   readonly description: string;
+  readonly milestones: readonly ClassDefinitionMilestone[];
   readonly defaultClothesDyeItemID: string;
   readonly defaultFigureID: string;
   readonly defaultHairDyeItemID: string;

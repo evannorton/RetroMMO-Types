@@ -25,6 +25,7 @@ export interface EnterPlayerCharacterUpdate {
   readonly luck: number;
   readonly mainHandItemInstance?: ItemInstanceUpdate;
   readonly maskItemInstance?: ItemInstanceUpdate;
+  readonly milestoneChoiceIDs: Record<number, string>;
   readonly npcs: readonly WorldNPCUpdate[];
   readonly offHandItemInstance?: ItemInstanceUpdate;
   readonly outfitItemInstance?: ItemInstanceUpdate;
