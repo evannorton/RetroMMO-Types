@@ -19,6 +19,7 @@ export enum CombatEventType {
   Instakill = "instakill",
   InstakillFinish = "instakill-finish",
   InventoryFull = "inventory-full",
+  LearnAbility = "learn-ability",
   LevelUp = "level-up",
   Miss = "miss",
   NewLevel = "new-level",

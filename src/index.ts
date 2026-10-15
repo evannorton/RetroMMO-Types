@@ -114,6 +114,7 @@ import {
   CombatInstakillFinishEventTarget,
 } from "./combat-events/CombatInstakillFinishEvent";
 import { CombatInventoryFullEvent } from "./combat-events/CombatInventoryFullEvent";
+import { CombatLearnAbilityEvent } from "./combat-events/CombatLearnAbilityEvent";
 import { CombatLevelUpEvent } from "./combat-events/CombatLevelUpEvent";
 import { CombatMissEvent } from "./combat-events/CombatMissEvent";
 import { CombatNewLevelEvent } from "./combat-events/CombatNewLevelEvent";
@@ -556,6 +557,7 @@ export {
   CombatInstakillFinishEvent,
   CombatInstakillFinishEventTarget,
   CombatInventoryFullEvent,
+  CombatLearnAbilityEvent,
   CombatLevelUpEvent,
   CombatMissEvent,
   CombatNewLevelEvent,
