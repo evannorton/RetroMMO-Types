@@ -21,6 +21,8 @@ export enum CombatEventType {
   InventoryFull = "inventory-full",
   LearnAbility = "learn-ability",
   LevelUp = "level-up",
+  MilestoneReset = "milestone-reset",
+  MilestoneResetFailure = "milestone-reset-failure",
   Miss = "miss",
   NewLevel = "new-level",
   Obtain = "obtain",

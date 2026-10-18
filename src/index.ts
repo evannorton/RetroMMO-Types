@@ -116,6 +116,8 @@ import {
 import { CombatInventoryFullEvent } from "./combat-events/CombatInventoryFullEvent";
 import { CombatLearnAbilityEvent } from "./combat-events/CombatLearnAbilityEvent";
 import { CombatLevelUpEvent } from "./combat-events/CombatLevelUpEvent";
+import { CombatMilestoneResetEvent } from "./combat-events/CombatMilestoneResetEvent";
+import { CombatMilestoneResetFailureEvent } from "./combat-events/CombatMilestoneResetFailureEvent";
 import { CombatMissEvent } from "./combat-events/CombatMissEvent";
 import { CombatNewLevelEvent } from "./combat-events/CombatNewLevelEvent";
 import { CombatObtainEvent } from "./combat-events/CombatObtainEvent";
@@ -559,6 +561,8 @@ export {
   CombatInventoryFullEvent,
   CombatLearnAbilityEvent,
   CombatLevelUpEvent,
+  CombatMilestoneResetEvent,
+  CombatMilestoneResetFailureEvent,
   CombatMissEvent,
   CombatNewLevelEvent,
   CombatObtainEvent,
