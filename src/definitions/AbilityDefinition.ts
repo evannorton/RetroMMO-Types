@@ -9,6 +9,7 @@ export interface AbilityDefinition extends Definition {
   readonly canBeUsedInBattle?: boolean;
   readonly canBeUsedInWorld?: boolean;
   readonly chargeAudioPath?: string;
+  readonly curesPoison?: boolean;
   readonly description: string;
   readonly fleeChance?: number;
   readonly iconImagePath: string;

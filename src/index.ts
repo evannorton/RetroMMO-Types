@@ -122,6 +122,14 @@ import { CombatMissEvent } from "./combat-events/CombatMissEvent";
 import { CombatNewLevelEvent } from "./combat-events/CombatNewLevelEvent";
 import { CombatObtainEvent } from "./combat-events/CombatObtainEvent";
 import {
+  CombatPoisonEndEvent,
+  CombatPoisonEndEventTarget,
+} from "./combat-events/CombatPoisonEndEvent";
+import {
+  CombatPoisonEndFailureEvent,
+  CombatPoisonEndFailureEventTarget,
+} from "./combat-events/CombatPoisonEndFailureEvent";
+import {
   CombatPoisonStartEvent,
   CombatPoisonStartEventTarget,
 } from "./combat-events/CombatPoisonStartEvent";
@@ -566,6 +574,10 @@ export {
   CombatMissEvent,
   CombatNewLevelEvent,
   CombatObtainEvent,
+  CombatPoisonEndEvent,
+  CombatPoisonEndEventTarget,
+  CombatPoisonEndFailureEvent,
+  CombatPoisonEndFailureEventTarget,
   CombatPoisonStartEvent,
   CombatPoisonStartEventTarget,
   CombatRejuvenateEvent,

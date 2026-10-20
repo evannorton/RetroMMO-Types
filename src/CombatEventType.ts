@@ -26,6 +26,8 @@ export enum CombatEventType {
   Miss = "miss",
   NewLevel = "new-level",
   Obtain = "obtain",
+  PoisonEnd = "poison-end",
+  PoisonEndFailure = "poison-end-failure",
   PoisonStart = "poison-start",
   Rejuvenate = "rejuvenate",
   RejuvenateFailure = "rejuvenate-failure",

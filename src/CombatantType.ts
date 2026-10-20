@@ -1,4 +1,4 @@
 export enum CombatantType {
-  "Monster" = "monster",
-  "Player" = "player",
+  Monster = "monster",
+  Player = "player",
 }
