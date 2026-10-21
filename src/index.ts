@@ -110,6 +110,10 @@ import {
   CombatInstakillEventTarget,
 } from "./combat-events/CombatInstakillEvent";
 import {
+  CombatInstakillFailEvent,
+  CombatInstakillFailEventTarget,
+} from "./combat-events/CombatInstakillFailEvent";
+import {
   CombatInstakillFinishEvent,
   CombatInstakillFinishEventTarget,
 } from "./combat-events/CombatInstakillFinishEvent";
@@ -564,6 +568,8 @@ export {
   CombatHealEventTarget,
   CombatInstakillEvent,
   CombatInstakillEventTarget,
+  CombatInstakillFailEvent,
+  CombatInstakillFailEventTarget,
   CombatInstakillFinishEvent,
   CombatInstakillFinishEventTarget,
   CombatInventoryFullEvent,
