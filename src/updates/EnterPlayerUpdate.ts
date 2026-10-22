@@ -33,6 +33,7 @@ export interface EnterPlayerCharacterUpdate {
   readonly reachableID: string;
   readonly strength: number;
   readonly timePlayed: number;
+  readonly totalTimePlayed: number;
   readonly wisdom: number;
 }
 export interface EnterPlayerUpdate {

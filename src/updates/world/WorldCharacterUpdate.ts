@@ -9,6 +9,7 @@ export interface WorldCharacterUpdateEmote {
   readonly sinceUsed: number;
 }
 export interface WorldCharacterUpdate {
+  readonly bestiaryKills?: Readonly<Record<string, number>>;
   readonly characterID: string;
   readonly clothesDyeItemID?: string;
   readonly direction: Direction;

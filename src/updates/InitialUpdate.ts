@@ -107,6 +107,7 @@ export interface InitialWorldUpdate {
   readonly reachableID: string;
   readonly strength: number;
   readonly timePlayed: number;
+  readonly totalTimePlayed: number;
   readonly trade?: InitialWorldTradeUpdate;
   readonly wisdom: number;
 }
