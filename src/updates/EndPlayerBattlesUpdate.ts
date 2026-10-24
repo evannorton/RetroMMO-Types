@@ -1,10 +1,13 @@
 import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { PartyUpdate } from "./PartyUpdate";
+import { WorldAbilityHotkeyUpdate } from "./world/WorldAbilityHotkeyUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldInvitePromptsUpdate } from "./world/invites/WorldInvitePromptsUpdate";
+import { WorldItemHotkeyUpdate } from "./world/WorldItemHotkeyUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 
 export interface EndPlayerBattleCharacterUpdate {
+  readonly abilityHotkeys: readonly WorldAbilityHotkeyUpdate[];
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly bankGold: number;
@@ -20,6 +23,7 @@ export interface EndPlayerBattleCharacterUpdate {
   readonly headItemInstance?: ItemInstanceUpdate;
   readonly intelligence: number;
   readonly inventoryGold: number;
+  readonly itemHotkeys: readonly WorldItemHotkeyUpdate[];
   readonly luck: number;
   readonly mainHandItemInstance?: ItemInstanceUpdate;
   readonly maskItemInstance?: ItemInstanceUpdate;

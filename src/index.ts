@@ -358,6 +358,7 @@ import { UnmuteChat } from "./chats/UnmuteChat";
 import { VanitySlot } from "./VanitySlot";
 import { VideoRecordingScaleDownstreamWindowMessage } from "./downstream-window-messages/VideoRecordingScaleDownstreamWindowMessage";
 import { WarnChat } from "./chats/WarnChat";
+import { WorldAbilityHotkeyUpdate } from "./updates/world/WorldAbilityHotkeyUpdate";
 import { WorldAcceptDuelInviteRequest } from "./requests/world/WorldAcceptDuelInviteRequest";
 import { WorldAcceptPartyInviteRequest } from "./requests/world/WorldAcceptPartyInviteRequest";
 import { WorldAcceptTradeInviteRequest } from "./requests/world/WorldAcceptTradeInviteRequest";
@@ -370,6 +371,10 @@ import { WorldBankWithdrawGoldRequest } from "./requests/world/bank/WorldBankWit
 import { WorldBankWithdrawGoldUpdate } from "./updates/world/bank/WorldBankWithdrawGoldUpdate";
 import { WorldBankWithdrawItemRequest } from "./requests/world/bank/WorldBankWithdrawItemRequest";
 import { WorldBankWithdrawItemUpdate } from "./updates/world/bank/WorldBankWithdrawItemUpdate";
+import { WorldBindAbilityRequest } from "./requests/world/WorldBindAbilityRequest";
+import { WorldBindAbilityUpdate } from "./updates/world/WorldBindAbilityUpdate";
+import { WorldBindItemRequest } from "./requests/world/WorldBindItemRequest";
+import { WorldBindItemUpdate } from "./updates/world/WorldBindItemUpdate";
 import { WorldBonkUpdate } from "./updates/world/WorldBonkUpdate";
 import { WorldCancelInviteRequest } from "./requests/world/WorldCancelInviteRequest";
 import {
@@ -411,6 +416,7 @@ import {
   WorldInvitePromptsUpdate,
 } from "./updates/world/invites/WorldInvitePromptsUpdate";
 import { WorldInviteStartUpdate } from "./updates/world/invites/WorldInviteStartUpdate";
+import { WorldItemHotkeyUpdate } from "./updates/world/WorldItemHotkeyUpdate";
 import { WorldLeavePartyRequest } from "./requests/world/WorldLeavePartyRequest";
 import {
   WorldMoveCharacterUpdate,
@@ -473,6 +479,8 @@ import {
   WorldTurnCharactersUpdateTurn,
 } from "./updates/world/WorldTurnCharactersUpdate";
 import { WorldTurnNPCUpdate } from "./updates/world/WorldTurnNPCUpdate";
+import { WorldUnbindHotkeyRequest } from "./requests/world/WorldUnbindHotkeyRequest";
+import { WorldUnbindHotkeyUpdate } from "./updates/world/WorldUnbindHotkeyUpdate";
 import { WorldUnequipEquipmentItemRequest } from "./requests/world/WorldUnequipEquipmentItemRequest";
 import { WorldUnequipVanityItemRequest } from "./requests/world/WorldUnequipVanityItemRequest";
 import { WorldUnlockMilestoneChoiceRequest } from "./requests/world/WorldUnlockMilestoneChoiceRequest";
@@ -791,6 +799,7 @@ export {
   VanitySlot,
   VideoRecordingScaleDownstreamWindowMessage,
   WarnChat,
+  WorldAbilityHotkeyUpdate,
   WorldAcceptDuelInviteRequest,
   WorldAcceptPartyInviteRequest,
   WorldAcceptTradeInviteRequest,
@@ -803,6 +812,10 @@ export {
   WorldBankWithdrawGoldUpdate,
   WorldBankWithdrawItemRequest,
   WorldBankWithdrawItemUpdate,
+  WorldBindAbilityRequest,
+  WorldBindAbilityUpdate,
+  WorldBindItemRequest,
+  WorldBindItemUpdate,
   WorldBonkUpdate,
   WorldCancelInviteRequest,
   WorldCharacterUpdate,
@@ -838,6 +851,7 @@ export {
   WorldInvitePromptsUpdate,
   WorldInvitePromptUpdate,
   WorldInviteStartUpdate,
+  WorldItemHotkeyUpdate,
   WorldLeavePartyRequest,
   WorldMoveCharactersUpdate,
   WorldMoveCharacterUpdate,
@@ -894,6 +908,8 @@ export {
   WorldTurnCharactersUpdate,
   WorldTurnCharactersUpdateTurn,
   WorldTurnNPCUpdate,
+  WorldUnbindHotkeyRequest,
+  WorldUnbindHotkeyUpdate,
   WorldUnequipEquipmentItemRequest,
   WorldUnequipVanityItemRequest,
   WorldUnlockMilestoneChoiceRequest,

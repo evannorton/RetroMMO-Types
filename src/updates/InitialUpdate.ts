@@ -14,8 +14,10 @@ import { ItemInstanceUpdate } from "./ItemInstanceUpdate";
 import { MainMenuCharacterUpdate } from "./main-menu/MainMenuCharacterUpdate";
 import { MainState } from "../MainState";
 import { PartyUpdate } from "./PartyUpdate";
+import { WorldAbilityHotkeyUpdate } from "./world/WorldAbilityHotkeyUpdate";
 import { WorldCharacterUpdate } from "./world/WorldCharacterUpdate";
 import { WorldCombatRoundUpdate } from "./world/WorldCombatUpdate";
+import { WorldItemHotkeyUpdate } from "./world/WorldItemHotkeyUpdate";
 import { WorldNPCUpdate } from "./world/WorldNPCUpdate";
 
 export interface InitialPlayerCharacterUpdate {
@@ -81,6 +83,7 @@ export interface InitialWorldTradeUpdate {
   ];
 }
 export interface InitialWorldUpdate {
+  readonly abilityHotkeys: readonly WorldAbilityHotkeyUpdate[];
   readonly agility: number;
   readonly bagItemInstances: readonly ItemInstanceUpdate[];
   readonly bankGold: number;
@@ -98,6 +101,7 @@ export interface InitialWorldUpdate {
   readonly intelligence: number;
   readonly inventoryGold: number;
   readonly invite?: InitialWorldInviteUpdate;
+  readonly itemHotkeys: readonly WorldItemHotkeyUpdate[];
   readonly luck: number;
   readonly mainHandItemInstance?: ItemInstanceUpdate;
   readonly maskItemInstance?: ItemInstanceUpdate;
