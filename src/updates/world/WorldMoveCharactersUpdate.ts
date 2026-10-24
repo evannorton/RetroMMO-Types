@@ -9,6 +9,8 @@ export interface WorldMoveCharacterUpdate {
   readonly isPoisoned?: boolean;
   readonly isRenewing?: boolean;
   readonly order: number;
+  readonly poisonOrder?: number;
+  readonly renewOrder?: number;
   readonly resources?: WorldResourcesUpdate;
   readonly step: Step;
 }

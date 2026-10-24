@@ -7,6 +7,8 @@ export interface WorldPartyCharacterUpdate {
   readonly isRenewing: boolean;
   readonly openedChestIDs: readonly string[];
   readonly order: number;
+  readonly poisonOrder?: number;
   readonly questInstances: Record<string, WorldQuestInstanceUpdate>;
+  readonly renewOrder?: number;
   readonly resources: WorldResourcesUpdate;
 }

@@ -24,7 +24,9 @@ export interface WorldCharacterUpdate {
   readonly order: number;
   readonly outfitItemID?: string;
   readonly playerID: string;
+  readonly poisonOrder?: number;
   readonly questInstances?: Record<string, WorldQuestInstanceUpdate>;
+  readonly renewOrder?: number;
   readonly resources?: WorldResourcesUpdate;
   readonly skinColorID: string;
   readonly step: Step;
