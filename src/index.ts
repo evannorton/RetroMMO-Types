@@ -48,6 +48,9 @@ import {
   BattlerPoisonUpdate,
   BattlerUpdate,
 } from "./updates/battle/BattlerUpdate";
+import { BindGamepadKeybindDownstreamWindowMessage } from "./downstream-window-messages/BindGamepadKeybindDownstreamWindowMessage";
+import { BindKeyboardKeybindDownstreamWindowMessage } from "./downstream-window-messages/BindKeyboardKeybindDownstreamWindowMessage";
+import { BindMouseKeybindDownstreamWindowMessage } from "./downstream-window-messages/BindMouseKeybindDownstreamWindowMessage";
 import { BodyCosmeticDefinition } from "./definitions/BodyCosmeticDefinition";
 import { BoostDefinition } from "./definitions/BoostDefinition";
 import { Chat } from "./chats/Chat";
@@ -223,6 +226,13 @@ import { InviteType } from "./InviteType";
 import { ItemDefinition } from "./definitions/ItemDefinition";
 import { ItemInstanceUpdate } from "./updates/ItemInstanceUpdate";
 import { JoystickDownstreamWindowMessage } from "./downstream-window-messages/JoystickDownstreamWindowMessage";
+import {
+  KeybindInputCollection,
+  KeybindJoystickDirection,
+  KeybindKeyboardButton,
+  KeybindsUpstreamWindowMessage,
+} from "./upstream-window-messages/KeybindsUpstreamWindowMessage";
+import { KeybindNumLock } from "./KeybindNumLock";
 import { KickChat } from "./chats/KickChat";
 import { KickedUpdate } from "./updates/KickedUpdate";
 import { KickedUpstreamWindowMessage } from "./upstream-window-messages/KickedUpstreamWindowMessage";
@@ -301,6 +311,7 @@ import { ReplacedUpdate } from "./updates/ReplacedUpdate";
 import { ReplacedUpstreamWindowMessage } from "./upstream-window-messages/ReplacedUpstreamWindowMessage";
 import { ReportIssueDownstreamWindowMessage } from "./downstream-window-messages/ReportIssueDownstreamWindowMessage";
 import { ReportIssueRequest } from "./requests/ReportIssueRequest";
+import { ResetKeybindsDownstreamWindowMessage } from "./downstream-window-messages/ResetKeybindsDownstreamWindowMessage";
 import { ResourceBarDefinition } from "./definitions/ResourceBarDefinition";
 import { ResourcePool } from "./ResourcePool";
 import { RunUpstreamWindowMessage } from "./upstream-window-messages/RunUpstreamWindowMessage";
@@ -520,6 +531,9 @@ export {
   BattleUnbindHotkeyUpdate,
   BattleUseAbilityRequest,
   BattleUseItemInstanceRequest,
+  BindGamepadKeybindDownstreamWindowMessage,
+  BindKeyboardKeybindDownstreamWindowMessage,
+  BindMouseKeybindDownstreamWindowMessage,
   BodyCosmeticDefinition,
   BoostDefinition,
   Chat,
@@ -651,6 +665,11 @@ export {
   ItemDefinition,
   ItemInstanceUpdate,
   JoystickDownstreamWindowMessage,
+  KeybindInputCollection,
+  KeybindJoystickDirection,
+  KeybindKeyboardButton,
+  KeybindNumLock,
+  KeybindsUpstreamWindowMessage,
   KickChat,
   KickedUpdate,
   KickedUpstreamWindowMessage,
@@ -727,6 +746,7 @@ export {
   ReplacedUpstreamWindowMessage,
   ReportIssueDownstreamWindowMessage,
   ReportIssueRequest,
+  ResetKeybindsDownstreamWindowMessage,
   ResourceBarDefinition,
   ResourcePool,
   RunUpstreamWindowMessage,
