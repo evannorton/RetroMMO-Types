@@ -15,6 +15,8 @@ export enum CombatEventType {
   FriendlyTargetFailure = "friendly-target-failure",
   GainStat = "gain-stat",
   Gold = "gold",
+  HardenStart = "harden-start",
+  HardenStartFailure = "harden-start-failure",
   Heal = "heal",
   Instakill = "instakill",
   InstakillFail = "instakill-fail",

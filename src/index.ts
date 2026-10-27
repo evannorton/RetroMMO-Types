@@ -21,6 +21,7 @@ import { BattleCancelSubmittedMoveUpdate } from "./updates/battle/BattleCancelSu
 import { BattleCharacterUpdate } from "./updates/battle/BattleCharacterUpdate";
 import {
   BattleEndRoundBattlerBleedUpdate,
+  BattleEndRoundBattlerHardenUpdate,
   BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
@@ -45,6 +46,7 @@ import { BattleUseAbilityRequest } from "./requests/battle/BattleUseAbilityReque
 import { BattleUseItemInstanceRequest } from "./requests/battle/BattleUseItemInstanceRequest";
 import {
   BattlerBleedUpdate,
+  BattlerHardenUpdate,
   BattlerPoisonUpdate,
   BattlerUpdate,
 } from "./updates/battle/BattlerUpdate";
@@ -104,6 +106,14 @@ import {
 } from "./combat-events/CombatFriendlyTargetFailureEvent";
 import { CombatGainStatEvent } from "./combat-events/CombatGainStatEvent";
 import { CombatGoldEvent } from "./combat-events/CombatGoldEvent";
+import {
+  CombatHardenStartEvent,
+  CombatHardenStartEventTarget,
+} from "./combat-events/CombatHardenStartEvent";
+import {
+  CombatHardenStartFailureEvent,
+  CombatHardenStartFailureEventTarget,
+} from "./combat-events/CombatHardenStartFailureEvent";
 import {
   CombatHealEvent,
   CombatHealEventTarget,
@@ -515,6 +525,7 @@ export {
   BattleCancelSubmittedMoveUpdate,
   BattleCharacterUpdate,
   BattleEndRoundBattlerBleedUpdate,
+  BattleEndRoundBattlerHardenUpdate,
   BattleEndRoundBattlerPoisonUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
@@ -524,6 +535,7 @@ export {
   BattleItemHotkeyUpdate,
   BattlePhase,
   BattlerBleedUpdate,
+  BattlerHardenUpdate,
   BattleResourcesUpdate,
   BattleRoundUpdate,
   BattlerPoisonUpdate,
@@ -586,6 +598,10 @@ export {
   CombatFriendlyTargetFailureEventTarget,
   CombatGainStatEvent,
   CombatGoldEvent,
+  CombatHardenStartEvent,
+  CombatHardenStartEventTarget,
+  CombatHardenStartFailureEvent,
+  CombatHardenStartFailureEventTarget,
   CombatHealEvent,
   CombatHealEventTarget,
   CombatInstakillEvent,

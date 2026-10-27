@@ -8,8 +8,12 @@ export interface BattleEndRoundBattlerPoisonUpdate {
 export interface BattleEndRoundBattlerBleedUpdate {
   readonly order: number;
 }
+export interface BattleEndRoundBattlerHardenUpdate {
+  readonly order: number;
+}
 export interface BattleEndRoundBattlerUpdate {
   readonly bleed?: BattleEndRoundBattlerBleedUpdate;
+  readonly harden?: BattleEndRoundBattlerHardenUpdate;
   readonly id: string;
   readonly isAlive?: boolean;
   readonly poison?: BattleEndRoundBattlerPoisonUpdate;
