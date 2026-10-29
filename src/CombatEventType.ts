@@ -15,6 +15,7 @@ export enum CombatEventType {
   FriendlyTargetFailure = "friendly-target-failure",
   GainStat = "gain-stat",
   Gold = "gold",
+  HardenEnd = "harden-end",
   HardenStart = "harden-start",
   HardenStartFailure = "harden-start-failure",
   Heal = "heal",
@@ -37,6 +38,9 @@ export enum CombatEventType {
   Renew = "renew",
   Revive = "revive",
   ReviveFailure = "revive-failure",
+  SoftenEnd = "soften-end",
+  SoftenStart = "soften-start",
+  SoftenStartFailure = "soften-start-failure",
   UseAbility = "use-ability",
   UseItem = "use-item",
 }

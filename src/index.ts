@@ -23,6 +23,7 @@ import {
   BattleEndRoundBattlerBleedUpdate,
   BattleEndRoundBattlerHardenUpdate,
   BattleEndRoundBattlerPoisonUpdate,
+  BattleEndRoundBattlerSoftenUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
 } from "./updates/battle/BattleEndRoundUpdate";
@@ -48,6 +49,7 @@ import {
   BattlerBleedUpdate,
   BattlerHardenUpdate,
   BattlerPoisonUpdate,
+  BattlerSoftenUpdate,
   BattlerUpdate,
 } from "./updates/battle/BattlerUpdate";
 import { BindGamepadKeybindDownstreamWindowMessage } from "./downstream-window-messages/BindGamepadKeybindDownstreamWindowMessage";
@@ -106,6 +108,10 @@ import {
 } from "./combat-events/CombatFriendlyTargetFailureEvent";
 import { CombatGainStatEvent } from "./combat-events/CombatGainStatEvent";
 import { CombatGoldEvent } from "./combat-events/CombatGoldEvent";
+import {
+  CombatHardenEndEvent,
+  CombatHardenEndEventTarget,
+} from "./combat-events/CombatHardenEndEvent";
 import {
   CombatHardenStartEvent,
   CombatHardenStartEventTarget,
@@ -167,6 +173,18 @@ import {
   CombatReviveFailureEvent,
   CombatReviveFailureEventTarget,
 } from "./combat-events/CombatReviveFailureEvent";
+import {
+  CombatSoftenEndEvent,
+  CombatSoftenEndEventTarget,
+} from "./combat-events/CombatSoftenEndEvent";
+import {
+  CombatSoftenStartEvent,
+  CombatSoftenStartEventTarget,
+} from "./combat-events/CombatSoftenStartEvent";
+import {
+  CombatSoftenStartFailureEvent,
+  CombatSoftenStartFailureEventTarget,
+} from "./combat-events/CombatSoftenStartFailureEvent";
 import {
   CombatUseAbilityEvent,
   CombatUseAbilityEventCaster,
@@ -527,6 +545,7 @@ export {
   BattleEndRoundBattlerBleedUpdate,
   BattleEndRoundBattlerHardenUpdate,
   BattleEndRoundBattlerPoisonUpdate,
+  BattleEndRoundBattlerSoftenUpdate,
   BattleEndRoundBattlerUpdate,
   BattleEndRoundUpdate,
   BattleGameOverUpdate,
@@ -539,6 +558,7 @@ export {
   BattleResourcesUpdate,
   BattleRoundUpdate,
   BattlerPoisonUpdate,
+  BattlerSoftenUpdate,
   BattlerUpdate,
   BattleSelectionUpdate,
   BattleStartRoundUpdate,
@@ -598,6 +618,8 @@ export {
   CombatFriendlyTargetFailureEventTarget,
   CombatGainStatEvent,
   CombatGoldEvent,
+  CombatHardenEndEvent,
+  CombatHardenEndEventTarget,
   CombatHardenStartEvent,
   CombatHardenStartEventTarget,
   CombatHardenStartFailureEvent,
@@ -633,6 +655,12 @@ export {
   CombatReviveEventTarget,
   CombatReviveFailureEvent,
   CombatReviveFailureEventTarget,
+  CombatSoftenEndEvent,
+  CombatSoftenEndEventTarget,
+  CombatSoftenStartEvent,
+  CombatSoftenStartEventTarget,
+  CombatSoftenStartFailureEvent,
+  CombatSoftenStartFailureEventTarget,
   CombatUseAbilityEvent,
   CombatUseAbilityEventCaster,
   CombatUseAbilityEventTarget,

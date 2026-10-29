@@ -11,6 +11,9 @@ export interface BattleEndRoundBattlerBleedUpdate {
 export interface BattleEndRoundBattlerHardenUpdate {
   readonly order: number;
 }
+export interface BattleEndRoundBattlerSoftenUpdate {
+  readonly order: number;
+}
 export interface BattleEndRoundBattlerUpdate {
   readonly bleed?: BattleEndRoundBattlerBleedUpdate;
   readonly harden?: BattleEndRoundBattlerHardenUpdate;
@@ -18,6 +21,7 @@ export interface BattleEndRoundBattlerUpdate {
   readonly isAlive?: boolean;
   readonly poison?: BattleEndRoundBattlerPoisonUpdate;
   readonly resources?: BattleResourcesUpdate;
+  readonly soften?: BattleEndRoundBattlerSoftenUpdate;
 }
 export interface BattleEndRoundUpdate {
   readonly battlers: readonly BattleEndRoundBattlerUpdate[];

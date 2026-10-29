@@ -10,6 +10,9 @@ export interface BattlerHardenUpdate {
 export interface BattlerPoisonUpdate {
   readonly order: number;
 }
+export interface BattlerSoftenUpdate {
+  readonly order: number;
+}
 export interface BattlerUpdate {
   readonly bleed?: BattlerBleedUpdate;
   readonly characterID?: string;
@@ -20,5 +23,6 @@ export interface BattlerUpdate {
   readonly monsterID?: string;
   readonly poison?: BattlerPoisonUpdate;
   readonly resources?: BattleResourcesUpdate;
+  readonly soften?: BattlerSoftenUpdate;
   readonly type: CombatantType;
 }
